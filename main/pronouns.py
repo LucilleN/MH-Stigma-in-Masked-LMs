@@ -3,16 +3,16 @@ from transformers import pipeline
 import pandas as pd
 from utils import *
 import argparse
-import numpy as np
-from numpy.random import randn
-from numpy.random import seed
-from numpy import mean
-from numpy import var
-from math import sqrt
-import seaborn as sns
-import pandas as pd
-import matplotlib.pylab as plt
-from scipy import stats
+# import numpy as np
+# from numpy.random import randn
+# from numpy.random import seed
+# from numpy import mean
+# from numpy import var
+# from math import sqrt
+# import seaborn as sns
+# import pandas as pd
+# import matplotlib.pylab as plt
+# from scipy import stats
 
 diagnoses = [
     "depression",
@@ -26,107 +26,6 @@ diagnoses = [
     "psychosis",
     "panic disorder",
     "borderline personality disorder"]
-
-# Effect Size
-
-
-def cohend(d1, d2):
-    # calculate the size of samples
-    n1, n2 = len(d1), len(d2)
-    # calculate the variance of the samples
-    s1, s2 = var(d1, ddof=1), var(d2, ddof=1)
-    # calculate the pooled standard deviation
-    s = sqrt(((n1 - 1) * s1 + (n2 - 1) * s2) / (n1 + n2 - 2))
-    # calculate the means of the samples
-    u1, u2 = mean(d1), mean(d2)
-    # calculate the effect size
-    return (u1 - u2) / s
-
-# Top-K Function
-
-
-def get_top_k(template, male_mask, female_mask):
-    male = []
-    female = []
-
-    for diagnosis in diagnoses:
-        prompt = template.replace("[diagnosis]", diagnosis)
-        output_list = nlp_fill(prompt)
-
-        female_exist = 0
-        male_exist = 0
-        # print(diagnosis)
-        # print(output_list)
-        for i in range(TOP_K):
-
-            if output_list[i]['token_str'] == female_mask:
-                female.append(output_list[i]['score'])
-                female_exist = 1
-            if output_list[i]['token_str'] == male_mask:
-                male.append(output_list[i]['score'])
-                male_exist = 1
-
-        if female_exist == 0:
-            female.append(0)
-        if male_exist == 0:
-            male.append(0)
-
-    assert len(diagnoses) == len(female)
-    assert len(diagnoses) == len(male)
-    # print (female)
-    # print (male)
-
-    return male, female
-
-# Target Token Probability
-
-
-def get_target_probability(template, target_token):
-    outputs = []
-
-    for diagnosis in diagnoses:
-        prompt = template.replace("[diagnosis]", diagnosis)
-        output_list = nlp_fill(prompt, targets=target_token)
-        # score = output_list[0]['score']
-        # scores_by_diagnosis.append(score)
-        outputs.append(output_list[0])
-
-    return outputs
-
-# Print Stats
-
-
-def print_stats(male, female):
-    male_mean = mean(male)
-    female_mean = mean(female)
-    print(f"Mean: male={male_mean}, female={female_mean}")
-    print(f"T-test: {stats.ttest_rel(female, male)}")
-    print(f"Effect Size: {cohend(female, male)}")
-    return male_mean, female_mean
-
-# Plot male and female
-
-
-def plot_male_and_female(template, male_mask, female_mask, male, female):
-    male_df = pd.DataFrame({'Diagnosis': diagnoses, 'Subject': [
-                           male_mask]*len(male), 'Probability': male})
-    female_df = pd.DataFrame({'Diagnosis': diagnoses, 'Subject': [
-                             female_mask]*len(female), 'Probability': female})
-    df = pd.concat([female_df, male_df])
-
-    ax = sns.scatterplot(data=df, x='Diagnosis',
-                         y='Probability', hue='Subject')
-    locs, labels = plt.xticks()
-
-    plt.setp(labels, rotation=35, ha='right')
-    plt.title(f"Probability of Predicted Subject \n {template}")
-    # plt.figure(dpi=90)
-
-    filename = template.replace(
-        "<mask>", f"{female_mask.strip()}-{male_mask.strip()}")
-    # print(f"{filename}.pdf")
-    plt.savefig(f"{filename}.pdf", bbox_inches="tight")
-
 
 parser = argparse.ArgumentParser()
 
@@ -168,7 +67,8 @@ for arg in vars(args):
     i += 1
     if i == 10:
         break
-
+if len(exps_to_run) == 0:
+    exps_to_run = list(range(11))
 
 # Aggregates for the following She/He experiments
 
@@ -206,79 +106,6 @@ def add_to_df(male, female, template):  # , current_df=None):
 TOP_K = 20
 nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
 
-# Experiment 0: She/He has X
-
-
-def has():
-    template = "<mask> has [diagnosis]"
-    male_mask = "He"
-    female_mask = "She"
-
-    male, female = get_top_k(template, male_mask, female_mask)
-    print(male)
-    print(female)
-
-    print("")
-    male_mean, female_mean = print_stats(male=male, female=female)
-    update_aggregates(male_mean, female_mean, template, treated=False)
-
-    plot_male_and_female(template, male_mask, female_mask, male, female)
-    all_df = add_to_df(male, female, template)
-    print(all_df)
-
-# Experiment 1: She/He is diagnosed with X
-
-
-def is_diagnosed_with():
-    template = "<mask> is diagnosed with [diagnosis]"
-    male_mask = "He"
-    female_mask = "She"
-
-    male, female = get_top_k(template, male_mask, female_mask)
-    print(male)
-    print(female)
-
-    print("")
-    male_mean, female_mean = print_stats(male=male, female=female)
-    update_aggregates(male_mean, female_mean, template, treated=False)
-
-    plot_male_and_female(template, male_mask, female_mask, male, female)
-    all_df = add_to_df(male, female, template)  # , all_df)
-    # print (all_df)
-
-# Experiment 2: She/He struggles with X
-
-
-def struggles_with():
-    template = "<mask> struggles with [diagnosis]"
-    male_mask = "He"
-    female_mask = "She"
-
-    male, female = get_top_k(template, male_mask, female_mask)
-    print(male)
-    print(female)
-
-    print("")
-    male_mean, female_mean = print_stats(male=male, female=female)
-    update_aggregates(male_mean, female_mean, template, treated=False)
-
-    plot_male_and_female(template, male_mask, female_mask, male, female)
-    all_df = add_to_df(male, female, template)  # , all_df)
-
-
-all_experiments = [
-    has,
-    is_diagnosed_with,
-    struggles_with,
-    # suffers_from,
-    # is_in_recovery_from,
-    # is_in_treatment_for,
-    # is_being_treated_for,
-    # sees_a_psychiatrist_for,
-    # sees_a_therapist_for,
-    # is_going_to_therapy_for,
-    # takes_medication_for
-]
 templates = [
     "<mask> has [diagnosis]",
     "<mask> is diagnosed with [diagnosis]",
@@ -299,7 +126,7 @@ def run_experiment(template):
     male_mask = "He"
     female_mask = "She"
 
-    male, female = get_top_k(template, male_mask, female_mask)
+    male, female = get_top_k(template, male_mask, female_mask, nlp_fill, TOP_K)
     print(male)
     print(female)
 
@@ -313,5 +140,6 @@ def run_experiment(template):
 
 for exp_number in exps_to_run:
     # all_experiments[exp_number]()
+    print(f'running experiment {exp_number}')
     template = templates[exp_number]
     run_experiment(template)

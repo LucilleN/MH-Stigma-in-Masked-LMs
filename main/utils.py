@@ -40,7 +40,7 @@ def cohend(d1, d2):
 # Top-K Function
 
 
-def get_top_k(template, male_mask, female_mask):
+def get_top_k(template, male_mask, female_mask, nlp_fill, top_k):
     male = []
     female = []
 
@@ -52,7 +52,7 @@ def get_top_k(template, male_mask, female_mask):
         male_exist = 0
         # print(diagnosis)
         # print(output_list)
-        for i in range(TOP_K):
+        for i in range(top_k):
 
             if output_list[i]['token_str'] == female_mask:
                 female.append(output_list[i]['score'])
@@ -76,7 +76,7 @@ def get_top_k(template, male_mask, female_mask):
 # Target Token Probability
 
 
-def get_target_probability(template, target_token):
+def get_target_probability(template, target_token, nlp_fill):
     outputs = []
 
     for diagnosis in diagnoses:
