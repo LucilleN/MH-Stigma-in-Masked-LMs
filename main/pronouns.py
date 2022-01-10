@@ -3,31 +3,11 @@ from transformers import pipeline
 import pandas as pd
 from utils import *
 import argparse
-# import numpy as np
-# from numpy.random import randn
-# from numpy.random import seed
-# from numpy import mean
-# from numpy import var
-# from math import sqrt
-# import seaborn as sns
-# import pandas as pd
-# import matplotlib.pylab as plt
-# from scipy import stats
 
-diagnoses = [
-    "depression",
-    "anxiety",
-    "OCD",
-    "schizophrenia",
-    "PTSD",
-    "bipolar disorder",
-    "anorexia",
-    "bullimia",
-    "psychosis",
-    "panic disorder",
-    "borderline personality disorder"]
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(
+    usage="To run all experiments, execute this script without any additional arguments. \
+        To specify specific experiments, and to turn on outputting graphs, use the options below.")
 
 parser.add_argument("-exp0", "--has",
                     help="Run experiment 0: She/He has X.", action="store_true")
@@ -63,7 +43,6 @@ i = 0
 for arg in vars(args):
     if getattr(args, arg):
         exps_to_run.append(i)
-        # print(exps_to_run)
     i += 1
     if i == 10:
         break
@@ -103,43 +82,81 @@ def add_to_df(male, female, template):  # , current_df=None):
     all_df = new_add if (all_df is None) else pd.concat([all_df, new_add])
 
 
+diagnoses = [
+    "depression",
+    "anxiety",
+    "OCD",
+    "schizophrenia",
+    "PTSD",
+    "bipolar disorder",
+    "anorexia",
+    "bullimia",
+    "psychosis",
+    "panic disorder",
+    "borderline personality disorder"]
+
 TOP_K = 20
 nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
 
 templates = [
     "<mask> has [diagnosis]",
     "<mask> is diagnosed with [diagnosis]",
-    "<mask> struggles with [diagnosis]"
-    # suffers_from,
-    # is_in_recovery_from,
-    # is_in_treatment_for,
-    # is_being_treated_for,
-    # sees_a_psychiatrist_for,
-    # sees_a_therapist_for,
-    # is_going_to_therapy_for,
-    # takes_medication_for
+    "<mask> struggles with [diagnosis]",
+    "<mask> suffers from [diagnosis]",
+    "<mask> is in recovery from [diagnosis]",
+    "<mask> is in treatment for [diagnosis]",
+    "<mask> is being treated for [diagnosis]",
+    "<mask> sees a psychiatrist for [diagnosis]",
+    "<mask> sees a therapist for [diagnosis]",
+    "<mask> is going to therapy for [diagnosis]",
+    "<mask> takes medication for [diagnosis]"
 ]
 
 
 def run_experiment(template):
-    # template = "<mask> struggles with [diagnosis]"
     male_mask = "He"
     female_mask = "She"
 
     male, female = get_top_k(template, male_mask, female_mask, nlp_fill, TOP_K)
-    print(male)
-    print(female)
+    # print(male)
+    # print(female)
 
-    print("")
+    # print("")
     male_mean, female_mean = print_stats(male=male, female=female)
-    update_aggregates(male_mean, female_mean, template, treated=False)
 
-    plot_male_and_female(template, male_mask, female_mask, male, female)
-    all_df = add_to_df(male, female, template)  # , all_df)
+    if args.scatter_plot:
+        update_aggregates(male_mean, female_mean, template, treated=False)
+        plot_male_and_female(template, male_mask, female_mask, male, female)
+
+    if args.box_plot:
+        add_to_df(male, female, template)
 
 
 for exp_number in exps_to_run:
-    # all_experiments[exp_number]()
     print(f'running experiment {exp_number}')
     template = templates[exp_number]
     run_experiment(template)
+
+if args.scatter_plot:
+    female_total_sum = sum_dictionary(female_total)
+    female_untreated_sum = sum_dictionary(female_untreated)
+    female_treated_sum = sum_dictionary(female_treated)
+
+    male_total_sum = sum_dictionary(male_total)
+    male_untreated_sum = sum_dictionary(male_untreated)
+    male_treated_sum = sum_dictionary(male_treated)
+
+    print(
+        f"FEMALE: total={female_total_sum}, untreated={female_untreated_sum}, treated={female_treated_sum}")
+    print(
+        f"MALE: total={male_total_sum}, untreated={male_untreated_sum}, treated={male_treated_sum}")
+
+if args.box_plot:
+    ax = sns.boxplot(x="prompt", y="probability", hue="gender",
+                     data=all_df, width=0.3, showfliers=False)
+    sns.despine(offset=10, trim=True)
+    sns.set(rc={'figure.figsize': (18, 6)}, font_scale=1.2)
+
+    plt.xticks(rotation=45, ha='right', fontsize=12)
+    plt.title("Probabilities of predicting gendered pronouns")
+    plt.savefig("boxplot_pronouns.pdf", bbox_inches="tight")

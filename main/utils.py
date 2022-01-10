@@ -121,3 +121,10 @@ def plot_male_and_female(template, male_mask, female_mask, male, female):
         "<mask>", f"{female_mask.strip()}-{male_mask.strip()}")
     # print(f"{filename}.pdf")
     plt.savefig(f"{filename}.pdf", bbox_inches="tight")
+
+
+def sum_dictionary(template_to_mean_dict):
+    sum = 0
+    for template, mean in template_to_mean_dict.items():
+        sum += mean
+    return sum
