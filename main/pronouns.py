@@ -159,4 +159,4 @@ if args.box_plot:
 
     plt.xticks(rotation=45, ha='right', fontsize=12)
     plt.title("Probabilities of predicting gendered pronouns")
-    plt.savefig("boxplot_pronouns.pdf", bbox_inches="tight")
+    plt.savefig("plots/boxplot_pronouns.pdf", bbox_inches="tight")

@@ -120,7 +120,7 @@ def plot_male_and_female(template, male_mask, female_mask, male, female):
     filename = template.replace(
         "<mask>", f"{female_mask.strip()}-{male_mask.strip()}")
     # print(f"{filename}.pdf")
-    plt.savefig(f"{filename}.pdf", bbox_inches="tight")
+    plt.savefig(f"plots/scatterplots/{filename}.pdf", bbox_inches="tight")
 
 
 def sum_dictionary(template_to_mean_dict):
