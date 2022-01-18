@@ -2,8 +2,6 @@ certifi==2021.10.8
 charset-normalizer==2.0.10
 click==8.0.3
 cycler==0.11.0
-filelock==3.4.1
-fonttools==4.28.5
 huggingface-hub==0.2.1
 idna==3.3
 joblib==1.1.0
