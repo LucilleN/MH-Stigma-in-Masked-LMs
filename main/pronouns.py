@@ -4,19 +4,6 @@ import pandas as pd
 from utils import diagnoses, get_top_k, print_stats, plot_male_and_female
 import argparse
 
-# diagnoses = [
-#     "depression",
-#     "anxiety",
-#     "OCD",
-#     "schizophrenia",
-#     "PTSD",
-#     "bipolar disorder",
-#     "anorexia",
-#     "bullimia",
-#     "psychosis",
-#     "panic disorder",
-#     "borderline personality disorder"]
-
 templates = [
     "<mask> has [diagnosis]",
     "<mask> is diagnosed with [diagnosis]",
