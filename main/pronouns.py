@@ -1,21 +1,21 @@
 # Comparing He vs She
 from transformers import pipeline
 import pandas as pd
-from utils import *
+from utils import diagnoses, get_top_k, print_stats, plot_male_and_female
 import argparse
 
-diagnoses = [
-    "depression",
-    "anxiety",
-    "OCD",
-    "schizophrenia",
-    "PTSD",
-    "bipolar disorder",
-    "anorexia",
-    "bullimia",
-    "psychosis",
-    "panic disorder",
-    "borderline personality disorder"]
+# diagnoses = [
+#     "depression",
+#     "anxiety",
+#     "OCD",
+#     "schizophrenia",
+#     "PTSD",
+#     "bipolar disorder",
+#     "anorexia",
+#     "bullimia",
+#     "psychosis",
+#     "panic disorder",
+#     "borderline personality disorder"]
 
 templates = [
     "<mask> has [diagnosis]",
