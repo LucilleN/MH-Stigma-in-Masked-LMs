@@ -87,9 +87,11 @@ def run_experiment(template):
 
 
 if __name__ == "__main__":
+    nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
+    
     for template in templates:
         run_experiment(template)
-        
+
     # parser = argparse.ArgumentParser(
     #     usage="To run all experiments, execute this script without any additional arguments. \
     #         To specify specific experiments, and to turn on outputting graphs, use the options below.")
@@ -134,7 +136,6 @@ if __name__ == "__main__":
     # if len(exps_to_run) == 0:
     #     exps_to_run = list(range(11))
 
-    # nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
 
 
     # for exp_number in exps_to_run:
