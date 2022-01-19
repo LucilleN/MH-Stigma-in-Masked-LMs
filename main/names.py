@@ -87,7 +87,7 @@ def run_experiment(template):
 
 
 if __name__ == "__main__":
-    nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
+    nlp_fill = pipeline('fill-mask', model="roberta-large")
     
     for template in templates:
         run_experiment(template)
