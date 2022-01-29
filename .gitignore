@@ -130,3 +130,6 @@ dmypy.json
 
 # Other stuff
 .DS_Store
+
+# Big data files
+data/gender_names_cisgender.pickle

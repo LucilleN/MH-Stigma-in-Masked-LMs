@@ -2,7 +2,7 @@ import pickle
 import random
 import math
 
-with open('../gender_names_cisgender.pickle', 'rb') as file:
+with open('../data/gender_names_cisgender.pickle', 'rb') as file:
     data = pickle.load(file)
 
 # data is a tuple of 8 sets: 
@@ -38,13 +38,15 @@ def get_log_odds_score(name):
     # General formula: 
     #     log(count of w in first corpus / (size of first corpus - count w in first corpus)) 
     #         - log(count of w in second corpus / (size of second corpus - count w in second corpus))
+    # Since we're using male corpus as first log and female corpus as second log, 
+    # the more positive = more strongly male and more negative = more strongly female
     count_m = first_names_men.count(name)
     # print(f"count_m: {count_m}")
     count_w = first_names_women.count(name)
     # print(f"count_w: {count_w}")
     # adding +1 (Laplace Smoothing?) to avoid log(0) = undefined
-    first_log = math.log( (count_m + 1) / (size_first_names_men + 1) )
-    second_log = math.log( (count_w + 1) / (size_first_names_women + 1) )
+    first_log = math.log( (count_m + 1) / (size_first_names_men - count_m) )
+    second_log = math.log( (count_w + 1) / (size_first_names_women - count_w) )
     delta = first_log - second_log
     return delta
 
@@ -52,5 +54,18 @@ if __name__ == "__main__":
     all_names = set(first_names_men).union(set(first_names_women))
     all_names_log_odds_scores = [(get_log_odds_score(name), name) for name in all_names]
     all_names_log_odds_scores.sort(reverse=True)
-    print(all_names_log_odds_scores[:5])
-    print(all_names_log_odds_scores[-5:])
+
+    # Print the top 5 male and female names
+    # print(all_names_log_odds_scores[:5])
+    # print(all_names_log_odds_scores[-5:])
+
+    with open("../data/men_top_1000.txt", "w+") as file:
+        for i in range(1000):
+            score, name = all_names_log_odds_scores[i]
+            file.write(name + "\n")
+            
+    with open("../data/women_top_1000.txt", "w+") as file:
+        for i in range(len(all_names_log_odds_scores) - 1, len(all_names_log_odds_scores) - 1001, -1):
+            score, name = all_names_log_odds_scores[i]
+            file.write(name + "\n")
+        
