@@ -19,45 +19,22 @@ templates = [
 ]
 
 
-female_names = [
-    "Mary", 
-    # "Patricia", 
-    "Jennifer", 
-    # "Linda", 
-    "Elizabeth", 
-    # "Barbara", 
-    "Susan", 
-    "Jessica", 
-    "Sarah",
-    # "Karen",
-    # "Nancy",
-    "Lisa",
-    # "Betty",
-    # "Margaret",
-    # "Sandra",
-    # "Ashley",
-    # "Kimberly",
-    "Emily",
-    # "Donna",
-    "Michelle",
-    # "Dorothy",
-    # "Carol",
-    # "Amanda",
-    # "Melissa"
-    ]
-male_names = [
-    "James", 
-    "Robert", 
-    "John", 
-    "Michael", 
-    "William", 
-    "David", 
-    "Richard", 
-    "Joseph", 
-    "Thomas"]
+female_names = read_data_from_file("../data/women_top_1000.txt")
+male_names = read_data_from_file("../data/men_top_1000.txt")
 
 female_sum = 0
 male_sum = 0
+
+def read_data_from_file(filepath):
+    data = []
+    with open(filepath) as f:
+        while True:
+            line = f.readline()
+            if not line:
+                break
+            data.append(line.strip())
+    return data
+
 
 def run_experiment(template):
     female_sum = 0
@@ -87,10 +64,18 @@ def run_experiment(template):
 
 
 if __name__ == "__main__":
+    print("--------ROBERTA LARGE--------")
     nlp_fill = pipeline('fill-mask', model="roberta-large")
     
     for template in templates:
         run_experiment(template)
+
+    print("--------MENTAL BERT--------")
+    nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
+    
+    for template in templates:
+        run_experiment(template)
+
 
     # parser = argparse.ArgumentParser(
     #     usage="To run all experiments, execute this script without any additional arguments. \
