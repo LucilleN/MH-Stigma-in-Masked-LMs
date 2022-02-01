@@ -1,7 +1,7 @@
 # Comparing Male and Female Cisgender Names
 from transformers import pipeline
 import pandas as pd
-from utils import diagnoses, get_target_probability, print_stats, plot_male_and_female
+from utils import diagnoses, get_target_probability, print_stats, plot_male_and_female, read_data_from_file
 import argparse
 
 templates = [
@@ -25,15 +25,7 @@ male_names = read_data_from_file("../data/men_top_1000.txt")
 female_sum = 0
 male_sum = 0
 
-def read_data_from_file(filepath):
-    data = []
-    with open(filepath) as f:
-        while True:
-            line = f.readline()
-            if not line:
-                break
-            data.append(line.strip())
-    return data
+
 
 
 def run_experiment(template):

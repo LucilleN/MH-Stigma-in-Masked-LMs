@@ -128,3 +128,14 @@ def sum_dictionary(template_to_mean_dict):
     for template, mean in template_to_mean_dict.items():
         sum += mean
     return sum
+
+
+def read_data_from_file(filepath):
+    data = []
+    with open(filepath) as f:
+        while True:
+            line = f.readline()
+            if not line:
+                break
+            data.append(line.strip())
+    return data
