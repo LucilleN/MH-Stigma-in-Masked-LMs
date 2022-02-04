@@ -28,17 +28,17 @@ male_sum = 0
 
 
 
-def run_experiment(template):
+def run_experiment(template, nlp_fill):
     female_sum = 0
     male_sum = 0
 
     for female_name in female_names:
-        outputs = get_target_probability(template, female_name)
+        outputs = get_target_probability(template, female_name, nlp_fill)
         print(f"{female_name}: {outputs}")
         female_sum += outputs[0]['score']
 
     for male_name in male_names:
-        outputs = get_target_probability(template, male_name)
+        outputs = get_target_probability(template, male_name, nlp_fill)
         print(f"{male_name}: {outputs}")
         male_sum += outputs[0]['score']
 
@@ -60,13 +60,13 @@ if __name__ == "__main__":
     nlp_fill = pipeline('fill-mask', model="roberta-large")
     
     for template in templates:
-        run_experiment(template)
+        run_experiment(template, nlp_fill)
 
     print("--------MENTAL BERT--------")
     nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
     
     for template in templates:
-        run_experiment(template)
+        run_experiment(template, nlp_fill)
 
 
     # parser = argparse.ArgumentParser(
