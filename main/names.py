@@ -48,26 +48,27 @@ def run_experiment(template, nlp_fill):
     print("TOTAL MALE for this template:")
     print(male_sum)
 
-    if args.scatter_plot:
-        pass
-    if args.box_plot:
-        pass
+    # if args.scatter_plot:
+    #     pass
+    # if args.box_plot:
+    #     pass
 
 
 
 if __name__ == "__main__":
-    print("--------ROBERTA LARGE--------")
-    nlp_fill = pipeline('fill-mask', model="roberta-large")
-    
-    for template in templates:
-        run_experiment(template, nlp_fill)
-
     print("--------MENTAL BERT--------")
     nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
     
     for template in templates:
         run_experiment(template, nlp_fill)
 
+    print("--------ROBERTA LARGE--------")
+    nlp_fill = pipeline('fill-mask', model="roberta-large")
+    
+    for template in templates:
+        run_experiment(template, nlp_fill)
+
+    
 
     # parser = argparse.ArgumentParser(
     #     usage="To run all experiments, execute this script without any additional arguments. \
