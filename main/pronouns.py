@@ -56,6 +56,9 @@ def run_experiment(template):
     male_outputs = get_target_probability(template, male_mask, nlp_fill)
     male = [element['score'] for element in male_outputs]
 
+    print(f"male: {male}")
+    print(f"female: {female}")
+
     male_mean, female_mean = print_stats(male=male, female=female)
 
     if args.scatter_plot:
