@@ -48,7 +48,10 @@ def run_experiment(template):
     male_mask = "He"
     female_mask = "She"
 
-    # male, female = get_top_k(template, male_mask, female_mask, nlp_fill, TOP_K)
+    male, female = get_top_k(template, male_mask, female_mask, nlp_fill, TOP_K)
+    print("get top k")
+    print(f"male: {male}")
+    print(f"female: {female}")
 
     female_outputs = get_target_probability(template, female_mask, nlp_fill)
     female = [element['score'] for element in female_outputs]
@@ -56,6 +59,7 @@ def run_experiment(template):
     male_outputs = get_target_probability(template, male_mask, nlp_fill)
     male = [element['score'] for element in male_outputs]
 
+    print("get target probability")
     print(f"male: {male}")
     print(f"female: {female}")
 
@@ -115,8 +119,8 @@ if __name__ == "__main__":
     if len(exps_to_run) == 0:
         exps_to_run = list(range(11))
 
-    # nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
-    nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
+    nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
+    # nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
 
 
     for exp_number in exps_to_run:
