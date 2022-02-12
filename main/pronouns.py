@@ -1,7 +1,7 @@
 # Comparing He vs She
 from transformers import pipeline
 import pandas as pd
-from utils import diagnoses, get_top_k, print_stats, plot_male_and_female
+from utils import diagnoses, get_target_probability, get_top_k, print_stats, plot_male_and_female
 import argparse
 
 templates = [
