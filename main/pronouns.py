@@ -106,7 +106,8 @@ if __name__ == "__main__":
     if len(exps_to_run) == 0:
         exps_to_run = list(range(11))
 
-    nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
+    # nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
+    nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
 
 
     for exp_number in exps_to_run:
