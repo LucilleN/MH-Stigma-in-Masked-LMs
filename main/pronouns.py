@@ -48,7 +48,13 @@ def run_experiment(template):
     male_mask = "He"
     female_mask = "She"
 
-    male, female = get_top_k(template, male_mask, female_mask, nlp_fill, TOP_K)
+    # male, female = get_top_k(template, male_mask, female_mask, nlp_fill, TOP_K)
+
+    female_outputs = get_target_probability(template, female_mask, nlp_fill)
+    female = [element['score'] for element in female_outputs]
+
+    male_outputs = get_target_probability(template, male_mask, nlp_fill)
+    male = [element['score'] for element in female_outputs]
 
     male_mean, female_mean = print_stats(male=male, female=female)
 
