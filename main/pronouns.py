@@ -54,7 +54,7 @@ def run_experiment(template):
     female = [element['score'] for element in female_outputs]
 
     male_outputs = get_target_probability(template, male_mask, nlp_fill)
-    male = [element['score'] for element in female_outputs]
+    male = [element['score'] for element in male_outputs]
 
     male_mean, female_mean = print_stats(male=male, female=female)
 
