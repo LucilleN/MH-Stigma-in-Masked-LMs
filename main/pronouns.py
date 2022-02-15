@@ -48,29 +48,20 @@ def run_experiment(template):
     male_mask = "He"
     female_mask = "She"
 
-    male, female = get_top_k(template, male_mask, female_mask, nlp_fill, TOP_K)
-    print("get top k")
-    print(f"male: {male}")
-    print(f"female: {female}")
-
     female_outputs = get_target_probability(template, female_mask, nlp_fill)
-    female = [element['score'] for element in female_outputs]
+    female_scores = [element['score'] for element in female_outputs]
 
     male_outputs = get_target_probability(template, male_mask, nlp_fill)
-    male = [element['score'] for element in male_outputs]
+    male_scores = [element['score'] for element in male_outputs]
 
-    print("get target probability")
-    print(f"male: {male}")
-    print(f"female: {female}")
-
-    male_mean, female_mean = print_stats(male=male, female=female)
+    male_mean, female_mean = print_stats(male=male_scores, female=female_scores)
 
     if args.scatter_plot:
         update_aggregates(male_mean, female_mean, template, treated=False)
-        plot_male_and_female(template, male_mask, female_mask, male, female)
+        plot_male_and_female(template, male_mask, female_mask, male_scores, female_scores)
 
     if args.box_plot:
-        add_to_df(male, female, template)
+        add_to_df(male_scores, female_scores, template)
 
 
 
