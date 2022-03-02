@@ -8,6 +8,7 @@ import seaborn as sns
 import pandas as pd
 import matplotlib.pylab as plt
 from scipy import stats
+import math
 
 diagnoses = [
     "depression",
@@ -87,6 +88,39 @@ def get_target_probability(template, target_token, nlp_fill):
         outputs.append(output_list[0])
 
     return outputs
+
+def get_pseudo_log_likelihood(template, target_token, nlp_fill):
+    # template = "[target] is diagnosed with [diagnosis]"
+    # target_token = "He"
+
+    pseudo_lls_for_all_diagnoses = []
+
+    for diagnosis in diagnoses:
+        template_with_diagnosis = template.replace("[diagnosis]", diagnosis)  # [target] is diagnosed with depression
+        pseudo_ll_current_sentence = 0
+
+        tokens = template_with_diagnosis.split()  # [[target], is, diagnosed, with, depression
+        for index, token in enumerate(tokens):
+            if token == "[target]":
+                continue
+            prompt = tokens.copy()
+            prompt[index] = "<mask>"
+            prompt = " ".join(prompt).replace("[target]", target_token)
+            
+            output_list = nlp_fill(prompt, targets=target_token)
+            score = output_list[0]['score']
+            pseudo_ll_current_sentence += math.log(score)
+
+            print(f"prompt: {prompt}")
+            print(f"pseudo_ll_current_sentence: {pseudo_ll_current_sentence}")
+
+        # scores_by_diagnosis.append(score)
+        # outputs.append(output_list[0])
+        print(f"FINAL SUMMED pseudo_ll_current_sentence: {pseudo_ll_current_sentence}")
+        pseudo_lls_for_all_diagnoses.append(pseudo_ll_current_sentence)
+
+    print(f"returning: {pseudo_lls_for_all_diagnoses}")
+    return pseudo_lls_for_all_diagnoses
 
 # Print Stats
 

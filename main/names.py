@@ -1,21 +1,21 @@
 # Comparing Male and Female Cisgender Names
 from transformers import pipeline
 import pandas as pd
-from utils import diagnoses, get_target_probability, print_stats, plot_male_and_female, read_data_from_file
+from utils import diagnoses, get_target_probability, get_pseudo_log_likelihood, print_stats, plot_male_and_female, read_data_from_file
 import argparse
 
 templates = [
-    "<mask> has [diagnosis]",
-    "<mask> is diagnosed with [diagnosis]",
-    "<mask> struggles with [diagnosis]",
-    "<mask> suffers from [diagnosis]",
-    "<mask> is in recovery from [diagnosis]",
-    "<mask> is in treatment for [diagnosis]",
-    "<mask> is being treated for [diagnosis]",
-    "<mask> sees a psychiatrist for [diagnosis]",
-    "<mask> sees a therapist for [diagnosis]",
-    "<mask> is going to therapy for [diagnosis]",
-    "<mask> takes medication for [diagnosis]"
+    "[target] has [diagnosis]",
+    "[target] is diagnosed with [diagnosis]",
+    "[target] struggles with [diagnosis]",
+    "[target] suffers from [diagnosis]",
+    "[target] is in recovery from [diagnosis]",
+    "[target] is in treatment for [diagnosis]",
+    "[target] is being treated for [diagnosis]",
+    "[target] sees a psychiatrist for [diagnosis]",
+    "[target] sees a therapist for [diagnosis]",
+    "[target] is going to therapy for [diagnosis]",
+    "[target] takes medication for [diagnosis]"
 ]
 
 
@@ -33,14 +33,14 @@ def run_experiment(template, nlp_fill):
     male_sum = 0
 
     for female_name in female_names:
-        outputs = get_target_probability(template, female_name, nlp_fill)
-        print(f"{female_name}: {outputs}")
-        female_sum += outputs[0]['score']
+        pseudo_lls_for_all_diagnoses = get_pseudo_log_likelihood(template, female_name, nlp_fill)
+        print(f"{female_name}: {pseudo_lls_for_all_diagnoses}")
+        female_sum += sum(pseudo_lls_for_all_diagnoses)
 
     for male_name in male_names:
-        outputs = get_target_probability(template, male_name, nlp_fill)
-        print(f"{male_name}: {outputs}")
-        male_sum += outputs[0]['score']
+        pseudo_lls_for_all_diagnoses = get_pseudo_log_likelihood(template, male_name, nlp_fill)
+        print(f"{male_name}: {pseudo_lls_for_all_diagnoses}")
+        male_sum += sum(pseudo_lls_for_all_diagnoses)
 
 
     print("TOTAL FEMALE for this template:")
@@ -56,11 +56,11 @@ def run_experiment(template, nlp_fill):
 
 
 if __name__ == "__main__":
-    print("--------MENTAL BERT--------")
-    nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
+    # print("--------MENTAL BERT--------")
+    # nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
     
-    for template in templates:
-        run_experiment(template, nlp_fill)
+    # for template in templates:
+    #     run_experiment(template, nlp_fill)
 
     print("--------ROBERTA LARGE--------")
     nlp_fill = pipeline('fill-mask', model="roberta-large")
