@@ -18,7 +18,7 @@ diagnoses = [
     "PTSD",
     "bipolar disorder",
     "anorexia",
-    "bullimia",
+    "bulimia",
     "psychosis",
     "panic disorder",
     "borderline personality disorder"]
@@ -99,15 +99,16 @@ def get_pseudo_log_likelihood(template, target_token, nlp_fill):
         template_with_diagnosis = template.replace("[diagnosis]", diagnosis)  # [target] is diagnosed with depression
         pseudo_ll_current_sentence = 0
 
-        tokens = template_with_diagnosis.split()  # [[target], is, diagnosed, with, depression
+        tokens = template_with_diagnosis.split()  # ["[target]", "is", "diagnosed", "with", "depression"]
         for index, token in enumerate(tokens):
             if token == "[target]":
+                print(f"Index {index} is the [target] token that we don't want to mask; skipping")
                 continue
             prompt = tokens.copy()
             prompt[index] = "<mask>"
             prompt = " ".join(prompt).replace("[target]", target_token)
             
-            output_list = nlp_fill(prompt, targets=target_token)
+            output_list = nlp_fill(prompt, targets=" " + token)
             score = output_list[0]['score']
             pseudo_ll_current_sentence += math.log(score)
 
