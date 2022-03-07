@@ -2,6 +2,8 @@
 from transformers import pipeline
 import pandas as pd
 from utils import diagnoses, get_target_probability, get_top_k, print_stats, plot_male_and_female
+import matplotlib.pylab as plt
+import seaborn as sns
 import argparse
 
 templates = [
@@ -110,8 +112,8 @@ if __name__ == "__main__":
     if len(exps_to_run) == 0:
         exps_to_run = list(range(11))
 
-    nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
-    # nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
+    # nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
+    nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
 
 
     for exp_number in exps_to_run:
@@ -141,4 +143,4 @@ if __name__ == "__main__":
 
         plt.xticks(rotation=45, ha='right', fontsize=12)
         plt.title("Probabilities of predicting gendered pronouns")
-        plt.savefig("plots/boxplot_pronouns.pdf", bbox_inches="tight")
+        plt.savefig("../plots/boxplot_pronouns_mentalroberta.pdf", bbox_inches="tight")
