@@ -59,13 +59,23 @@ if __name__ == "__main__":
     # print(all_names_log_odds_scores[:5])
     # print(all_names_log_odds_scores[-5:])
 
+    # with open("../data/men_top_1000.txt", "w+") as file:
+    #     for i in range(1000):
+    #         score, name = all_names_log_odds_scores[i]
+    #         file.write(name + "\n")
+            
+    # with open("../data/women_top_1000.txt", "w+") as file:
+    #     for i in range(len(all_names_log_odds_scores) - 1, len(all_names_log_odds_scores) - 1001, -1):
+    #         score, name = all_names_log_odds_scores[i]
+    #         file.write(name + "\n")
+
     with open("../data/men_top_1000.txt", "w+") as file:
         for i in range(1000):
             score, name = all_names_log_odds_scores[i]
-            file.write(name + "\n")
+            file.write(f"{score}, {name}\n")
             
     with open("../data/women_top_1000.txt", "w+") as file:
         for i in range(len(all_names_log_odds_scores) - 1, len(all_names_log_odds_scores) - 1001, -1):
             score, name = all_names_log_odds_scores[i]
-            file.write(name + "\n")
+            file.write(f"{score}, {name}\n")
         
