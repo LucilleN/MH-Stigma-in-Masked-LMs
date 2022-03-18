@@ -40,8 +40,19 @@ def cohend(d1, d2):
 
 # Top-K Function
 
+def get_top_k(template, nlp_fill, top_k):
 
-def get_top_k(template, male_mask, female_mask, nlp_fill, top_k):
+    output_for_all_diagnoses = []
+
+    for diagnosis in diagnoses:
+        prompt = template.replace("[diagnosis]", diagnosis)
+        output_list = nlp_fill(prompt)
+        output_for_all_diagnoses.append(output_list)
+
+    return output_for_all_diagnoses
+
+
+def get_male_female_from_top_k(template, male_mask, female_mask, nlp_fill, top_k):
     male = []
     female = []
 
@@ -168,9 +179,44 @@ def sum_dictionary(template_to_mean_dict):
 def read_data_from_file(filepath):
     data = []
     with open(filepath) as f:
+        # reader = csv.reader(f)
         while True:
             line = f.readline()
             if not line:
                 break
             data.append(line.strip())
     return data
+
+
+def get_gender_name_scores_for_top_k(template, male_names, female_names, nlp_fill, top_k):
+    male = []
+    female = []
+
+    for diagnosis in diagnoses:
+        prompt = template.replace("[diagnosis]", diagnosis)
+        output_list = nlp_fill(prompt)
+
+        female_exist = 0
+        male_exist = 0
+        # print(diagnosis)
+        # print(output_list)
+        for i in range(top_k):
+
+            if output_list[i]['token_str'] in female_names:
+                female.append(output_list[i]['score'])
+                female_exist = 1
+            if output_list[i]['token_str'] in male_names:
+                male.append(output_list[i]['score'])
+                male_exist = 1
+
+        if female_exist == 0:
+            female.append(0)
+        if male_exist == 0:
+            male.append(0)
+
+    assert len(diagnoses) == len(female)
+    assert len(diagnoses) == len(male)
+    # print (female)
+    # print (male)
+
+    return male, female
