@@ -46,8 +46,9 @@ def get_top_k(template, nlp_fill, top_k):
 
     for diagnosis in diagnoses:
         prompt = template.replace("[diagnosis]", diagnosis)
-        output_list = nlp_fill(prompt)
-        output_for_all_diagnoses.append(output_list)
+        output_list = nlp_fill(prompt, top_k=top_k)
+        # output_tokens = output_list[0]['token_str']
+        output_for_all_diagnoses.append([output_list])
 
     return output_for_all_diagnoses
 

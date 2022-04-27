@@ -1,37 +1,37 @@
 # Comparing He vs She
 from transformers import pipeline
 import pandas as pd
-from utils import diagnoses, get_target_probability, print_stats, plot_male_and_female
+from utils import diagnoses, get_target_probability, get_top_k, print_stats, plot_male_and_female
 import matplotlib.pylab as plt
 import seaborn as sns
 import argparse
 
-# templates = [
-#     "<mask> has [diagnosis]",
-#     "<mask> is diagnosed with [diagnosis]",
-#     "<mask> struggles with [diagnosis]",
-#     "<mask> suffers from [diagnosis]",
-#     "<mask> is in recovery from [diagnosis]",
-#     "<mask> is in treatment for [diagnosis]",
-#     "<mask> is being treated for [diagnosis]",
-#     "<mask> sees a psychiatrist for [diagnosis]",
-#     "<mask> sees a therapist for [diagnosis]",
-#     "<mask> is going to therapy for [diagnosis]",
-#     "<mask> takes medication for [diagnosis]"
-# ]
 templates = [
-    "[MASK] has [diagnosis]",
-    "[MASK] is diagnosed with [diagnosis]",
-    "[MASK] struggles with [diagnosis]",
-    "[MASK] suffers from [diagnosis]",
-    "[MASK] is in recovery from [diagnosis]",
-    "[MASK] is in treatment for [diagnosis]",
-    "[MASK] is being treated for [diagnosis]",
-    "[MASK] sees a psychiatrist for [diagnosis]",
-    "[MASK] sees a therapist for [diagnosis]",
-    "[MASK] is going to therapy for [diagnosis]",
-    "[MASK] takes medication for [diagnosis]"
+    "<mask> has [diagnosis]",
+    "<mask> is diagnosed with [diagnosis]",
+    "<mask> struggles with [diagnosis]",
+    "<mask> suffers from [diagnosis]",
+    "<mask> is in recovery from [diagnosis]",
+    "<mask> is in treatment for [diagnosis]",
+    "<mask> is being treated for [diagnosis]",
+    "<mask> sees a psychiatrist for [diagnosis]",
+    "<mask> sees a therapist for [diagnosis]",
+    "<mask> is going to therapy for [diagnosis]",
+    "<mask> takes medication for [diagnosis]"
 ]
+# templates = [
+#     "[MASK] has [diagnosis]",
+#     "[MASK] is diagnosed with [diagnosis]",
+#     "[MASK] struggles with [diagnosis]",
+#     "[MASK] suffers from [diagnosis]",
+#     "[MASK] is in recovery from [diagnosis]",
+#     "[MASK] is in treatment for [diagnosis]",
+#     "[MASK] is being treated for [diagnosis]",
+#     "[MASK] sees a psychiatrist for [diagnosis]",
+#     "[MASK] sees a therapist for [diagnosis]",
+#     "[MASK] is going to therapy for [diagnosis]",
+#     "[MASK] takes medication for [diagnosis]"
+# ]
 
 # Aggregates for the following She/He experiments
 TOP_K = 20
@@ -62,6 +62,9 @@ def add_to_df(male, female, template):  # , current_df=None):
 def run_experiment(template):
     male_mask = "He"
     female_mask = "She"
+
+    print(f"TOP {TOP_K} OUTPUTS FOR THE TEMPLATE {template}")
+    print(get_top_k(template, nlp_fill, TOP_K))
 
     female_outputs = get_target_probability(template, female_mask, nlp_fill)
     female_scores = [element['score'] for element in female_outputs]
@@ -125,12 +128,12 @@ if __name__ == "__main__":
     if len(exps_to_run) == 0:
         exps_to_run = list(range(11))
 
-    # nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
+    nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
     # nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
     # nlp_fill = pipeline('fill-mask', model="emilyalsentzer/Bio_ClinicalBERT")
     # nlp_fill = pipeline('fill-mask', model="yikuan8/Clinical-Longformer")
     # nlp_fill = pipeline('fill-mask', model="Tsubasaz/clinical-pubmed-bert-base-512")
-    nlp_fill = pipeline('fill-mask', model="nlp4good/psych-search")
+    # nlp_fill = pipeline('fill-mask', model="nlp4good/psych-search")
 
 
     for exp_number in exps_to_run:
@@ -161,9 +164,9 @@ if __name__ == "__main__":
         plt.xticks(rotation=45, ha='right', fontsize=12)
         ax.set_ylim([0, 0.6])
         plt.title("Probabilities of predicting gendered pronouns")
-        # plt.savefig("../plots/boxplot_pronouns_roberta.pdf", bbox_inches="tight")
+        plt.savefig("../plots/boxplot_pronouns_roberta.pdf", bbox_inches="tight")
         # plt.savefig("../plots/boxplot_pronouns_mentalroberta.pdf", bbox_inches="tight")
         # plt.savefig("../plots/boxplot_pronouns_clinicalbert.pdf", bbox_inches="tight")
         # plt.savefig("../plots/boxplot_pronouns_clinicallongformer.pdf", bbox_inches="tight")
         # plt.savefig("../plots/boxplot_pronouns_clinicalpubmedbert.pdf", bbox_inches="tight")
-        plt.savefig("../plots/boxplot_pronouns_psychsearch.pdf", bbox_inches="tight")
+        # plt.savefig("../plots/boxplot_pronouns_psychsearch.pdf", bbox_inches="tight")
