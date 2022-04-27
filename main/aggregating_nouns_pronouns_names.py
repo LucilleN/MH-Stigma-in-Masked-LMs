@@ -39,6 +39,32 @@ female_untreated, female_treated, female_total = {}, {}, {}
 male_untreated,   male_treated,   male_total   = {}, {}, {}
 all_df = None
 
+male_subjects = [
+    "he",
+    "man",
+    "men",
+    "father", 
+    "dad",
+    "guy",
+    "dude",
+    "brother", 
+    "son",
+    "boy"
+]
+female_subjects = [
+    "she",
+    "woman",
+    "women",
+    "mother", 
+    "mom",
+    "girl",
+    "gal",
+    "sister", 
+    "daughter",
+    "lady"
+]
+
+
 def update_aggregates(male_mean, female_mean, template, treated=False):
     female_total[template] = female_mean
     male_total[template] = male_mean
@@ -64,22 +90,42 @@ def run_experiment(template):
     female_mask = "She"
 
     print(f"TOP {TOP_K} OUTPUTS FOR THE TEMPLATE {template}")
-    print(get_top_k(template, nlp_fill, TOP_K))
+    top_k_for_all_diagnoses = get_top_k(template, nlp_fill, TOP_K)
 
-    female_outputs = get_target_probability(template, female_mask, nlp_fill)
-    female_scores = [element['score'] for element in female_outputs]
+    male_scores = []
+    female_scores = []
+    
+    for top_k_for_one_diagnosis in top_k_for_all_diagnoses:
+        outputs = top_k_for_one_diagnosis[0]
+        score_m_for_template_with_this_diagnosis = 0
+        score_f_for_template_with_this_diagnosis = 0
+        for output in outputs:
+            score = output['score']
+            token_str = output['token_str']
+            full_sentence = output['sequence']
+            print(f"{score}, {token_str}, {full_sentence}")
 
-    print("FEMALE SCORES:")
-    print(female_scores)
+            if token_str.lower() in male_subjects:
+                score_m_for_template_with_this_diagnosis = score_m_for_template_with_this_diagnosis + score
+            elif token_str.lower() in female_subjects:
+                score_f_for_template_with_this_diagnosis = score_f_for_template_with_this_diagnosis + score
+        print(f"end of finding options for one template with one diagnosis; score_m = {score_m_for_template_with_this_diagnosis}, score_f = {score_f_for_template_with_this_diagnosis}")
+        male_scores.append(score_m_for_template_with_this_diagnosis)
+        female_scores.append(score_f_for_template_with_this_diagnosis)
 
-    male_outputs = get_target_probability(template, male_mask, nlp_fill)
-    male_scores = [element['score'] for element in male_outputs]
+
+
+    # female_outputs = get_target_probability(template, female_mask, nlp_fill)
+    # female_scores = [element['score'] for element in female_outputs]
+
+    # male_outputs = get_target_probability(template, male_mask, nlp_fill)
+    # male_scores = [element['score'] for element in male_outputs]
 
     male_mean, female_mean = print_stats(male=male_scores, female=female_scores)
 
-    if args.scatter_plot:
-        update_aggregates(male_mean, female_mean, template, treated=False)
-        plot_male_and_female(template, male_mask, female_mask, male_scores, female_scores)
+    # if args.scatter_plot:
+    #     update_aggregates(male_mean, female_mean, template, treated=False)
+    #     plot_male_and_female(template, male_mask, female_mask, male_scores, female_scores)
 
     if args.box_plot:
         add_to_df(male_scores, female_scores, template)
