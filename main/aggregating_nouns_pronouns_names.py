@@ -1,7 +1,7 @@
 # Comparing He vs She
 from transformers import pipeline
 import pandas as pd
-from utils import diagnoses, get_target_probability, get_top_k, print_stats, plot_male_and_female
+from utils import diagnoses, get_target_probability, get_top_k, print_stats, plot_male_and_female, read_data_from_file
 import matplotlib.pylab as plt
 import seaborn as sns
 import argparse
@@ -63,7 +63,12 @@ female_subjects = [
     "daughter",
     "lady"
 ]
-
+female_names = read_data_from_file("../data/women_top_1000_names_only.csv")
+male_names = read_data_from_file("../data/men_top_1000_names_only.csv")
+for name in female_names:
+    if name in male_names:
+        female_names.remove(name)
+        male_names.remove(name)
 
 def update_aggregates(male_mean, female_mean, template, treated=False):
     female_total[template] = female_mean
@@ -86,8 +91,8 @@ def add_to_df(male, female, template):  # , current_df=None):
 
 
 def run_experiment(template):
-    male_mask = "He"
-    female_mask = "She"
+    # male_mask = "He"
+    # female_mask = "She"
 
     print(f"TOP {TOP_K} OUTPUTS FOR THE TEMPLATE {template}")
     top_k_for_all_diagnoses = get_top_k(template, nlp_fill, TOP_K)
@@ -105,21 +110,14 @@ def run_experiment(template):
             full_sentence = output['sequence']
             print(f"{score}, {token_str}, {full_sentence}")
 
-            if token_str.lower() in male_subjects:
+            if token_str.lower() in male_subjects or token_str in male_names:
                 score_m_for_template_with_this_diagnosis = score_m_for_template_with_this_diagnosis + score
-            elif token_str.lower() in female_subjects:
+            elif token_str.lower() in female_subjects or token_str in female_names:
                 score_f_for_template_with_this_diagnosis = score_f_for_template_with_this_diagnosis + score
         print(f"end of finding options for one template with one diagnosis; score_m = {score_m_for_template_with_this_diagnosis}, score_f = {score_f_for_template_with_this_diagnosis}")
         male_scores.append(score_m_for_template_with_this_diagnosis)
         female_scores.append(score_f_for_template_with_this_diagnosis)
 
-
-
-    # female_outputs = get_target_probability(template, female_mask, nlp_fill)
-    # female_scores = [element['score'] for element in female_outputs]
-
-    # male_outputs = get_target_probability(template, male_mask, nlp_fill)
-    # male_scores = [element['score'] for element in male_outputs]
 
     male_mean, female_mean = print_stats(male=male_scores, female=female_scores)
 
@@ -129,7 +127,6 @@ def run_experiment(template):
 
     if args.box_plot:
         add_to_df(male_scores, female_scores, template)
-
 
 
 if __name__ == "__main__":
@@ -213,9 +210,9 @@ if __name__ == "__main__":
         plt.xticks(rotation=45, ha='right', fontsize=12)
         ax.set_ylim([0, 0.6])
         plt.title("Probabilities of predicting gendered pronouns")
-        plt.savefig("../plots/boxplot_pronouns_roberta.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_mentalroberta.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_clinicalbert.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_clinicallongformer.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_clinicalpubmedbert.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_psychsearch.pdf", bbox_inches="tight")
+        plt.savefig("../plots/boxplot_pronouns_roberta_AGG.pdf", bbox_inches="tight")
+        # plt.savefig("../plots/boxplot_pronouns_mentalroberta_AGG.pdf", bbox_inches="tight")
+        # plt.savefig("../plots/boxplot_pronouns_clinicalbert_AGG.pdf", bbox_inches="tight")
+        # plt.savefig("../plots/boxplot_pronouns_clinicallongformer_AGG.pdf", bbox_inches="tight")
+        # plt.savefig("../plots/boxplot_pronouns_clinicalpubmedbert_AGG.pdf", bbox_inches="tight")
+        # plt.savefig("../plots/boxplot_pronouns_psychsearch_AGG.pdf", bbox_inches="tight")
