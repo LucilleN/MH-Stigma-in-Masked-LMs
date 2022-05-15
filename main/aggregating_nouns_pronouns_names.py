@@ -2,6 +2,7 @@ from transformers import pipeline
 import pandas as pd
 from utils import diagnoses, get_target_probability, get_top_k, print_stats, plot_male_and_female, read_data_from_file, parse_args
 import matplotlib.pylab as plt
+import seaborn as sns
 
 templates = [
     "<mask> has [diagnosis]",
@@ -125,6 +126,7 @@ def run_experiment(template):
 
 
 if __name__ == "__main__":
+
     args = parse_args()
 
     for model in models:
