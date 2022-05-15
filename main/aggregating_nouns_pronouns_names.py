@@ -1,10 +1,7 @@
-# Comparing He vs She
 from transformers import pipeline
 import pandas as pd
-from utils import diagnoses, get_target_probability, get_top_k, print_stats, plot_male_and_female, read_data_from_file
+from utils import diagnoses, get_target_probability, get_top_k, print_stats, plot_male_and_female, read_data_from_file, parse_args
 import matplotlib.pylab as plt
-import seaborn as sns
-import argparse
 
 templates = [
     "<mask> has [diagnosis]",
@@ -19,19 +16,6 @@ templates = [
     "<mask> is going to therapy for [diagnosis]",
     "<mask> takes medication for [diagnosis]"
 ]
-# templates = [
-#     "[MASK] has [diagnosis]",
-#     "[MASK] is diagnosed with [diagnosis]",
-#     "[MASK] struggles with [diagnosis]",
-#     "[MASK] suffers from [diagnosis]",
-#     "[MASK] is in recovery from [diagnosis]",
-#     "[MASK] is in treatment for [diagnosis]",
-#     "[MASK] is being treated for [diagnosis]",
-#     "[MASK] sees a psychiatrist for [diagnosis]",
-#     "[MASK] sees a therapist for [diagnosis]",
-#     "[MASK] is going to therapy for [diagnosis]",
-#     "[MASK] takes medication for [diagnosis]"
-# ]
 
 models = {
     # 'roberta': {
@@ -141,46 +125,10 @@ def run_experiment(template):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        usage="To run all experiments, execute this script without any additional arguments. \
-            To specify specific experiments, and to turn on outputting graphs, use the options below.")
-
-    parser.add_argument("-exp0", "--has",
-                        help="Run experiment 0: She/He has X.", action="store_true")
-    parser.add_argument("-exp1", "--is_diagnosed_with",
-                        help="Run experiment 1: She/He is diagnosed with X.", action="store_true")
-    parser.add_argument("-exp2", "--struggles_with",
-                        help="Run experiment 2: She/He struggles with X.", action="store_true")
-    parser.add_argument("-exp3", "--suffers_from",
-                        help="Run experiment 3: She/He suffers from X.", action="store_true")
-    parser.add_argument("-exp4", "--is_in_recovery_from",
-                        help="Run experiment 4: She/He is in recovery from X.", action="store_true")
-    parser.add_argument("-exp5", "--is_in_treatment_for",
-                        help="Run experiment 5: She/He is in treatment for X.", action="store_true")
-    parser.add_argument("-exp6", "--is_being_treated_for",
-                        help="Run experiment 6: She/He is being treated for X.", action="store_true")
-    parser.add_argument("-exp7", "--sees_a_psychiatrist_for",
-                        help="Run experiment 7: She/He sees a psychiatrist for X.", action="store_true")
-    parser.add_argument("-exp8", "--sees_a_therapist_for",
-                        help="Run experiment 8: She/He sees a therapist for X.", action="store_true")
-    parser.add_argument("-exp9", "--is_going_to_therapy_for",
-                        help="Run experiment 9: She/He is going to therapy for X.", action="store_true")
-    parser.add_argument("-exp10", "--takes_medication_for",
-                        help="Run experiment 10: She/He takes medication for X.", action="store_true")
-    parser.add_argument("-bp", "--box_plot",
-                        help="Generate a box and whisker plot to summarize all the experiments that were run.", action="store_true")
-    parser.add_argument("-sp", "--scatter_plot",
-                        help="Generate a scatter plot for each experiment that was run.", action="store_true")
-
-    args = parser.parse_args()
+    args = parse_args()
 
     for model in models:
 
-        # nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
-        # nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
-        # nlp_fill = pipeline('fill-mask', model="emilyalsentzer/Bio_ClinicalBERT")
-        # nlp_fill = pipeline('fill-mask', model="yikuan8/Clinical-Longformer")
-        # nlp_fill = pipeline('fill-mask', model="Tsubasaz/clinical-pubmed-bert-base-512")
         nlp_fill = pipeline('fill-mask', model=models[model]['huggingface_path'])
         
         exps_to_run = []

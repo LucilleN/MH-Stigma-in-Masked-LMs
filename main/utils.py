@@ -9,6 +9,7 @@ import pandas as pd
 import matplotlib.pylab as plt
 from scipy import stats
 import math
+import argparse
 
 diagnoses = [
     "depression",
@@ -221,3 +222,39 @@ def get_gender_name_scores_for_top_k(template, male_names, female_names, nlp_fil
     # print (male)
 
     return male, female
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        usage="To run all experiments, execute this script without any additional arguments. \
+            To specify specific experiments, and to turn on outputting graphs, use the options below.")
+
+    parser.add_argument("-exp0", "--has",
+                        help="Run experiment 0: She/He has X.", action="store_true")
+    parser.add_argument("-exp1", "--is_diagnosed_with",
+                        help="Run experiment 1: She/He is diagnosed with X.", action="store_true")
+    parser.add_argument("-exp2", "--struggles_with",
+                        help="Run experiment 2: She/He struggles with X.", action="store_true")
+    parser.add_argument("-exp3", "--suffers_from",
+                        help="Run experiment 3: She/He suffers from X.", action="store_true")
+    parser.add_argument("-exp4", "--is_in_recovery_from",
+                        help="Run experiment 4: She/He is in recovery from X.", action="store_true")
+    parser.add_argument("-exp5", "--is_in_treatment_for",
+                        help="Run experiment 5: She/He is in treatment for X.", action="store_true")
+    parser.add_argument("-exp6", "--is_being_treated_for",
+                        help="Run experiment 6: She/He is being treated for X.", action="store_true")
+    parser.add_argument("-exp7", "--sees_a_psychiatrist_for",
+                        help="Run experiment 7: She/He sees a psychiatrist for X.", action="store_true")
+    parser.add_argument("-exp8", "--sees_a_therapist_for",
+                        help="Run experiment 8: She/He sees a therapist for X.", action="store_true")
+    parser.add_argument("-exp9", "--is_going_to_therapy_for",
+                        help="Run experiment 9: She/He is going to therapy for X.", action="store_true")
+    parser.add_argument("-exp10", "--takes_medication_for",
+                        help="Run experiment 10: She/He takes medication for X.", action="store_true")
+    parser.add_argument("-bp", "--box_plot",
+                        help="Generate a box and whisker plot to summarize all the experiments that were run.", action="store_true")
+    parser.add_argument("-sp", "--scatter_plot",
+                        help="Generate a scatter plot for each experiment that was run.", action="store_true")
+
+    args = parser.parse_args()
+
+    return args
