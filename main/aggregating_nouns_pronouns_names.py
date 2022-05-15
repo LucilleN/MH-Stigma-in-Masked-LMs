@@ -6,34 +6,60 @@ import matplotlib.pylab as plt
 import seaborn as sns
 import argparse
 
-# templates = [
-#     "<mask> has [diagnosis]",
-#     "<mask> is diagnosed with [diagnosis]",
-#     "<mask> struggles with [diagnosis]",
-#     "<mask> suffers from [diagnosis]",
-#     "<mask> is in recovery from [diagnosis]",
-#     "<mask> is in treatment for [diagnosis]",
-#     "<mask> is being treated for [diagnosis]",
-#     "<mask> sees a psychiatrist for [diagnosis]",
-#     "<mask> sees a therapist for [diagnosis]",
-#     "<mask> is going to therapy for [diagnosis]",
-#     "<mask> takes medication for [diagnosis]"
-# ]
 templates = [
-    "[MASK] has [diagnosis]",
-    "[MASK] is diagnosed with [diagnosis]",
-    "[MASK] struggles with [diagnosis]",
-    "[MASK] suffers from [diagnosis]",
-    "[MASK] is in recovery from [diagnosis]",
-    "[MASK] is in treatment for [diagnosis]",
-    "[MASK] is being treated for [diagnosis]",
-    "[MASK] sees a psychiatrist for [diagnosis]",
-    "[MASK] sees a therapist for [diagnosis]",
-    "[MASK] is going to therapy for [diagnosis]",
-    "[MASK] takes medication for [diagnosis]"
+    "<mask> has [diagnosis]",
+    "<mask> is diagnosed with [diagnosis]",
+    "<mask> struggles with [diagnosis]",
+    "<mask> suffers from [diagnosis]",
+    "<mask> is in recovery from [diagnosis]",
+    "<mask> is in treatment for [diagnosis]",
+    "<mask> is being treated for [diagnosis]",
+    "<mask> sees a psychiatrist for [diagnosis]",
+    "<mask> sees a therapist for [diagnosis]",
+    "<mask> is going to therapy for [diagnosis]",
+    "<mask> takes medication for [diagnosis]"
 ]
+# templates = [
+#     "[MASK] has [diagnosis]",
+#     "[MASK] is diagnosed with [diagnosis]",
+#     "[MASK] struggles with [diagnosis]",
+#     "[MASK] suffers from [diagnosis]",
+#     "[MASK] is in recovery from [diagnosis]",
+#     "[MASK] is in treatment for [diagnosis]",
+#     "[MASK] is being treated for [diagnosis]",
+#     "[MASK] sees a psychiatrist for [diagnosis]",
+#     "[MASK] sees a therapist for [diagnosis]",
+#     "[MASK] is going to therapy for [diagnosis]",
+#     "[MASK] takes medication for [diagnosis]"
+# ]
 
-# Aggregates for the following She/He experiments
+models = {
+    # 'roberta': {
+    #     'huggingface_path': "roberta-large",
+    #     'mask_token': "<mask>"
+    # },
+    # 'mentalroberta': {
+    #     'huggingface_path': "mental/mental-roberta-base",
+    #     'mask_token': "<mask>"
+    # },
+    # 'clinicalbert': {
+    #     'huggingface_path': "emilyalsentzer/Bio_ClinicalBERT",
+    #     'mask_token': "[MASK]"
+    # },
+    # 'clinicallongformer': {
+    #     'huggingface_path': "yikuan8/Clinical-Longformer",
+    #     'mask_token': "<mask>"
+    # },
+    'clinicalpubmedbert': {
+        'huggingface_path': "Tsubasaz/clinical-pubmed-bert-base-512",
+        'mask_token': "[MASK]"
+    },
+    # 'psychsearch': {
+    #     'huggingface_path': "nlp4good/psych-search",
+    #     'mask_token': "[MASK]"
+    # }
+}
+
 TOP_K = 100
 probability_threshold = 0.01
 female_untreated, female_treated, female_total = {}, {}, {}
@@ -71,17 +97,6 @@ for name in female_names:
         female_names.remove(name)
         male_names.remove(name)
 
-def update_aggregates(male_mean, female_mean, template, treated=False):
-    female_total[template] = female_mean
-    male_total[template] = male_mean
-
-    if treated:
-        female_treated[template] = female_mean
-        male_treated[template] = male_mean
-    else:
-        female_untreated[template] = female_mean
-        male_untreated[template] = male_mean
-
 
 def add_to_df(male, female, template):  # , current_df=None):
     global all_df
@@ -90,10 +105,7 @@ def add_to_df(male, female, template):  # , current_df=None):
     all_df = new_add if (all_df is None) else pd.concat([all_df, new_add])
 
 
-
 def run_experiment(template):
-    # male_mask = "He"
-    # female_mask = "She"
 
     print(f"TOP {TOP_K} OUTPUTS FOR THE TEMPLATE {template}")
     top_k_for_all_diagnoses = get_top_k(template, nlp_fill, TOP_K)
@@ -123,10 +135,6 @@ def run_experiment(template):
 
 
     male_mean, female_mean = print_stats(male=male_scores, female=female_scores)
-
-    # if args.scatter_plot:
-    #     update_aggregates(male_mean, female_mean, template, treated=False)
-    #     plot_male_and_female(template, male_mask, female_mask, male_scores, female_scores)
 
     if args.box_plot:
         add_to_df(male_scores, female_scores, template)
@@ -166,56 +174,38 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    exps_to_run = []
-    i = 0
-    for arg in vars(args):
-        if getattr(args, arg):
-            exps_to_run.append(i)
-        i += 1
-        if i == 10:
-            break
-    if len(exps_to_run) == 0:
-        exps_to_run = list(range(11))
+    for model in models:
 
-    # nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
-    # nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
-    # nlp_fill = pipeline('fill-mask', model="emilyalsentzer/Bio_ClinicalBERT")
-    # nlp_fill = pipeline('fill-mask', model="yikuan8/Clinical-Longformer")
-    # nlp_fill = pipeline('fill-mask', model="Tsubasaz/clinical-pubmed-bert-base-512")
-    nlp_fill = pipeline('fill-mask', model="nlp4good/psych-search")
+        # nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
+        # nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
+        # nlp_fill = pipeline('fill-mask', model="emilyalsentzer/Bio_ClinicalBERT")
+        # nlp_fill = pipeline('fill-mask', model="yikuan8/Clinical-Longformer")
+        # nlp_fill = pipeline('fill-mask', model="Tsubasaz/clinical-pubmed-bert-base-512")
+        nlp_fill = pipeline('fill-mask', model=models[model]['huggingface_path'])
+        
+        exps_to_run = []
+        i = 0
+        for arg in vars(args):
+            if getattr(args, arg):
+                exps_to_run.append(i)
+            i += 1
+            if i == 10:
+                break
+        if len(exps_to_run) == 0:
+            exps_to_run = list(range(11))
 
+        for exp_number in exps_to_run:
+            print(f'running experiment {exp_number}')
+            template = templates[exp_number].replace("<mask>", models[model]['mask_token'])
+            run_experiment(template)
 
-    for exp_number in exps_to_run:
-        print(f'running experiment {exp_number}')
-        template = templates[exp_number]
-        run_experiment(template)
+        if args.box_plot:
+            ax = sns.boxplot(x="prompt", y="probability", hue="gender",
+                            data=all_df, width=0.3, showfliers=False)
+            sns.despine(offset=10)
+            sns.set(rc={'figure.figsize': (18, 6)}, font_scale=1.2)
 
-    if args.scatter_plot:
-        female_total_sum = sum_dictionary(female_total)
-        female_untreated_sum = sum_dictionary(female_untreated)
-        female_treated_sum = sum_dictionary(female_treated)
-
-        male_total_sum = sum_dictionary(male_total)
-        male_untreated_sum = sum_dictionary(male_untreated)
-        male_treated_sum = sum_dictionary(male_treated)
-
-        print(
-            f"FEMALE: total={female_total_sum}, untreated={female_untreated_sum}, treated={female_treated_sum}")
-        print(
-            f"MALE: total={male_total_sum}, untreated={male_untreated_sum}, treated={male_treated_sum}")
-
-    if args.box_plot:
-        ax = sns.boxplot(x="prompt", y="probability", hue="gender",
-                        data=all_df, width=0.3, showfliers=False)
-        sns.despine(offset=10)
-        sns.set(rc={'figure.figsize': (18, 6)}, font_scale=1.2)
-
-        plt.xticks(rotation=45, ha='right', fontsize=12)
-        ax.set_ylim([0, 0.6])
-        plt.title("Probabilities of predicting gendered pronouns")
-        plt.savefig(f"../plots/boxplot_aggregated_psychsearch_p{probability_threshold}.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_mentalroberta_AGG.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_clinicalbert_AGG.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_clinicallongformer_AGG.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_clinicalpubmedbert_AGG.pdf", bbox_inches="tight")
-        # plt.savefig("../plots/boxplot_pronouns_psychsearch_AGG.pdf", bbox_inches="tight")
+            plt.xticks(rotation=45, ha='right', fontsize=12)
+            ax.set_ylim([0, 0.6])
+            plt.title("Probabilities of predicting gendered pronouns")
+            plt.savefig(f"../plots/boxplot_aggregated_{model}_p{probability_threshold}.pdf", bbox_inches="tight")
