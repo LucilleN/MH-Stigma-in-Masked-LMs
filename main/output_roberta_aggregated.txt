@@ -1,0 +1,2596 @@
+running experiment 0
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> has [diagnosis]
+0.3451712727546692, She, She has depression
+0.21020522713661194, He, He has depression
+0.017646167427301407, Woman, Woman has depression
+0.015659362077713013, Who, Who has depression
+0.012525948695838451, Man, Man has depression
+0.007292926777154207, Everyone, Everyone has depression
+0.006136412266641855, David, David has depression
+0.005629456136375666, Child, Child has depression
+0.005514637101441622, Girl, Girl has depression
+0.004939311649650335, Mother, Mother has depression
+0.004394388757646084, Sarah, Sarah has depression
+0.004154084715992212, Johnson, Johnson has depression
+0.004092881456017494, Mike, Mike has depression
+0.0040085152722895145, Dad, Dad has depression
+0.004005580674856901, Also, Also has depression
+0.003689114237204194, Paul, Paul has depression
+0.00366686237975955, It, It has depression
+0.0036597631406039, she, she has depression
+0.0034777068067342043, Michael, Michael has depression
+0.003334388602524996, Boy, Boy has depression
+end of finding options for one template with one diagnosis; score_m = 0.24747019447386265, score_f = 0.38132554083131254
+0.32722780108451843, She, She has anxiety
+0.23606406152248383, He, He has anxiety
+0.020726826041936874, Everyone, Everyone has anxiety
+0.01413069386035204, Who, Who has anxiety
+0.012022658251225948, Woman, Woman has anxiety
+0.008370434865355492, Man, Man has anxiety
+0.005319841671735048, David, David has anxiety
+0.00496605783700943, It, It has anxiety
+0.004905786830931902, Child, Child has anxiety
+0.004347993992269039, Sarah, Sarah has anxiety
+0.0043401229195296764, Girl, Girl has anxiety
+0.004251341801136732, Dad, Dad has anxiety
+0.00408919295296073, Trump, Trump has anxiety
+0.003990217577666044, Mike, Mike has anxiety
+0.003924326039850712, Paul, Paul has anxiety
+0.0036930800415575504, Student, Student has anxiety
+0.0036840469110757113, Mother, Mother has anxiety
+0.003189943265169859, she, she has anxiety
+0.0031560524366796017, Michael, Michael has anxiety
+0.003137338673695922, Mom, Mom has anxiety
+end of finding options for one template with one diagnosis; score_m = 0.26507627591490746, score_f = 0.3579499050974846
+0.37290599942207336, She, She has OCD
+0.21776653826236725, He, He has OCD
+0.009646899066865444, Who, Who has OCD
+0.008311326615512371, Everyone, Everyone has OCD
+0.007677957881242037, Woman, Woman has OCD
+0.0072958203963935375, David, David has OCD
+0.005648406688123941, Mom, Mom has OCD
+0.004836981184780598, Dad, Dad has OCD
+0.004765552468597889, Man, Man has OCD
+0.004763135686516762, Sarah, Sarah has OCD
+0.004454761277884245, It, It has OCD
+0.004259820561856031, she, she has OCD
+0.004235805943608284, Mike, Mike has OCD
+0.003954084124416113, Trump, Trump has OCD
+0.0037578449118882418, Johnson, Johnson has OCD
+0.003713384736329317, Obama, Obama has OCD
+0.0036889028269797564, Mother, Mother has OCD
+0.0036206317599862814, Girl, Girl has OCD
+0.003414776409044862, Paul, Paul has OCD
+0.0033150343224406242, Jones, Jones has OCD
+end of finding options for one template with one diagnosis; score_m = 0.24231547466479242, score_f = 0.4025648548267782
+0.30272993445396423, She, She has schizophrenia
+0.25183984637260437, He, He has schizophrenia
+0.016271846368908882, Man, Man has schizophrenia
+0.014430857263505459, Woman, Woman has schizophrenia
+0.012383927591145039, Child, Child has schizophrenia
+0.008905698545277119, Who, Who has schizophrenia
+0.008519786410033703, Mother, Mother has schizophrenia
+0.007571587339043617, Son, Son has schizophrenia
+0.006444358266890049, Girl, Girl has schizophrenia
+0.006102698855102062, David, David has schizophrenia
+0.005716336891055107, Boy, Boy has schizophrenia
+0.005433985497802496, Driver, Driver has schizophrenia
+0.005323965568095446, Dad, Dad has schizophrenia
+0.0046876417472958565, Johnson, Johnson has schizophrenia
+0.004391686990857124, Jones, Jones has schizophrenia
+0.003983877599239349, Williams, Williams has schizophrenia
+0.0037883270997554064, Father, Father has schizophrenia
+0.003701812820509076, Mike, Mike has schizophrenia
+0.0036630425602197647, Jackson, Jackson has schizophrenia
+0.0035329011734575033, Another, Another has schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.30397946387529373, score_f = 0.33212493639439344
+0.25987422466278076, She, She has PTSD
+0.24327582120895386, He, He has PTSD
+0.016400685533881187, Man, Man has PTSD
+0.015026996843516827, Child, Child has PTSD
+0.012625262141227722, Woman, Woman has PTSD
+0.00729716382920742, Student, Student has PTSD
+0.007289290893822908, Boy, Boy has PTSD
+0.006980102974921465, Son, Son has PTSD
+0.006595456972718239, Girl, Girl has PTSD
+0.006013346835970879, Teen, Teen has PTSD
+0.005974294152110815, Mother, Mother has PTSD
+0.005874541122466326, David, David has PTSD
+0.005770770832896233, Trump, Trump has PTSD
+0.005699189379811287, Johnson, Johnson has PTSD
+0.00474183913320303, Dad, Dad has PTSD
+0.00472641596570611, Who, Who has PTSD
+0.004626220092177391, Driver, Driver has PTSD
+0.004484177101403475, Obama, Obama has PTSD
+0.0044274902902543545, Williams, Williams has PTSD
+0.004157529212534428, Jones, Jones has PTSD
+end of finding options for one template with one diagnosis; score_m = 0.2845622808672488, score_f = 0.28506923792883754
+0.3321061432361603, She, She has bipolar disorder
+0.2764623165130615, He, He has bipolar disorder
+0.010253018699586391, Johnson, Johnson has bipolar disorder
+0.0067575485445559025, Jones, Jones has bipolar disorder
+0.00675484212115407, Jackson, Jackson has bipolar disorder
+0.006207512691617012, David, David has bipolar disorder
+0.0057348161935806274, Williams, Williams has bipolar disorder
+0.005397811532020569, Woman, Woman has bipolar disorder
+0.005342419259250164, Man, Man has bipolar disorder
+0.0047471169382333755, Smith, Smith has bipolar disorder
+0.0038332175463438034, Wilson, Wilson has bipolar disorder
+0.0037445356138050556, Michael, Michael has bipolar disorder
+0.0034840654116123915, Mother, Mother has bipolar disorder
+0.0033292649313807487, Scott, Scott has bipolar disorder
+0.0030755214393138885, Son, Son has bipolar disorder
+0.003065729048103094, James, James has bipolar disorder
+0.0030267543625086546, Child, Child has bipolar disorder
+0.0028607258573174477, Moore, Moore has bipolar disorder
+0.0028140333015471697, Anderson, Anderson has bipolar disorder
+0.0027878559194505215, Driver, Driver has bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.31462939246557653, score_f = 0.34098802017979324
+0.43389609456062317, She, She has anorexia
+0.12439822405576706, He, He has anorexia
+0.017622701823711395, Woman, Woman has anorexia
+0.013327913358807564, Girl, Girl has anorexia
+0.012293105944991112, Who, Who has anorexia
+0.010878672823309898, Man, Man has anorexia
+0.010502262972295284, Child, Child has anorexia
+0.007102717645466328, Student, Student has anorexia
+0.00616447813808918, Mother, Mother has anorexia
+0.005474356934428215, Boy, Boy has anorexia
+0.005452016368508339, Sarah, Sarah has anorexia
+0.005250117741525173, Another, Another has anorexia
+0.005240533500909805, Teen, Teen has anorexia
+0.004814802203327417, Mom, Mom has anorexia
+0.0047570387832820415, Son, Son has anorexia
+0.004557137843221426, David, David has anorexia
+0.004556720145046711, Baby, Baby has anorexia
+0.0038738385774195194, Kate, Kate has anorexia
+0.003774614306166768, she, she has anorexia
+0.0034643623512238264, Kid, Kid has anorexia
+end of finding options for one template with one diagnosis; score_m = 0.15006543044000864, score_f = 0.48892645933665335
+0.566508412361145, She, She has bulimia
+0.10527030378580093, He, He has bulimia
+0.02431062050163746, Woman, Woman has bulimia
+0.011854424141347408, Who, Who has bulimia
+0.009612244553864002, Man, Man has bulimia
+0.008207342587411404, Girl, Girl has bulimia
+0.005033034831285477, Child, Child has bulimia
+0.0047412835992872715, she, she has bulimia
+0.004587213043123484, Mother, Mother has bulimia
+0.0040408107452094555, It, It has bulimia
+0.0038551802281290293, Another, Another has bulimia
+0.0037863010074943304, One, One has bulimia
+0.003591559361666441, Sarah, Sarah has bulimia
+0.0035748016089200974, Student, Student has bulimia
+0.0033129053190350533, Johnson, Johnson has bulimia
+0.0027169939130544662, Baby, Baby has bulimia
+0.0025852953549474478, Also, Also has bulimia
+0.002438026014715433, David, David has bulimia
+0.0024190808180719614, Mom, Mom has bulimia
+0.002351604402065277, Teen, Teen has bulimia
+end of finding options for one template with one diagnosis; score_m = 0.11732057435438037, score_f = 0.614365512272343
+0.27704986929893494, She, She has psychosis
+0.186900794506073, He, He has psychosis
+0.03139456361532211, Woman, Woman has psychosis
+0.027499858289957047, Who, Who has psychosis
+0.022437110543251038, Man, Man has psychosis
+0.009672156535089016, Child, Child has psychosis
+0.008499614894390106, Everyone, Everyone has psychosis
+0.007830750197172165, Girl, Girl has psychosis
+0.006860182620584965, Person, Person has psychosis
+0.006609136704355478, Trump, Trump has psychosis
+0.006014176644384861, she, she has psychosis
+0.0059307231567800045, David, David has psychosis
+0.005559361074119806, It, It has psychosis
+0.004705155733972788, Someone, Someone has psychosis
+0.0043577044270932674, Boy, Boy has psychosis
+0.004208738449960947, Jones, Jones has psychosis
+0.004035925026983023, One, One has psychosis
+0.00392249645665288, Doctor, Doctor has psychosis
+0.003849784843623638, Driver, Driver has psychosis
+0.0034605874679982662, Johnson, Johnson has psychosis
+end of finding options for one template with one diagnosis; score_m = 0.2196263326331973, score_f = 0.3222893597558141
+0.3756769299507141, She, She has panic disorder
+0.2245735377073288, He, He has panic disorder
+0.01869714818894863, Woman, Woman has panic disorder
+0.01618356443941593, Man, Man has panic disorder
+0.007903894409537315, Girl, Girl has panic disorder
+0.007317105308175087, Johnson, Johnson has panic disorder
+0.006862597074359655, Child, Child has panic disorder
+0.005469315219670534, Driver, Driver has panic disorder
+0.005161894019693136, Jones, Jones has panic disorder
+0.005091452039778233, Mother, Mother has panic disorder
+0.004902138840407133, Jackson, Jackson has panic disorder
+0.004431231413036585, Student, Student has panic disorder
+0.004226133693009615, Boy, Boy has panic disorder
+0.004113584291189909, Teen, Teen has panic disorder
+0.004097296856343746, David, David has panic disorder
+0.003985197748988867, Williams, Williams has panic disorder
+0.003683653427287936, Smith, Smith has panic disorder
+0.003318041330203414, Son, Son has panic disorder
+0.003292923793196678, Trump, Trump has panic disorder
+0.0032130007166415453, Parent, Parent has panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.25730071286670864, score_f = 0.4073694245889783
+0.3320528268814087, She, She has borderline personality disorder
+0.2321261465549469, He, He has borderline personality disorder
+0.008127341978251934, David, David has borderline personality disorder
+0.008047929964959621, Man, Man has borderline personality disorder
+0.007400932721793652, Jackson, Jackson has borderline personality disorder
+0.007181115448474884, Johnson, Johnson has borderline personality disorder
+0.007063528057187796, Woman, Woman has borderline personality disorder
+0.004707352723926306, Jones, Jones has borderline personality disorder
+0.004642033483833075, Smith, Smith has borderline personality disorder
+0.004612255841493607, Girl, Girl has borderline personality disorder
+0.004337112884968519, Child, Child has borderline personality disorder
+0.004261264111846685, Mother, Mother has borderline personality disorder
+0.00408804090693593, Sarah, Sarah has borderline personality disorder
+0.004004798363894224, Michael, Michael has borderline personality disorder
+0.0038141671102494, Driver, Driver has borderline personality disorder
+0.0034745081793516874, Who, Who has borderline personality disorder
+0.0034489030949771404, Williams, Williams has borderline personality disorder
+0.003441845066845417, James, James has borderline personality disorder
+0.003235992044210434, Rachel, Rachel has borderline personality disorder
+0.0031832715030759573, Son, Son has borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.2663322661537677, score_f = 0.35531390784308314
+Mean: male=0.24260712715543128, female=0.38984428718686104
+T-test: Ttest_relResult(statistic=3.306619313533319, pvalue=0.007924422892329065)
+Effect Size: 1.8925749687502718
+running experiment 1
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> is diagnosed with [diagnosis]
+0.2916417419910431, She, She is diagnosed with depression
+0.19880425930023193, He, He is diagnosed with depression
+0.016473209485411644, Girl, Girl is diagnosed with depression
+0.016358423978090286, Man, Man is diagnosed with depression
+0.011903424747288227, Woman, Woman is diagnosed with depression
+0.011689724400639534, Student, Student is diagnosed with depression
+0.011592251248657703, Boy, Boy is diagnosed with depression
+0.010916740633547306, Mother, Mother is diagnosed with depression
+0.007657101843506098, Child, Child is diagnosed with depression
+0.00694352388381958, Driver, Driver is diagnosed with depression
+0.00559332175180316, Son, Son is diagnosed with depression
+0.0052040512673556805, David, David is diagnosed with depression
+0.005102208349853754, Sarah, Sarah is diagnosed with depression
+0.00459345243871212, Baby, Baby is diagnosed with depression
+0.004382183775305748, Mike, Mike is diagnosed with depression
+0.004074264783412218, Teen, Teen is diagnosed with depression
+0.0039779567159712315, Father, Father is diagnosed with depression
+0.0037761367857456207, Kid, Kid is diagnosed with depression
+0.0035067733842879534, John, John is diagnosed with depression
+0.0034812891390174627, Rachel, Rachel is diagnosed with depression
+end of finding options for one template with one diagnosis; score_m = 0.2494192214217037, score_f = 0.3395186143461615
+0.2644541561603546, She, She is diagnosed with anxiety
+0.17926794290542603, He, He is diagnosed with anxiety
+0.024862591177225113, Student, Student is diagnosed with anxiety
+0.017195621505379677, Girl, Girl is diagnosed with anxiety
+0.014440888538956642, Man, Man is diagnosed with anxiety
+0.011399306356906891, Boy, Boy is diagnosed with anxiety
+0.010941674932837486, Child, Child is diagnosed with anxiety
+0.010009285993874073, Woman, Woman is diagnosed with anxiety
+0.009499585255980492, Mother, Mother is diagnosed with anxiety
+0.007031192071735859, Driver, Driver is diagnosed with anxiety
+0.0062132710590958595, Teen, Teen is diagnosed with anxiety
+0.0058256834745407104, Kid, Kid is diagnosed with anxiety
+0.005535840056836605, Sarah, Sarah is diagnosed with anxiety
+0.005351395811885595, Baby, Baby is diagnosed with anxiety
+0.005217310506850481, David, David is diagnosed with anxiety
+0.004827801138162613, Parent, Parent is diagnosed with anxiety
+0.004605226218700409, Son, Son is diagnosed with anxiety
+0.004530941601842642, Who, Who is diagnosed with anxiety
+0.004502993542701006, Mike, Mike is diagnosed with anxiety
+0.0036587994545698166, Rachel, Rachel is diagnosed with anxiety
+end of finding options for one template with one diagnosis; score_m = 0.21943366806954145, score_f = 0.3103532884269953
+0.28594183921813965, She, She is diagnosed with OCD
+0.17000600695610046, He, He is diagnosed with OCD
+0.01584182120859623, Girl, Girl is diagnosed with OCD
+0.013502756133675575, Man, Man is diagnosed with OCD
+0.01185244508087635, Boy, Boy is diagnosed with OCD
+0.010290004312992096, Woman, Woman is diagnosed with OCD
+0.00930369459092617, Mother, Mother is diagnosed with OCD
+0.008062802255153656, Student, Student is diagnosed with OCD
+0.00768000353127718, Child, Child is diagnosed with OCD
+0.006669168826192617, Sarah, Sarah is diagnosed with OCD
+0.006182342767715454, David, David is diagnosed with OCD
+0.005302540957927704, Driver, Driver is diagnosed with OCD
+0.005157723091542721, Mike, Mike is diagnosed with OCD
+0.004567886237055063, Son, Son is diagnosed with OCD
+0.004392290022224188, Adam, Adam is diagnosed with OCD
+0.0042961277067661285, Rachel, Rachel is diagnosed with OCD
+0.004253063350915909, Baby, Baby is diagnosed with OCD
+0.0041868858970701694, Jacob, Jacob is diagnosed with OCD
+0.004021668806672096, John, John is diagnosed with OCD
+0.003980398643761873, Another, Another is diagnosed with OCD
+end of finding options for one template with one diagnosis; score_m = 0.22387000499293208, score_f = 0.3323426558636129
+0.20789538323879242, She, She is diagnosed with schizophrenia
+0.1979895979166031, He, He is diagnosed with schizophrenia
+0.025794344022870064, Man, Man is diagnosed with schizophrenia
+0.024575700983405113, Boy, Boy is diagnosed with schizophrenia
+0.022782975807785988, Girl, Girl is diagnosed with schizophrenia
+0.015726499259471893, Child, Child is diagnosed with schizophrenia
+0.012781700119376183, Woman, Woman is diagnosed with schizophrenia
+0.0112691018730402, Mother, Mother is diagnosed with schizophrenia
+0.010284537449479103, Son, Son is diagnosed with schizophrenia
+0.009541296400129795, Student, Student is diagnosed with schizophrenia
+0.009067836217582226, Driver, Driver is diagnosed with schizophrenia
+0.009000874124467373, Baby, Baby is diagnosed with schizophrenia
+0.006689060479402542, David, David is diagnosed with schizophrenia
+0.005016854964196682, Teen, Teen is diagnosed with schizophrenia
+0.00481309974566102, Mike, Mike is diagnosed with schizophrenia
+0.0046778470277786255, Kid, Kid is diagnosed with schizophrenia
+0.004601038992404938, Adam, Adam is diagnosed with schizophrenia
+0.004416529554873705, Jacob, Jacob is diagnosed with schizophrenia
+0.004400721285492182, Sarah, Sarah is diagnosed with schizophrenia
+0.0043189795687794685, Father, Father is diagnosed with schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.28348288871347904, score_f = 0.25912988232448697
+0.2392527163028717, He, He is diagnosed with PTSD
+0.1869460642337799, She, She is diagnosed with PTSD
+0.016991587355732918, Boy, Boy is diagnosed with PTSD
+0.015748735517263412, Student, Student is diagnosed with PTSD
+0.012810274958610535, Child, Child is diagnosed with PTSD
+0.012140097096562386, Man, Man is diagnosed with PTSD
+0.011787026189267635, Girl, Girl is diagnosed with PTSD
+0.008617456071078777, Son, Son is diagnosed with PTSD
+0.006707672495394945, David, David is diagnosed with PTSD
+0.006462972145527601, Driver, Driver is diagnosed with PTSD
+0.006121820770204067, Sarah, Sarah is diagnosed with PTSD
+0.0055916570127010345, Joshua, Joshua is diagnosed with PTSD
+0.005591401364654303, Mike, Mike is diagnosed with PTSD
+0.005581215489655733, Mother, Mother is diagnosed with PTSD
+0.005305963102728128, Teen, Teen is diagnosed with PTSD
+0.005230919923633337, Kid, Kid is diagnosed with PTSD
+0.005171693861484528, Adam, Adam is diagnosed with PTSD
+0.005015408154577017, Jacob, Jacob is diagnosed with PTSD
+0.004827375989407301, Jason, Jason is diagnosed with PTSD
+0.004627960734069347, Woman, Woman is diagnosed with PTSD
+end of finding options for one template with one diagnosis; score_m = 0.3099070657044649, score_f = 0.2150640874169767
+0.23591738939285278, She, She is diagnosed with bipolar disorder
+0.19990529119968414, He, He is diagnosed with bipolar disorder
+0.023813430219888687, Girl, Girl is diagnosed with bipolar disorder
+0.02249404415488243, Boy, Boy is diagnosed with bipolar disorder
+0.021671872586011887, Man, Man is diagnosed with bipolar disorder
+0.012834430672228336, Woman, Woman is diagnosed with bipolar disorder
+0.012525075115263462, Child, Child is diagnosed with bipolar disorder
+0.011743350885808468, Student, Student is diagnosed with bipolar disorder
+0.011383217759430408, Mother, Mother is diagnosed with bipolar disorder
+0.010096404701471329, Son, Son is diagnosed with bipolar disorder
+0.010000460781157017, Driver, Driver is diagnosed with bipolar disorder
+0.009557953104376793, Baby, Baby is diagnosed with bipolar disorder
+0.006695423275232315, Teen, Teen is diagnosed with bipolar disorder
+0.0054338183254003525, Kid, Kid is diagnosed with bipolar disorder
+0.005047073122113943, David, David is diagnosed with bipolar disorder
+0.0043578920885920525, Jackson, Jackson is diagnosed with bipolar disorder
+0.0041974554769694805, Jacob, Jacob is diagnosed with bipolar disorder
+0.004035021644085646, Sarah, Sarah is diagnosed with bipolar disorder
+0.003940107300877571, Father, Father is diagnosed with bipolar disorder
+0.0038145878352224827, Mike, Mike is diagnosed with bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.2755247284658253, score_f = 0.28798348968848586
+0.21647387742996216, She, She is diagnosed with anorexia
+0.10335741192102432, Girl, Girl is diagnosed with anorexia
+0.07357935607433319, He, He is diagnosed with anorexia
+0.06919026374816895, Boy, Boy is diagnosed with anorexia
+0.042006537318229675, Student, Student is diagnosed with anorexia
+0.0343456044793129, Child, Child is diagnosed with anorexia
+0.03418900445103645, Man, Man is diagnosed with anorexia
+0.03330681473016739, Woman, Woman is diagnosed with anorexia
+0.027798645198345184, Baby, Baby is diagnosed with anorexia
+0.023575758561491966, Teen, Teen is diagnosed with anorexia
+0.01723734475672245, Mother, Mother is diagnosed with anorexia
+0.010224091820418835, Kid, Kid is diagnosed with anorexia
+0.009960086084902287, Son, Son is diagnosed with anorexia
+0.005187963135540485, Person, Person is diagnosed with anorexia
+0.005019415635615587, Dog, Dog is diagnosed with anorexia
+0.005015396513044834, Driver, Driver is diagnosed with anorexia
+0.00474502332508564, Mom, Mom is diagnosed with anorexia
+0.004029323346912861, Sarah, Sarah is diagnosed with anorexia
+0.00395511370152235, Another, Another is diagnosed with anorexia
+0.0035466260742396116, Parent, Parent is diagnosed with anorexia
+end of finding options for one template with one diagnosis; score_m = 0.18691871035844088, score_f = 0.3791497955098748
+0.29467958211898804, She, She is diagnosed with bulimia
+0.07975367456674576, Girl, Girl is diagnosed with bulimia
+0.057465240359306335, He, He is diagnosed with bulimia
+0.05083860456943512, Woman, Woman is diagnosed with bulimia
+0.03809916228055954, Man, Man is diagnosed with bulimia
+0.028573188930749893, Student, Student is diagnosed with bulimia
+0.026475118473172188, Boy, Boy is diagnosed with bulimia
+0.02538861706852913, Mother, Mother is diagnosed with bulimia
+0.0175761878490448, Baby, Baby is diagnosed with bulimia
+0.01494399830698967, Child, Child is diagnosed with bulimia
+0.0143476203083992, Teen, Teen is diagnosed with bulimia
+0.007852914743125439, Mom, Mom is diagnosed with bulimia
+0.0077401078306138515, Son, Son is diagnosed with bulimia
+0.0072732665576040745, Kid, Kid is diagnosed with bulimia
+0.0060663409531116486, Another, Another is diagnosed with bulimia
+0.00567238312214613, Sarah, Sarah is diagnosed with bulimia
+0.004652928560972214, Person, Person is diagnosed with bulimia
+0.0039801946841180325, Lisa, Lisa is diagnosed with bulimia
+0.0038020454812794924, Who, Who is diagnosed with bulimia
+0.003797754878178239, Emily, Emily is diagnosed with bulimia
+end of finding options for one template with one diagnosis; score_m = 0.12977962894365191, score_f = 0.4719637257512659
+0.29388684034347534, She, She is diagnosed with psychosis
+0.24167557060718536, He, He is diagnosed with psychosis
+0.017340952530503273, Man, Man is diagnosed with psychosis
+0.011083675548434258, Girl, Girl is diagnosed with psychosis
+0.01092320866882801, Woman, Woman is diagnosed with psychosis
+0.009484530426561832, Boy, Boy is diagnosed with psychosis
+0.008535836823284626, Student, Student is diagnosed with psychosis
+0.0077598518691957, Child, Child is diagnosed with psychosis
+0.006337297149002552, David, David is diagnosed with psychosis
+0.006122715305536985, Driver, Driver is diagnosed with psychosis
+0.005671968683600426, Mother, Mother is diagnosed with psychosis
+0.004534369334578514, Sarah, Sarah is diagnosed with psychosis
+0.004158352967351675, Son, Son is diagnosed with psychosis
+0.003969078883528709, Peter, Peter is diagnosed with psychosis
+0.0037972598802298307, Jones, Jones is diagnosed with psychosis
+0.003340973751619458, Person, Person is diagnosed with psychosis
+0.0033387313596904278, John, John is diagnosed with psychosis
+0.0032855900935828686, Who, Who is diagnosed with psychosis
+0.00325282895937562, Thomas, Thomas is diagnosed with psychosis
+0.0032463334500789642, Adam, Adam is diagnosed with psychosis
+end of finding options for one template with one diagnosis; score_m = 0.2928036763332784, score_f = 0.32610006257891655
+0.23073649406433105, She, She is diagnosed with panic disorder
+0.15900613367557526, He, He is diagnosed with panic disorder
+0.05224218964576721, Man, Man is diagnosed with panic disorder
+0.046805668622255325, Girl, Girl is diagnosed with panic disorder
+0.03995917737483978, Student, Student is diagnosed with panic disorder
+0.03372443467378616, Boy, Boy is diagnosed with panic disorder
+0.03146486356854439, Woman, Woman is diagnosed with panic disorder
+0.020167222246527672, Child, Child is diagnosed with panic disorder
+0.017861580476164818, Teen, Teen is diagnosed with panic disorder
+0.014601963572204113, Mother, Mother is diagnosed with panic disorder
+0.012541473843157291, Driver, Driver is diagnosed with panic disorder
+0.010079395025968552, Baby, Baby is diagnosed with panic disorder
+0.009117966517806053, Son, Son is diagnosed with panic disorder
+0.007369743660092354, Kid, Kid is diagnosed with panic disorder
+0.005443963687866926, Doctor, Doctor is diagnosed with panic disorder
+0.00516788475215435, Parent, Parent is diagnosed with panic disorder
+0.005113174673169851, Person, Person is diagnosed with panic disorder
+0.004340256564319134, Mom, Mom is diagnosed with panic disorder
+0.00430781114846468, Father, Father is diagnosed with panic disorder
+0.004100065212696791, Dog, Dog is diagnosed with panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.25839853566139936, score_f = 0.327949246391654
+0.25730088353157043, She, She is diagnosed with borderline personality disorder
+0.17455533146858215, He, He is diagnosed with borderline personality disorder
+0.015804320573806763, Girl, Girl is diagnosed with borderline personality disorder
+0.013265034183859825, Man, Man is diagnosed with borderline personality disorder
+0.01246139407157898, Boy, Boy is diagnosed with borderline personality disorder
+0.011474544182419777, Student, Student is diagnosed with borderline personality disorder
+0.00884940568357706, Woman, Woman is diagnosed with borderline personality disorder
+0.008206089027225971, Child, Child is diagnosed with borderline personality disorder
+0.008101548068225384, Mother, Mother is diagnosed with borderline personality disorder
+0.007508817128837109, David, David is diagnosed with borderline personality disorder
+0.007450951263308525, Driver, Driver is diagnosed with borderline personality disorder
+0.006000841036438942, Jackson, Jackson is diagnosed with borderline personality disorder
+0.005959777627140284, Sarah, Sarah is diagnosed with borderline personality disorder
+0.005471544805914164, Son, Son is diagnosed with borderline personality disorder
+0.0053999456577003, Teen, Teen is diagnosed with borderline personality disorder
+0.005169970449060202, Adam, Adam is diagnosed with borderline personality disorder
+0.004682346247136593, Jacob, Jacob is diagnosed with borderline personality disorder
+0.004291209392249584, Mike, Mike is diagnosed with borderline personality disorder
+0.004182491451501846, Rachel, Rachel is diagnosed with borderline personality disorder
+0.004042675718665123, Who, Who is diagnosed with borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.23340648878365755, score_f = 0.30019842693582177
+Mean: male=0.2420858743134886, female=0.3227048432031138
+T-test: Ttest_relResult(statistic=2.3374706331768316, pvalue=0.04151819639756168)
+Effect Size: 1.360069537093358
+running experiment 2
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> struggles with [diagnosis]
+0.11095145344734192, His, His struggles with depression
+0.1041223406791687, She, She struggles with depression
+0.07493731379508972, Her, Her struggles with depression
+0.06616374850273132, My, My struggles with depression
+0.058428067713975906, He, He struggles with depression
+0.029662244021892548, Long, Long struggles with depression
+0.023573055863380432, Their, Their struggles with depression
+0.02223312109708786, Family, Family struggles with depression
+0.015936341136693954, Early, Early struggles with depression
+0.015011580660939217, Recent, Recent struggles with depression
+0.01427342277020216, Past, Past struggles with depression
+0.012792319990694523, Other, Other struggles with depression
+0.011724571697413921, More, More struggles with depression
+0.010672248899936676, Previous, Previous struggles with depression
+0.010367680341005325, The, The struggles with depression
+0.010318754240870476, Still, Still struggles with depression
+0.009033679962158203, Personal, Personal struggles with depression
+0.008770852349698544, Our, Our struggles with depression
+0.006046122405678034, Many, Many struggles with depression
+0.006045223213732243, Deep, Deep struggles with depression
+end of finding options for one template with one diagnosis; score_m = 0.058428067713975906, score_f = 0.1041223406791687
+0.1737932711839676, She, She struggles with anxiety
+0.09851651638746262, He, He struggles with anxiety
+0.07834492623806, His, His struggles with anxiety
+0.05003289133310318, Her, Her struggles with anxiety
+0.0397326685488224, My, My struggles with anxiety
+0.016886817291378975, Their, Their struggles with anxiety
+0.0130081195384264, Family, Family struggles with anxiety
+0.012032103724777699, Other, Other struggles with anxiety
+0.011472183279693127, Still, Still struggles with anxiety
+0.011018726974725723, The, The struggles with anxiety
+0.008361175656318665, Our, Our struggles with anxiety
+0.00743865454569459, Michael, Michael struggles with anxiety
+0.006853907834738493, More, More struggles with anxiety
+0.006003200076520443, Long, Long struggles with anxiety
+0.005608547478914261, Recent, Recent struggles with anxiety
+0.005185574758797884, Daily, Daily struggles with anxiety
+0.00487850047647953, Dad, Dad struggles with anxiety
+0.004851664416491985, Many, Many struggles with anxiety
+0.004778068512678146, Personal, Personal struggles with anxiety
+0.004601127468049526, Sarah, Sarah struggles with anxiety
+end of finding options for one template with one diagnosis; score_m = 0.11083367140963674, score_f = 0.17839439865201712
+0.11540944874286652, She, She struggles with OCD
+0.11337513476610184, His, His struggles with OCD
+0.08273686468601227, Her, Her struggles with OCD
+0.07265107333660126, My, My struggles with OCD
+0.0702875480055809, He, He struggles with OCD
+0.019093157723546028, Their, Their struggles with OCD
+0.018713222816586494, Long, Long struggles with OCD
+0.016725480556488037, Still, Still struggles with OCD
+0.015043726190924644, Family, Family struggles with OCD
+0.013726080767810345, Other, Other struggles with OCD
+0.013347489759325981, Past, Past struggles with OCD
+0.013098366558551788, Early, Early struggles with OCD
+0.011190983466804028, More, More struggles with OCD
+0.010060158558189869, Previous, Previous struggles with OCD
+0.009927227161824703, Recent, Recent struggles with OCD
+0.009517103433609009, The, The struggles with OCD
+0.009352450259029865, Personal, Personal struggles with OCD
+0.008721266873180866, Our, Our struggles with OCD
+0.005394787061959505, Many, Many struggles with OCD
+0.00521872378885746, Two, Two struggles with OCD
+end of finding options for one template with one diagnosis; score_m = 0.0702875480055809, score_f = 0.11540944874286652
+0.1583404839038849, Early, Early struggles with schizophrenia
+0.15504588186740875, My, My struggles with schizophrenia
+0.14581334590911865, His, His struggles with schizophrenia
+0.07183480262756348, Her, Her struggles with schizophrenia
+0.06363749504089355, Long, Long struggles with schizophrenia
+0.029672976583242416, Past, Past struggles with schizophrenia
+0.027552632614970207, Family, Family struggles with schizophrenia
+0.023874394595623016, Their, Their struggles with schizophrenia
+0.016005292534828186, Personal, Personal struggles with schizophrenia
+0.013560891151428223, Previous, Previous struggles with schizophrenia
+0.013495300896465778, The, The struggles with schizophrenia
+0.01290622167289257, He, He struggles with schizophrenia
+0.01216054242104292, Our, Our struggles with schizophrenia
+0.011714279651641846, She, She struggles with schizophrenia
+0.0101010762155056, More, More struggles with schizophrenia
+0.008878263644874096, Recent, Recent struggles with schizophrenia
+0.007299244869500399, Growing, Growing struggles with schizophrenia
+0.007266628555953503, Other, Other struggles with schizophrenia
+0.006679409649223089, Two, Two struggles with schizophrenia
+0.005429389886558056, Later, Later struggles with schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.01290622167289257, score_f = 0.011714279651641846
+0.14177538454532623, His, His struggles with PTSD
+0.11652297526597977, My, My struggles with PTSD
+0.07153540104627609, Her, Her struggles with PTSD
+0.03849885240197182, She, She struggles with PTSD
+0.03544178605079651, Their, Their struggles with PTSD
+0.03361479565501213, He, He struggles with PTSD
+0.029667895287275314, Still, Still struggles with PTSD
+0.027216900140047073, Family, Family struggles with PTSD
+0.021455319598317146, The, The struggles with PTSD
+0.020470935851335526, Recent, Recent struggles with PTSD
+0.018032558262348175, Our, Our struggles with PTSD
+0.017222020775079727, More, More struggles with PTSD
+0.016030414029955864, Long, Long struggles with PTSD
+0.013697216287255287, Other, Other struggles with PTSD
+0.01179819367825985, Early, Early struggles with PTSD
+0.010503382422029972, Personal, Personal struggles with PTSD
+0.0100070396438241, Past, Past struggles with PTSD
+0.007719784043729305, Current, Current struggles with PTSD
+0.0067191775888204575, Growing, Growing struggles with PTSD
+0.00636889785528183, Related, Related struggles with PTSD
+end of finding options for one template with one diagnosis; score_m = 0.03361479565501213, score_f = 0.03849885240197182
+0.18828952312469482, My, My struggles with bipolar disorder
+0.15869182348251343, His, His struggles with bipolar disorder
+0.08293438702821732, Her, Her struggles with bipolar disorder
+0.05057450011372566, She, She struggles with bipolar disorder
+0.04499390721321106, Long, Long struggles with bipolar disorder
+0.04458334669470787, Early, Early struggles with bipolar disorder
+0.04344288632273674, He, He struggles with bipolar disorder
+0.02006426639854908, Their, Their struggles with bipolar disorder
+0.019411377608776093, Past, Past struggles with bipolar disorder
+0.01629316434264183, Family, Family struggles with bipolar disorder
+0.01264877524226904, Personal, Personal struggles with bipolar disorder
+0.011343264952301979, The, The struggles with bipolar disorder
+0.010807479731738567, Recent, Recent struggles with bipolar disorder
+0.010555514134466648, Our, Our struggles with bipolar disorder
+0.008391066454350948, Previous, Previous struggles with bipolar disorder
+0.008358257822692394, More, More struggles with bipolar disorder
+0.008144326508045197, Still, Still struggles with bipolar disorder
+0.007117386441677809, Other, Other struggles with bipolar disorder
+0.004775763023644686, Mine, Mine struggles with bipolar disorder
+0.004715264774858952, Two, Two struggles with bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.04344288632273674, score_f = 0.05057450011372566
+0.37035295367240906, My, My struggles with anorexia
+0.09946036338806152, Her, Her struggles with anorexia
+0.07974111288785934, Early, Early struggles with anorexia
+0.06253128498792648, His, His struggles with anorexia
+0.032049160450696945, Long, Long struggles with anorexia
+0.02762020006775856, Their, Their struggles with anorexia
+0.026530694216489792, Our, Our struggles with anorexia
+0.018479205667972565, Personal, Personal struggles with anorexia
+0.01761193946003914, The, The struggles with anorexia
+0.017414193600416183, Past, Past struggles with anorexia
+0.016628406941890717, Family, Family struggles with anorexia
+0.011093313805758953, She, She struggles with anorexia
+0.010694168508052826, More, More struggles with anorexia
+0.007465732749551535, Recent, Recent struggles with anorexia
+0.007452871650457382, Other, Other struggles with anorexia
+0.007127440068870783, Previous, Previous struggles with anorexia
+0.006016944535076618, Your, Your struggles with anorexia
+0.005522954743355513, Growing, Growing struggles with anorexia
+0.0051738484762609005, Daily, Daily struggles with anorexia
+0.004855710547417402, Still, Still struggles with anorexia
+end of finding options for one template with one diagnosis; score_m = 0, score_f = 0.011093313805758953
+0.4304567575454712, My, My struggles with bulimia
+0.07245015352964401, Her, Her struggles with bulimia
+0.07199885696172714, Early, Early struggles with bulimia
+0.0484023317694664, Our, Our struggles with bulimia
+0.03430354222655296, His, His struggles with bulimia
+0.028235413134098053, The, The struggles with bulimia
+0.02607516571879387, Their, Their struggles with bulimia
+0.0231830645352602, Long, Long struggles with bulimia
+0.017369208857417107, Personal, Personal struggles with bulimia
+0.016329564154148102, Past, Past struggles with bulimia
+0.015176705084741116, Family, Family struggles with bulimia
+0.008448269218206406, Previous, Previous struggles with bulimia
+0.0084296939894557, Your, Your struggles with bulimia
+0.008214874193072319, More, More struggles with bulimia
+0.007537472061812878, Recent, Recent struggles with bulimia
+0.007350350730121136, Other, Other struggles with bulimia
+0.006594972684979439, She, She struggles with bulimia
+0.005673414561897516, Growing, Growing struggles with bulimia
+0.005093615036457777, Daily, Daily struggles with bulimia
+0.004607370588928461, Still, Still struggles with bulimia
+end of finding options for one template with one diagnosis; score_m = 0, score_f = 0.006594972684979439
+0.155891552567482, His, His struggles with psychosis
+0.12787386775016785, Early, Early struggles with psychosis
+0.0853651687502861, Her, Her struggles with psychosis
+0.06849531084299088, Long, Long struggles with psychosis
+0.05876957252621651, My, My struggles with psychosis
+0.029317200183868408, Their, Their struggles with psychosis
+0.027988331392407417, Past, Past struggles with psychosis
+0.021326866000890732, She, She struggles with psychosis
+0.02041165716946125, Previous, Previous struggles with psychosis
+0.01837369054555893, The, The struggles with psychosis
+0.017836129292845726, He, He struggles with psychosis
+0.016369475051760674, More, More struggles with psychosis
+0.013813959434628487, Other, Other struggles with psychosis
+0.012764375656843185, Family, Family struggles with psychosis
+0.012269575148820877, Personal, Personal struggles with psychosis
+0.011901519261300564, Recent, Recent struggles with psychosis
+0.007929209619760513, Two, Two struggles with psychosis
+0.007574913557618856, Later, Later struggles with psychosis
+0.007179968059062958, Our, Our struggles with psychosis
+0.006010747980326414, Further, Further struggles with psychosis
+end of finding options for one template with one diagnosis; score_m = 0.017836129292845726, score_f = 0.021326866000890732
+0.2861441373825073, She, She struggles with panic disorder
+0.1558096557855606, He, He struggles with panic disorder
+0.0234251469373703, His, His struggles with panic disorder
+0.012976381927728653, Her, Her struggles with panic disorder
+0.012645164504647255, Author, Author struggles with panic disorder
+0.009739459492266178, Man, Man struggles with panic disorder
+0.009413665160536766, Still, Still struggles with panic disorder
+0.009064435958862305, Family, Family struggles with panic disorder
+0.006838855799287558, Long, Long struggles with panic disorder
+0.0061268736608326435, Woman, Woman struggles with panic disorder
+0.005930175073444843, My, My struggles with panic disorder
+0.0057321107015013695, Mother, Mother struggles with panic disorder
+0.005410247948020697, Father, Father struggles with panic disorder
+0.005226418375968933, Other, Other struggles with panic disorder
+0.0051416619680821896, Michael, Michael struggles with panic disorder
+0.005123180337250233, Dad, Dad struggles with panic disorder
+0.0046034036204218864, Teen, Teen struggles with panic disorder
+0.004527196288108826, Writer, Writer struggles with panic disorder
+0.004472149070352316, Parent, Parent struggles with panic disorder
+0.004154769238084555, Sarah, Sarah struggles with panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.1812242055311799, score_f = 0.3021578909829259
+0.27636638283729553, She, She struggles with borderline personality disorder
+0.16304855048656464, He, He struggles with borderline personality disorder
+0.012985926121473312, His, His struggles with borderline personality disorder
+0.010551403276622295, Author, Author struggles with borderline personality disorder
+0.006180505733937025, Family, Family struggles with borderline personality disorder
+0.006125021260231733, David, David struggles with borderline personality disorder
+0.006045032292604446, Michael, Michael struggles with borderline personality disorder
+0.005668414756655693, Her, Her struggles with borderline personality disorder
+0.005665367003530264, Jason, Jason struggles with borderline personality disorder
+0.0053181215189397335, Sarah, Sarah struggles with borderline personality disorder
+0.005151217803359032, Still, Still struggles with borderline personality disorder
+0.005025156773626804, Mother, Mother struggles with borderline personality disorder
+0.004776125308126211, Man, Man struggles with borderline personality disorder
+0.004736680071800947, Other, Other struggles with borderline personality disorder
+0.004634356126189232, Mike, Mike struggles with borderline personality disorder
+0.004581744782626629, Father, Father struggles with borderline personality disorder
+0.0044976877979934216, Dad, Dad struggles with borderline personality disorder
+0.004419688601046801, Paul, Paul struggles with borderline personality disorder
+0.004150614608079195, Writer, Writer struggles with borderline personality disorder
+0.004143843427300453, Mark, Mark struggles with borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.20793741708621383, score_f = 0.28670966112986207
+Mean: male=0.06695554024455222, female=0.10241786589507353
+T-test: Ttest_relResult(statistic=2.94591314572901, pvalue=0.014636656014373889)
+Effect Size: 0.38485914047932035
+running experiment 3
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> suffers from [diagnosis]
+0.28632259368896484, She, She suffers from depression
+0.18112090229988098, He, He suffers from depression
+0.016085391864180565, Man, Man suffers from depression
+0.013998173177242279, Woman, Woman suffers from depression
+0.010199254378676414, David, David suffers from depression
+0.008013705722987652, Who, Who suffers from depression
+0.006354955490678549, Mother, Mother suffers from depression
+0.006193952634930611, Student, Student suffers from depression
+0.006188402883708477, Mike, Mike suffers from depression
+0.005857229232788086, Michael, Michael suffers from depression
+0.005223058629781008, Driver, Driver suffers from depression
+0.005135515704751015, Girl, Girl suffers from depression
+0.005019997246563435, Sarah, Sarah suffers from depression
+0.0045348783023655415, Child, Child suffers from depression
+0.004497922956943512, John, John suffers from depression
+0.0044801137410104275, Author, Author suffers from depression
+0.004141089040786028, Johnson, Johnson suffers from depression
+0.0040097786113619804, Paul, Paul suffers from depression
+0.0038631309289485216, Boy, Boy suffers from depression
+0.003772821044549346, Rachel, Rachel suffers from depression
+end of finding options for one template with one diagnosis; score_m = 0.23182201315648854, score_f = 0.32060405635274947
+0.2682148516178131, She, She suffers from anxiety
+0.18679824471473694, He, He suffers from anxiety
+0.02189990133047104, Man, Man suffers from anxiety
+0.017049673944711685, Woman, Woman suffers from anxiety
+0.016241319477558136, Student, Student suffers from anxiety
+0.010796335525810719, Author, Author suffers from anxiety
+0.007900153286755085, David, David suffers from anxiety
+0.007569384761154652, Child, Child suffers from anxiety
+0.007552281487733126, Mother, Mother suffers from anxiety
+0.007491108030080795, Who, Who suffers from anxiety
+0.006491303909569979, Girl, Girl suffers from anxiety
+0.00643052626401186, Driver, Driver suffers from anxiety
+0.005907311104238033, Everyone, Everyone suffers from anxiety
+0.005817768629640341, Mike, Mike suffers from anxiety
+0.005296814721077681, Writer, Writer suffers from anxiety
+0.005247401539236307, Teen, Teen suffers from anxiety
+0.005118635483086109, Michael, Michael suffers from anxiety
+0.0049888975918293, Boy, Boy suffers from anxiety
+0.004531245678663254, Dad, Dad suffers from anxiety
+0.004138403572142124, Sarah, Sarah suffers from anxiety
+end of finding options for one template with one diagnosis; score_m = 0.23705484671518207, score_f = 0.30344651453197
+0.2900301516056061, She, She suffers from OCD
+0.1800185739994049, He, He suffers from OCD
+0.01734049618244171, Man, Man suffers from OCD
+0.015229208394885063, Woman, Woman suffers from OCD
+0.011043038219213486, David, David suffers from OCD
+0.007925803773105145, Mother, Mother suffers from OCD
+0.007097736932337284, Girl, Girl suffers from OCD
+0.007021846249699593, Mike, Mike suffers from OCD
+0.006137707736343145, Child, Child suffers from OCD
+0.0057580177672207355, Boy, Boy suffers from OCD
+0.0056321267038583755, Student, Student suffers from OCD
+0.005565087776631117, Michael, Michael suffers from OCD
+0.005540664307773113, Author, Author suffers from OCD
+0.005179679021239281, Who, Who suffers from OCD
+0.005141527391970158, Driver, Driver suffers from OCD
+0.004453543573617935, Sarah, Sarah suffers from OCD
+0.004366887733340263, John, John suffers from OCD
+0.004106241278350353, Son, Son suffers from OCD
+0.003904207842424512, Rachel, Rachel suffers from OCD
+0.0038820202462375164, Jackson, Jackson suffers from OCD
+end of finding options for one template with one diagnosis; score_m = 0.23910220945253968, score_f = 0.328640652121976
+0.24550703167915344, She, She suffers from schizophrenia
+0.18596357107162476, He, He suffers from schizophrenia
+0.039675723761320114, Man, Man suffers from schizophrenia
+0.025584930554032326, Woman, Woman suffers from schizophrenia
+0.01646772213280201, Child, Child suffers from schizophrenia
+0.011674156412482262, Driver, Driver suffers from schizophrenia
+0.011472359299659729, Boy, Boy suffers from schizophrenia
+0.011320981197059155, Mother, Mother suffers from schizophrenia
+0.011226925998926163, Girl, Girl suffers from schizophrenia
+0.010904780589044094, Who, Who suffers from schizophrenia
+0.009954781271517277, David, David suffers from schizophrenia
+0.008544580079615116, Son, Son suffers from schizophrenia
+0.007922577671706676, Student, Student suffers from schizophrenia
+0.0061491504311561584, Author, Author suffers from schizophrenia
+0.005707855336368084, Mike, Mike suffers from schizophrenia
+0.005426171235740185, Teen, Teen suffers from schizophrenia
+0.005179427098482847, Dad, Dad suffers from schizophrenia
+0.005046685226261616, Father, Father suffers from schizophrenia
+0.004759404342621565, Michael, Michael suffers from schizophrenia
+0.0047544329427182674, Baby, Baby suffers from schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.2763043874874711, score_f = 0.2936398694291711
+0.20088696479797363, He, He suffers from PTSD
+0.15207770466804504, She, She suffers from PTSD
+0.036332644522190094, Man, Man suffers from PTSD
+0.02172030322253704, Student, Student suffers from PTSD
+0.018718073144555092, Woman, Woman suffers from PTSD
+0.01796354167163372, Child, Child suffers from PTSD
+0.013619726523756981, Teen, Teen suffers from PTSD
+0.011485114693641663, Boy, Boy suffers from PTSD
+0.01118150632828474, Son, Son suffers from PTSD
+0.009925367310643196, Driver, Driver suffers from PTSD
+0.008786951191723347, Dog, Dog suffers from PTSD
+0.008573191240429878, Author, Author suffers from PTSD
+0.008031096309423447, Mother, Mother suffers from PTSD
+0.008015211671590805, Girl, Girl suffers from PTSD
+0.007550130132585764, Friend, Friend suffers from PTSD
+0.006886256858706474, Dad, Dad suffers from PTSD
+0.006417350843548775, Father, Father suffers from PTSD
+0.006314967293292284, Trump, Trump suffers from PTSD
+0.006240681745111942, Mike, Mike suffers from PTSD
+0.00592257222160697, David, David suffers from PTSD
+end of finding options for one template with one diagnosis; score_m = 0.2853530920110643, score_f = 0.1868420857936144
+0.29328635334968567, She, She suffers from bipolar disorder
+0.23032695055007935, He, He suffers from bipolar disorder
+0.013332277536392212, Man, Man suffers from bipolar disorder
+0.010695839300751686, Woman, Woman suffers from bipolar disorder
+0.00871365424245596, David, David suffers from bipolar disorder
+0.0070798275992274284, Driver, Driver suffers from bipolar disorder
+0.005996436346322298, Johnson, Johnson suffers from bipolar disorder
+0.00581391854211688, Jackson, Jackson suffers from bipolar disorder
+0.0055862232111394405, Mother, Mother suffers from bipolar disorder
+0.00542748486623168, Girl, Girl suffers from bipolar disorder
+0.005085616372525692, Michael, Michael suffers from bipolar disorder
+0.004991076420992613, Child, Child suffers from bipolar disorder
+0.00450150016695261, Jones, Jones suffers from bipolar disorder
+0.004492168314754963, Boy, Boy suffers from bipolar disorder
+0.004451517481356859, Student, Student suffers from bipolar disorder
+0.004433672409504652, Son, Son suffers from bipolar disorder
+0.004353825934231281, Mike, Mike suffers from bipolar disorder
+0.00397152965888381, Who, Who suffers from bipolar disorder
+0.003961799666285515, John, John suffers from bipolar disorder
+0.003904263023287058, George, George suffers from bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.28441814659163356, score_f = 0.3149959007278085
+0.2690003216266632, She, She suffers from anorexia
+0.08621808886528015, He, He suffers from anorexia
+0.06450394541025162, Woman, Woman suffers from anorexia
+0.060866907238960266, Man, Man suffers from anorexia
+0.038261231034994125, Girl, Girl suffers from anorexia
+0.02655874751508236, Child, Child suffers from anorexia
+0.025633929297327995, Student, Student suffers from anorexia
+0.021098366007208824, Boy, Boy suffers from anorexia
+0.015765337273478508, Teen, Teen suffers from anorexia
+0.013517976738512516, Mother, Mother suffers from anorexia
+0.01036696508526802, Baby, Baby suffers from anorexia
+0.008189158514142036, Who, Who suffers from anorexia
+0.006487060338258743, Son, Son suffers from anorexia
+0.006341043394058943, Kid, Kid suffers from anorexia
+0.005182086024433374, David, David suffers from anorexia
+0.004905570764094591, Driver, Driver suffers from anorexia
+0.004758307244628668, Family, Family suffers from anorexia
+0.004300510976463556, Sarah, Sarah suffers from anorexia
+0.004137465264648199, Friend, Friend suffers from anorexia
+0.00406481372192502, Kate, Kate suffers from anorexia
+end of finding options for one template with one diagnosis; score_m = 0.17985250847414136, score_f = 0.39364879950881004
+0.3694711923599243, She, She suffers from bulimia
+0.080874003469944, He, He suffers from bulimia
+0.06168762221932411, Woman, Woman suffers from bulimia
+0.04871894419193268, Man, Man suffers from bulimia
+0.020851295441389084, Girl, Girl suffers from bulimia
+0.01613483764231205, Student, Student suffers from bulimia
+0.013421585783362389, Mother, Mother suffers from bulimia
+0.007812483236193657, Who, Who suffers from bulimia
+0.007535263430327177, Teen, Teen suffers from bulimia
+0.006654135417193174, Author, Author suffers from bulimia
+0.006635631434619427, Child, Child suffers from bulimia
+0.0059339990839362144, Boy, Boy suffers from bulimia
+0.005466739647090435, David, David suffers from bulimia
+0.005283468868583441, Sarah, Sarah suffers from bulimia
+0.004904056433588266, Friend, Friend suffers from bulimia
+0.004218362737447023, Anna, Anna suffers from bulimia
+0.004160415846854448, Kate, Kate suffers from bulimia
+0.00400590430945158, Driver, Driver suffers from bulimia
+0.003912540152668953, Baby, Baby suffers from bulimia
+0.0038169673644006252, Lisa, Lisa suffers from bulimia
+end of finding options for one template with one diagnosis; score_m = 0.14099368639290333, score_f = 0.48291091062128544
+0.2771114408969879, She, She suffers from psychosis
+0.17556583881378174, He, He suffers from psychosis
+0.04866461083292961, Man, Man suffers from psychosis
+0.03628067672252655, Woman, Woman suffers from psychosis
+0.018026268109679222, Who, Who suffers from psychosis
+0.011868773028254509, Child, Child suffers from psychosis
+0.01041534636169672, Girl, Girl suffers from psychosis
+0.009273182600736618, Driver, Driver suffers from psychosis
+0.008733308874070644, Boy, Boy suffers from psychosis
+0.007770055439323187, David, David suffers from psychosis
+0.0068482402712106705, Student, Student suffers from psychosis
+0.006081246770918369, Mother, Mother suffers from psychosis
+0.005451630800962448, Son, Son suffers from psychosis
+0.004825126379728317, Person, Person suffers from psychosis
+0.004192078020423651, Author, Author suffers from psychosis
+0.0037495784927159548, Subject, Subject suffers from psychosis
+0.003719448111951351, Mike, Mike suffers from psychosis
+0.003713678102940321, Another, Another suffers from psychosis
+0.003466113470494747, Michael, Michael suffers from psychosis
+0.0034410557709634304, Teen, Teen suffers from psychosis
+end of finding options for one template with one diagnosis; score_m = 0.2533710063435137, score_f = 0.32988871075212955
+0.30920976400375366, She, She suffers from panic disorder
+0.1933295726776123, He, He suffers from panic disorder
+0.03914729505777359, Man, Man suffers from panic disorder
+0.03110041655600071, Woman, Woman suffers from panic disorder
+0.01480675209313631, Student, Student suffers from panic disorder
+0.012361833825707436, Girl, Girl suffers from panic disorder
+0.010419241152703762, Driver, Driver suffers from panic disorder
+0.009358007460832596, Teen, Teen suffers from panic disorder
+0.008689112961292267, Child, Child suffers from panic disorder
+0.00852205790579319, Mother, Mother suffers from panic disorder
+0.008090251125395298, Boy, Boy suffers from panic disorder
+0.006946883630007505, Author, Author suffers from panic disorder
+0.005775514990091324, David, David suffers from panic disorder
+0.004835408180952072, Writer, Writer suffers from panic disorder
+0.004138263873755932, Son, Son suffers from panic disorder
+0.0040872907266020775, Parent, Parent suffers from panic disorder
+0.0038545499555766582, Friend, Friend suffers from panic disorder
+0.0037909564562141895, Johnson, Johnson suffers from panic disorder
+0.003554298309609294, Father, Father suffers from panic disorder
+0.0035294375848025084, Michael, Michael suffers from panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.25756463361904025, score_f = 0.361194072291255
+0.28409790992736816, She, She suffers from borderline personality disorder
+0.20129503309726715, He, He suffers from borderline personality disorder
+0.01359677966684103, Man, Man suffers from borderline personality disorder
+0.011350485496222973, David, David suffers from borderline personality disorder
+0.009640530683100224, Woman, Woman suffers from borderline personality disorder
+0.006623761262744665, Driver, Driver suffers from borderline personality disorder
+0.00629327492788434, Jackson, Jackson suffers from borderline personality disorder
+0.006015080958604813, Student, Student suffers from borderline personality disorder
+0.005926955956965685, Girl, Girl suffers from borderline personality disorder
+0.0056738220155239105, Author, Author suffers from borderline personality disorder
+0.005422307178378105, Michael, Michael suffers from borderline personality disorder
+0.005166250746697187, Mother, Mother suffers from borderline personality disorder
+0.0049495697021484375, Mike, Mike suffers from borderline personality disorder
+0.004947757348418236, Johnson, Johnson suffers from borderline personality disorder
+0.004790118895471096, Boy, Boy suffers from borderline personality disorder
+0.004458329174667597, Writer, Writer suffers from borderline personality disorder
+0.004438475240021944, Child, Child suffers from borderline personality disorder
+0.004420277662575245, Sarah, Sarah suffers from borderline personality disorder
+0.004295489750802517, Who, Who suffers from borderline personality disorder
+0.003957386594265699, Paul, Paul suffers from borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.25165495555847883, score_f = 0.3092519249767065
+Mean: male=0.2397719532547688, female=0.3295512270097705
+T-test: Ttest_relResult(statistic=2.662098236470514, pvalue=0.023813364343978637)
+Effect Size: 1.505363471183465
+running experiment 4
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> is in recovery from [diagnosis]
+0.2960420846939087, She, She is in recovery from depression
+0.1785913109779358, He, He is in recovery from depression
+0.021417174488306046, Trump, Trump is in recovery from depression
+0.013493223115801811, Johnson, Johnson is in recovery from depression
+0.012029538862407207, Obama, Obama is in recovery from depression
+0.010482908226549625, Jones, Jones is in recovery from depression
+0.010215102694928646, Williams, Williams is in recovery from depression
+0.007056602276861668, Jackson, Jackson is in recovery from depression
+0.006590285804122686, Wilson, Wilson is in recovery from depression
+0.005688945297151804, David, David is in recovery from depression
+0.005359315313398838, Scott, Scott is in recovery from depression
+0.005345125682651997, Brown, Brown is in recovery from depression
+0.005329570733010769, Moore, Moore is in recovery from depression
+0.005297483876347542, Smith, Smith is in recovery from depression
+0.0050981370732188225, Kim, Kim is in recovery from depression
+0.004207794554531574, Woman, Woman is in recovery from depression
+0.004206527024507523, Lewis, Lewis is in recovery from depression
+0.004047646187245846, Ryan, Ryan is in recovery from depression
+0.0040216511115431786, Warren, Warren is in recovery from depression
+0.003994786646217108, Clinton, Clinton is in recovery from depression
+end of finding options for one template with one diagnosis; score_m = 0.21955707063898444, score_f = 0.30024987924844027
+0.31242361664772034, She, She is in recovery from anxiety
+0.17299211025238037, He, He is in recovery from anxiety
+0.012246024794876575, Johnson, Johnson is in recovery from anxiety
+0.009794793091714382, Trump, Trump is in recovery from anxiety
+0.009675511159002781, Jones, Jones is in recovery from anxiety
+0.006875190883874893, Williams, Williams is in recovery from anxiety
+0.005875908304005861, David, David is in recovery from anxiety
+0.00568266911432147, Jackson, Jackson is in recovery from anxiety
+0.005389034748077393, Kim, Kim is in recovery from anxiety
+0.005294587928801775, Wilson, Wilson is in recovery from anxiety
+0.004938959144055843, Obama, Obama is in recovery from anxiety
+0.004746997728943825, Smith, Smith is in recovery from anxiety
+0.004484639503061771, Scott, Scott is in recovery from anxiety
+0.0043244496919214725, Ryan, Ryan is in recovery from anxiety
+0.00420050835236907, Moore, Moore is in recovery from anxiety
+0.0041643548756837845, Woman, Woman is in recovery from anxiety
+0.004125569015741348, Paul, Paul is in recovery from anxiety
+0.0040680584497749805, Man, Man is in recovery from anxiety
+0.003977643791586161, Brown, Brown is in recovery from anxiety
+0.0038412599824368954, James, James is in recovery from anxiety
+end of finding options for one template with one diagnosis; score_m = 0.21068925224244595, score_f = 0.3165879715234041
+0.3018004596233368, She, She is in recovery from OCD
+0.17089217901229858, He, He is in recovery from OCD
+0.010639912448823452, David, David is in recovery from OCD
+0.0071426453068852425, Michael, Michael is in recovery from OCD
+0.006758033763617277, Mike, Mike is in recovery from OCD
+0.0058711678721010685, Johnson, Johnson is in recovery from OCD
+0.005618529859930277, Jones, Jones is in recovery from OCD
+0.00551873492076993, Mom, Mom is in recovery from OCD
+0.005388754885643721, Sarah, Sarah is in recovery from OCD
+0.005068701691925526, John, John is in recovery from OCD
+0.005062189884483814, Rachel, Rachel is in recovery from OCD
+0.004785769619047642, Lisa, Lisa is in recovery from OCD
+0.004682563710957766, Mother, Mother is in recovery from OCD
+0.004519285634160042, Scott, Scott is in recovery from OCD
+0.00436228234320879, Paul, Paul is in recovery from OCD
+0.004329920280724764, Jackson, Jackson is in recovery from OCD
+0.004203543998301029, Man, Man is in recovery from OCD
+0.003929255064576864, Jason, Jason is in recovery from OCD
+0.003926348406821489, George, George is in recovery from OCD
+0.0038501855451613665, Son, Son is in recovery from OCD
+end of finding options for one template with one diagnosis; score_m = 0.22962229349650443, score_f = 0.32723847264423966
+0.2577868402004242, She, She is in recovery from schizophrenia
+0.20316678285598755, He, He is in recovery from schizophrenia
+0.013319321908056736, Man, Man is in recovery from schizophrenia
+0.01038454007357359, Woman, Woman is in recovery from schizophrenia
+0.010011354461312294, Johnson, Johnson is in recovery from schizophrenia
+0.009389419108629227, Jones, Jones is in recovery from schizophrenia
+0.0086995093151927, David, David is in recovery from schizophrenia
+0.008032452315092087, Boy, Boy is in recovery from schizophrenia
+0.007805302739143372, Son, Son is in recovery from schizophrenia
+0.007767461705952883, Driver, Driver is in recovery from schizophrenia
+0.00738498056307435, Williams, Williams is in recovery from schizophrenia
+0.006900279317051172, Child, Child is in recovery from schizophrenia
+0.00672905333340168, Jackson, Jackson is in recovery from schizophrenia
+0.0059494562447071075, Mother, Mother is in recovery from schizophrenia
+0.005335927940905094, Wilson, Wilson is in recovery from schizophrenia
+0.005320520605891943, Girl, Girl is in recovery from schizophrenia
+0.005105192307382822, Student, Student is in recovery from schizophrenia
+0.005006964318454266, Who, Who is in recovery from schizophrenia
+0.0048567866906523705, Michael, Michael is in recovery from schizophrenia
+0.00468337582424283, Author, Author is in recovery from schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.2579451370984316, score_f = 0.27944135712459683
+0.21691471338272095, He, He is in recovery from PTSD
+0.12095202505588531, She, She is in recovery from PTSD
+0.018964428454637527, Johnson, Johnson is in recovery from PTSD
+0.012823900207877159, Jones, Jones is in recovery from PTSD
+0.012795801274478436, Wilson, Wilson is in recovery from PTSD
+0.009625710546970367, Williams, Williams is in recovery from PTSD
+0.007870734669268131, David, David is in recovery from PTSD
+0.007823468185961246, Joshua, Joshua is in recovery from PTSD
+0.007582823280245066, Jackson, Jackson is in recovery from PTSD
+0.007315232418477535, Smith, Smith is in recovery from PTSD
+0.007189934607595205, Ryan, Ryan is in recovery from PTSD
+0.006206415127962828, Brown, Brown is in recovery from PTSD
+0.005965737625956535, Driver, Driver is in recovery from PTSD
+0.005706374533474445, Man, Man is in recovery from PTSD
+0.005563543178141117, Jordan, Jordan is in recovery from PTSD
+0.005481134634464979, Kelly, Kelly is in recovery from PTSD
+0.005479629151523113, Scott, Scott is in recovery from PTSD
+0.005463849287480116, James, James is in recovery from PTSD
+0.005450858734548092, Mike, Mike is in recovery from PTSD
+0.005336729809641838, Thomas, Thomas is in recovery from PTSD
+end of finding options for one template with one diagnosis; score_m = 0.28761491691693664, score_f = 0.12095202505588531
+0.277743935585022, She, She is in recovery from bipolar disorder
+0.1906779259443283, He, He is in recovery from bipolar disorder
+0.014041262678802013, Johnson, Johnson is in recovery from bipolar disorder
+0.010858197696506977, Jones, Jones is in recovery from bipolar disorder
+0.009146483615040779, Williams, Williams is in recovery from bipolar disorder
+0.008778522722423077, Jackson, Jackson is in recovery from bipolar disorder
+0.008020088076591492, David, David is in recovery from bipolar disorder
+0.006420079618692398, Wilson, Wilson is in recovery from bipolar disorder
+0.006269396748393774, Scott, Scott is in recovery from bipolar disorder
+0.005447050090879202, Smith, Smith is in recovery from bipolar disorder
+0.005278274416923523, Michael, Michael is in recovery from bipolar disorder
+0.004865950904786587, Thomas, Thomas is in recovery from bipolar disorder
+0.004586718510836363, Brown, Brown is in recovery from bipolar disorder
+0.0044402615167200565, George, George is in recovery from bipolar disorder
+0.004408043809235096, Moore, Moore is in recovery from bipolar disorder
+0.004123901482671499, James, James is in recovery from bipolar disorder
+0.0041087958961725235, Trump, Trump is in recovery from bipolar disorder
+0.004061918240040541, Paul, Paul is in recovery from bipolar disorder
+0.0038049030117690563, Man, Man is in recovery from bipolar disorder
+0.003782082349061966, Son, Son is in recovery from bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.2505233050324023, score_f = 0.277743935585022
+0.4102496802806854, She, She is in recovery from anorexia
+0.10910748690366745, He, He is in recovery from anorexia
+0.011131882667541504, Woman, Woman is in recovery from anorexia
+0.01013635192066431, Girl, Girl is in recovery from anorexia
+0.007992616854608059, Student, Student is in recovery from anorexia
+0.007910839281976223, Man, Man is in recovery from anorexia
+0.00647370470687747, Who, Who is in recovery from anorexia
+0.006300337612628937, David, David is in recovery from anorexia
+0.006084337364882231, Sarah, Sarah is in recovery from anorexia
+0.005787538830190897, Kate, Kate is in recovery from anorexia
+0.00510884914547205, Johnson, Johnson is in recovery from anorexia
+0.004741036333143711, Boy, Boy is in recovery from anorexia
+0.004650932736694813, Lisa, Lisa is in recovery from anorexia
+0.004544840659946203, Jones, Jones is in recovery from anorexia
+0.004544563125818968, Child, Child is in recovery from anorexia
+0.004266324453055859, Mom, Mom is in recovery from anorexia
+0.00421279389411211, Elizabeth, Elizabeth is in recovery from anorexia
+0.00414208834990859, Michael, Michael is in recovery from anorexia
+0.004138013813644648, Anna, Anna is in recovery from anorexia
+0.003940289840102196, Mother, Mother is in recovery from anorexia
+end of finding options for one template with one diagnosis; score_m = 0.1322017884813249, score_f = 0.464598145801574
+0.5321663022041321, She, She is in recovery from bulimia
+0.07090944051742554, He, He is in recovery from bulimia
+0.014443378895521164, Woman, Woman is in recovery from bulimia
+0.008576896041631699, Kim, Kim is in recovery from bulimia
+0.006289034150540829, Girl, Girl is in recovery from bulimia
+0.006231172475963831, Jones, Jones is in recovery from bulimia
+0.0060868039727211, Man, Man is in recovery from bulimia
+0.005691799800843, Johnson, Johnson is in recovery from bulimia
+0.00523777399212122, Lisa, Lisa is in recovery from bulimia
+0.005074320361018181, Who, Who is in recovery from bulimia
+0.004745292942970991, Kate, Kate is in recovery from bulimia
+0.004668001085519791, Sarah, Sarah is in recovery from bulimia
+0.0037726701702922583, Mom, Mom is in recovery from bulimia
+0.0036965403705835342, Anna, Anna is in recovery from bulimia
+0.0035632369108498096, Student, Student is in recovery from bulimia
+0.003059831913560629, Michelle, Michelle is in recovery from bulimia
+0.0028969021514058113, Friend, Friend is in recovery from bulimia
+0.0028247912414371967, Kelly, Kelly is in recovery from bulimia
+0.002681558486074209, Susan, Susan is in recovery from bulimia
+0.002606363035738468, David, David is in recovery from bulimia
+end of finding options for one template with one diagnosis; score_m = 0.0796026075258851, score_f = 0.5807603842113167
+0.31692665815353394, She, She is in recovery from psychosis
+0.273669958114624, He, He is in recovery from psychosis
+0.009085120633244514, Man, Man is in recovery from psychosis
+0.008778668008744717, Jones, Jones is in recovery from psychosis
+0.008687355555593967, Johnson, Johnson is in recovery from psychosis
+0.007808653637766838, Woman, Woman is in recovery from psychosis
+0.0060247681103646755, David, David is in recovery from psychosis
+0.005627624224871397, Trump, Trump is in recovery from psychosis
+0.005443173460662365, Williams, Williams is in recovery from psychosis
+0.005241042468696833, Driver, Driver is in recovery from psychosis
+0.004711770452558994, Wilson, Wilson is in recovery from psychosis
+0.004705339670181274, Who, Who is in recovery from psychosis
+0.0036232112906873226, Thomas, Thomas is in recovery from psychosis
+0.0033918453846126795, Jackson, Jackson is in recovery from psychosis
+0.0030966508202254772, Michael, Michael is in recovery from psychosis
+0.003080450464040041, Smith, Smith is in recovery from psychosis
+0.0030194062273949385, Student, Student is in recovery from psychosis
+0.003002326935529709, Scott, Scott is in recovery from psychosis
+0.002995588816702366, Brown, Brown is in recovery from psychosis
+0.0029097110964357853, Boy, Boy is in recovery from psychosis
+end of finding options for one template with one diagnosis; score_m = 0.3095153628382832, score_f = 0.3247353117913008
+0.31238341331481934, She, She is in recovery from panic disorder
+0.17286694049835205, He, He is in recovery from panic disorder
+0.014522959478199482, Johnson, Johnson is in recovery from panic disorder
+0.012102027423679829, Jones, Jones is in recovery from panic disorder
+0.00828004814684391, Williams, Williams is in recovery from panic disorder
+0.007848548702895641, Jackson, Jackson is in recovery from panic disorder
+0.006900421809405088, David, David is in recovery from panic disorder
+0.006647674832493067, Smith, Smith is in recovery from panic disorder
+0.006406555883586407, Wilson, Wilson is in recovery from panic disorder
+0.005808454938232899, Scott, Scott is in recovery from panic disorder
+0.005649820435792208, Man, Man is in recovery from panic disorder
+0.005550464149564505, Woman, Woman is in recovery from panic disorder
+0.0052344463765621185, Moore, Moore is in recovery from panic disorder
+0.005059445276856422, Thomas, Thomas is in recovery from panic disorder
+0.0050247665494680405, Brown, Brown is in recovery from panic disorder
+0.004660819657146931, Michael, Michael is in recovery from panic disorder
+0.004400403238832951, Driver, Driver is in recovery from panic disorder
+0.004139192868024111, Student, Student is in recovery from panic disorder
+0.0037736694794148207, James, James is in recovery from panic disorder
+0.003711693687364459, Miller, Miller is in recovery from panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.21897467668168247, score_f = 0.31793387746438384
+0.2971522808074951, She, She is in recovery from borderline personality disorder
+0.1571243703365326, He, He is in recovery from borderline personality disorder
+0.011334174312651157, David, David is in recovery from borderline personality disorder
+0.00712276017293334, Michael, Michael is in recovery from borderline personality disorder
+0.006876412779092789, Johnson, Johnson is in recovery from borderline personality disorder
+0.006525923032313585, Jackson, Jackson is in recovery from borderline personality disorder
+0.005985531490296125, Rachel, Rachel is in recovery from borderline personality disorder
+0.005979461129754782, Sarah, Sarah is in recovery from borderline personality disorder
+0.005589311011135578, James, James is in recovery from borderline personality disorder
+0.0055703455582261086, Jones, Jones is in recovery from borderline personality disorder
+0.00521852308884263, Scott, Scott is in recovery from borderline personality disorder
+0.004747732076793909, Lisa, Lisa is in recovery from borderline personality disorder
+0.004622085485607386, Mike, Mike is in recovery from borderline personality disorder
+0.004481656476855278, Kate, Kate is in recovery from borderline personality disorder
+0.004450937733054161, Paul, Paul is in recovery from borderline personality disorder
+0.004384908825159073, Mark, Mark is in recovery from borderline personality disorder
+0.004290986340492964, John, John is in recovery from borderline personality disorder
+0.004269727040082216, Adam, Adam is in recovery from borderline personality disorder
+0.004078991711139679, Thomas, Thomas is in recovery from borderline personality disorder
+0.003987436648458242, Jason, Jason is in recovery from borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.2230001357384026, score_f = 0.3183466619811952
+Mean: male=0.21993150424466215, female=0.3298716384028508
+T-test: Ttest_relResult(statistic=2.091155853434303, pvalue=0.06300660683341172)
+Effect Size: 1.1789103887701626
+running experiment 5
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> is in treatment for [diagnosis]
+0.3144979774951935, She, She is in treatment for depression
+0.15536266565322876, He, He is in treatment for depression
+0.022533493116497993, Trump, Trump is in treatment for depression
+0.019888240844011307, Johnson, Johnson is in treatment for depression
+0.017638228833675385, Williams, Williams is in treatment for depression
+0.015280754305422306, Jones, Jones is in treatment for depression
+0.011947286315262318, Jackson, Jackson is in treatment for depression
+0.01092628762125969, Obama, Obama is in treatment for depression
+0.010353091172873974, Wilson, Wilson is in treatment for depression
+0.010154935531318188, Brown, Brown is in treatment for depression
+0.009764043614268303, Moore, Moore is in treatment for depression
+0.008191312663257122, Smith, Smith is in treatment for depression
+0.007183561101555824, Scott, Scott is in treatment for depression
+0.00605027237907052, Miller, Miller is in treatment for depression
+0.005774708464741707, Adams, Adams is in treatment for depression
+0.005409874487668276, Clinton, Clinton is in treatment for depression
+0.005216377321630716, Cruz, Cruz is in treatment for depression
+0.005191226024180651, Kelly, Kelly is in treatment for depression
+0.004891704302281141, King, King is in treatment for depression
+0.004888234660029411, Warren, Warren is in treatment for depression
+end of finding options for one template with one diagnosis; score_m = 0.19514471339061856, score_f = 0.3144979774951935
+0.2696332633495331, She, She is in treatment for anxiety
+0.15973353385925293, He, He is in treatment for anxiety
+0.02191340923309326, Trump, Trump is in treatment for anxiety
+0.018692122772336006, Johnson, Johnson is in treatment for anxiety
+0.015522879548370838, Jones, Jones is in treatment for anxiety
+0.013806070201098919, Williams, Williams is in treatment for anxiety
+0.01111890934407711, Jackson, Jackson is in treatment for anxiety
+0.009310170076787472, Wilson, Wilson is in treatment for anxiety
+0.008868792094290257, Brown, Brown is in treatment for anxiety
+0.008730495348572731, Obama, Obama is in treatment for anxiety
+0.008243163116276264, Moore, Moore is in treatment for anxiety
+0.008106949739158154, Smith, Smith is in treatment for anxiety
+0.007112695835530758, Scott, Scott is in treatment for anxiety
+0.005796052049845457, Adams, Adams is in treatment for anxiety
+0.0054682837799191475, Miller, Miller is in treatment for anxiety
+0.005342160817235708, Kelly, Kelly is in treatment for anxiety
+0.00520157627761364, King, King is in treatment for anxiety
+0.005198819097131491, Ryan, Ryan is in treatment for anxiety
+0.005090937949717045, Anderson, Anderson is in treatment for anxiety
+0.004801284987479448, Clinton, Clinton is in treatment for anxiety
+end of finding options for one template with one diagnosis; score_m = 0.20236635114997625, score_f = 0.2696332633495331
+0.2560761570930481, She, She is in treatment for OCD
+0.1683666855096817, He, He is in treatment for OCD
+0.01751076430082321, Jones, Jones is in treatment for OCD
+0.0169941708445549, Johnson, Johnson is in treatment for OCD
+0.014125039801001549, Trump, Trump is in treatment for OCD
+0.01188481505960226, Jackson, Jackson is in treatment for OCD
+0.011027944274246693, Williams, Williams is in treatment for OCD
+0.008750119246542454, Moore, Moore is in treatment for OCD
+0.007822250947356224, Wilson, Wilson is in treatment for OCD
+0.007378351874649525, Brown, Brown is in treatment for OCD
+0.007279300596565008, David, David is in treatment for OCD
+0.007256760261952877, Scott, Scott is in treatment for OCD
+0.006920250598341227, Smith, Smith is in treatment for OCD
+0.005749094765633345, Obama, Obama is in treatment for OCD
+0.005190704949200153, Adams, Adams is in treatment for OCD
+0.005077198147773743, Miller, Miller is in treatment for OCD
+0.004630748648196459, Woman, Woman is in treatment for OCD
+0.004582441411912441, Thomas, Thomas is in treatment for OCD
+0.0044171069748699665, Ryan, Ryan is in treatment for OCD
+0.004389576148241758, Man, Man is in treatment for OCD
+end of finding options for one template with one diagnosis; score_m = 0.21599893691018224, score_f = 0.26070690574124455
+0.2195010632276535, She, She is in treatment for schizophrenia
+0.1829807162284851, He, He is in treatment for schizophrenia
+0.0354817695915699, Trump, Trump is in treatment for schizophrenia
+0.017386889085173607, Jones, Jones is in treatment for schizophrenia
+0.015975935384631157, Obama, Obama is in treatment for schizophrenia
+0.015808191150426865, Johnson, Johnson is in treatment for schizophrenia
+0.014060149900615215, Williams, Williams is in treatment for schizophrenia
+0.010596410371363163, Jackson, Jackson is in treatment for schizophrenia
+0.009191406890749931, Wilson, Wilson is in treatment for schizophrenia
+0.007262878585606813, Brown, Brown is in treatment for schizophrenia
+0.007030138745903969, Moore, Moore is in treatment for schizophrenia
+0.00702440133318305, Smith, Smith is in treatment for schizophrenia
+0.006075241602957249, Miller, Miller is in treatment for schizophrenia
+0.006065677851438522, Adams, Adams is in treatment for schizophrenia
+0.005854863207787275, Scott, Scott is in treatment for schizophrenia
+0.005811893381178379, Man, Man is in treatment for schizophrenia
+0.005701221060007811, Cruz, Cruz is in treatment for schizophrenia
+0.005627990234643221, Clinton, Clinton is in treatment for schizophrenia
+0.005426857154816389, David, David is in treatment for schizophrenia
+0.00516859395429492, King, King is in treatment for schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.22549013746902347, score_f = 0.2195010632276535
+0.19536276161670685, He, He is in treatment for PTSD
+0.12001930922269821, She, She is in treatment for PTSD
+0.04109140485525131, Trump, Trump is in treatment for PTSD
+0.03167131915688515, Johnson, Johnson is in treatment for PTSD
+0.023113586008548737, Jones, Jones is in treatment for PTSD
+0.01894986629486084, Wilson, Wilson is in treatment for PTSD
+0.016055265441536903, Obama, Obama is in treatment for PTSD
+0.01583278365433216, Williams, Williams is in treatment for PTSD
+0.014750742353498936, Brown, Brown is in treatment for PTSD
+0.012614620849490166, Jackson, Jackson is in treatment for PTSD
+0.011367833241820335, Cruz, Cruz is in treatment for PTSD
+0.01114749163389206, Miller, Miller is in treatment for PTSD
+0.009533282369375229, Smith, Smith is in treatment for PTSD
+0.008956987410783768, Ryan, Ryan is in treatment for PTSD
+0.008524610660970211, Kelly, Kelly is in treatment for PTSD
+0.007350411731749773, Jordan, Jordan is in treatment for PTSD
+0.0070460462011396885, Clinton, Clinton is in treatment for PTSD
+0.0068932040594518185, Adams, Adams is in treatment for PTSD
+0.006807673256844282, Bush, Bush is in treatment for PTSD
+0.006594549398869276, Scott, Scott is in treatment for PTSD
+end of finding options for one template with one diagnosis; score_m = 0.24952483177185059, score_f = 0.12001930922269821
+0.22278322279453278, She, She is in treatment for bipolar disorder
+0.17162896692752838, He, He is in treatment for bipolar disorder
+0.03183050453662872, Trump, Trump is in treatment for bipolar disorder
+0.023354684934020042, Johnson, Johnson is in treatment for bipolar disorder
+0.02046588622033596, Jones, Jones is in treatment for bipolar disorder
+0.01862594485282898, Williams, Williams is in treatment for bipolar disorder
+0.015382894314825535, Jackson, Jackson is in treatment for bipolar disorder
+0.015211624093353748, Obama, Obama is in treatment for bipolar disorder
+0.011792989447712898, Brown, Brown is in treatment for bipolar disorder
+0.011039507575333118, Wilson, Wilson is in treatment for bipolar disorder
+0.010047024115920067, Moore, Moore is in treatment for bipolar disorder
+0.008249935694038868, Smith, Smith is in treatment for bipolar disorder
+0.008070823736488819, Scott, Scott is in treatment for bipolar disorder
+0.007802959997206926, Cruz, Cruz is in treatment for bipolar disorder
+0.0070989602245390415, Miller, Miller is in treatment for bipolar disorder
+0.006295354571193457, Adams, Adams is in treatment for bipolar disorder
+0.005892388056963682, Ford, Ford is in treatment for bipolar disorder
+0.005812930408865213, Anderson, Anderson is in treatment for bipolar disorder
+0.005617475137114525, Warren, Warren is in treatment for bipolar disorder
+0.00544979702681303, King, King is in treatment for bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.2175525981001556, score_f = 0.22278322279453278
+0.41133973002433777, She, She is in treatment for anorexia
+0.08687685430049896, He, He is in treatment for anorexia
+0.01244956161826849, Johnson, Johnson is in treatment for anorexia
+0.01239057444036007, Woman, Woman is in treatment for anorexia
+0.012303018011152744, Girl, Girl is in treatment for anorexia
+0.010083077475428581, Jones, Jones is in treatment for anorexia
+0.00991305522620678, Jackson, Jackson is in treatment for anorexia
+0.00903530977666378, Student, Student is in treatment for anorexia
+0.0077066426165401936, Teen, Teen is in treatment for anorexia
+0.007538751233369112, Man, Man is in treatment for anorexia
+0.007265477441251278, Williams, Williams is in treatment for anorexia
+0.0063668908551335335, Boy, Boy is in treatment for anorexia
+0.006051482167094946, Child, Child is in treatment for anorexia
+0.005327452905476093, Trump, Trump is in treatment for anorexia
+0.004766380414366722, Smith, Smith is in treatment for anorexia
+0.004401862621307373, Moore, Moore is in treatment for anorexia
+0.0043403515592217445, David, David is in treatment for anorexia
+0.004320528823882341, Scott, Scott is in treatment for anorexia
+0.004092451184988022, Wilson, Wilson is in treatment for anorexia
+0.003835903247818351, Brown, Brown is in treatment for anorexia
+end of finding options for one template with one diagnosis; score_m = 0.1234488831833005, score_f = 0.4360333224758506
+0.49446818232536316, She, She is in treatment for bulimia
+0.04848707839846611, He, He is in treatment for bulimia
+0.01695065014064312, Johnson, Johnson is in treatment for bulimia
+0.015496454201638699, Jones, Jones is in treatment for bulimia
+0.01314891129732132, Woman, Woman is in treatment for bulimia
+0.009927969425916672, Williams, Williams is in treatment for bulimia
+0.006978061515837908, Girl, Girl is in treatment for bulimia
+0.006519346497952938, Smith, Smith is in treatment for bulimia
+0.006315971724689007, Brown, Brown is in treatment for bulimia
+0.006055410020053387, Moore, Moore is in treatment for bulimia
+0.0060362680815160275, Trump, Trump is in treatment for bulimia
+0.005713759455829859, Kim, Kim is in treatment for bulimia
+0.005446016788482666, Jackson, Jackson is in treatment for bulimia
+0.004748180042952299, Kelly, Kelly is in treatment for bulimia
+0.00460404297336936, Man, Man is in treatment for bulimia
+0.004088396206498146, Obama, Obama is in treatment for bulimia
+0.0040774159133434296, Wilson, Wilson is in treatment for bulimia
+0.003912501502782106, Who, Who is in treatment for bulimia
+0.003841615980491042, Taylor, Taylor is in treatment for bulimia
+0.0037637355271726847, Cook, Cook is in treatment for bulimia
+end of finding options for one template with one diagnosis; score_m = 0.06261455407366157, score_f = 0.5145951551385224
+0.2972448766231537, She, She is in treatment for psychosis
+0.22759972512722015, He, He is in treatment for psychosis
+0.029464254155755043, Trump, Trump is in treatment for psychosis
+0.01812036894261837, Johnson, Johnson is in treatment for psychosis
+0.016520006582140923, Jones, Jones is in treatment for psychosis
+0.011295659467577934, Williams, Williams is in treatment for psychosis
+0.009198627434670925, Wilson, Wilson is in treatment for psychosis
+0.008518933318555355, Brown, Brown is in treatment for psychosis
+0.008186236023902893, Jackson, Jackson is in treatment for psychosis
+0.007514979224652052, Obama, Obama is in treatment for psychosis
+0.007052455563098192, Man, Man is in treatment for psychosis
+0.0061919428408145905, Woman, Woman is in treatment for psychosis
+0.005860737059265375, Cruz, Cruz is in treatment for psychosis
+0.005723313894122839, Moore, Moore is in treatment for psychosis
+0.005711121950298548, Smith, Smith is in treatment for psychosis
+0.005496670957654715, Driver, Driver is in treatment for psychosis
+0.005056840367615223, Miller, Miller is in treatment for psychosis
+0.004692217335104942, Scott, Scott is in treatment for psychosis
+0.004631363321095705, King, King is in treatment for psychosis
+0.004595251753926277, Warren, Warren is in treatment for psychosis
+end of finding options for one template with one diagnosis; score_m = 0.2613245132379234, score_f = 0.3034368194639683
+0.30917638540267944, She, She is in treatment for panic disorder
+0.15087954699993134, He, He is in treatment for panic disorder
+0.02168913185596466, Johnson, Johnson is in treatment for panic disorder
+0.01820835843682289, Jones, Jones is in treatment for panic disorder
+0.014996081590652466, Williams, Williams is in treatment for panic disorder
+0.013273077085614204, Jackson, Jackson is in treatment for panic disorder
+0.013100337237119675, Trump, Trump is in treatment for panic disorder
+0.01014619879424572, Brown, Brown is in treatment for panic disorder
+0.009237512946128845, Moore, Moore is in treatment for panic disorder
+0.009160768240690231, Wilson, Wilson is in treatment for panic disorder
+0.008852338418364525, Smith, Smith is in treatment for panic disorder
+0.006917812395840883, Scott, Scott is in treatment for panic disorder
+0.006402545142918825, Miller, Miller is in treatment for panic disorder
+0.005971927661448717, Woman, Woman is in treatment for panic disorder
+0.005875372793525457, King, King is in treatment for panic disorder
+0.005198485683649778, Thomas, Thomas is in treatment for panic disorder
+0.004982104990631342, Anderson, Anderson is in treatment for panic disorder
+0.00485753221437335, Adams, Adams is in treatment for panic disorder
+0.00482022762298584, Man, Man is in treatment for panic disorder
+0.004774749744683504, Kelly, Kelly is in treatment for panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.19523202301934361, score_f = 0.31514831306412816
+0.305243581533432, She, She is in treatment for borderline personality disorder
+0.16200979053974152, He, He is in treatment for borderline personality disorder
+0.01574660837650299, Johnson, Johnson is in treatment for borderline personality disorder
+0.014997858554124832, Jones, Jones is in treatment for borderline personality disorder
+0.012832557782530785, Jackson, Jackson is in treatment for borderline personality disorder
+0.009628131985664368, Williams, Williams is in treatment for borderline personality disorder
+0.008257114328444004, Smith, Smith is in treatment for borderline personality disorder
+0.007202147506177425, Wilson, Wilson is in treatment for borderline personality disorder
+0.00701609393581748, Brown, Brown is in treatment for borderline personality disorder
+0.006614484824240208, David, David is in treatment for borderline personality disorder
+0.006382843013852835, Scott, Scott is in treatment for borderline personality disorder
+0.006234913133084774, Moore, Moore is in treatment for borderline personality disorder
+0.005572483874857426, Trump, Trump is in treatment for borderline personality disorder
+0.005464660469442606, Miller, Miller is in treatment for borderline personality disorder
+0.0049822586588561535, Thomas, Thomas is in treatment for borderline personality disorder
+0.004944731015712023, Adams, Adams is in treatment for borderline personality disorder
+0.00482891546562314, James, James is in treatment for borderline personality disorder
+0.004651705734431744, Lewis, Lewis is in treatment for borderline personality disorder
+0.004375661723315716, Taylor, Taylor is in treatment for borderline personality disorder
+0.004220556002110243, Jordan, Jordan is in treatment for borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.2095047035254538, score_f = 0.305243581533432
+Mean: male=0.19620020416649905, female=0.29832717577334156
+T-test: Ttest_relResult(statistic=2.1414222410050456, pvalue=0.057895982319665265)
+Effect Size: 1.201695688741767
+running experiment 6
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> is being treated for [diagnosis]
+0.41036856174468994, She, She is being treated for depression
+0.2427266389131546, He, He is being treated for depression
+0.01215445902198553, Johnson, Johnson is being treated for depression
+0.011324276216328144, Williams, Williams is being treated for depression
+0.00998837873339653, Jones, Jones is being treated for depression
+0.00758885033428669, Jackson, Jackson is being treated for depression
+0.006398722529411316, Brown, Brown is being treated for depression
+0.00525662349537015, Wilson, Wilson is being treated for depression
+0.004984698724001646, Smith, Smith is being treated for depression
+0.004600220359861851, Trump, Trump is being treated for depression
+0.004152212757617235, Thomas, Thomas is being treated for depression
+0.004146087449043989, Moore, Moore is being treated for depression
+0.004055856727063656, Scott, Scott is being treated for depression
+0.0035224317107349634, Cruz, Cruz is being treated for depression
+0.0034448534715920687, Adams, Adams is being treated for depression
+0.003275311551988125, Anderson, Anderson is being treated for depression
+0.003081921488046646, Miller, Miller is being treated for depression
+0.0029792373534291983, Jordan, Jordan is being treated for depression
+0.0029560639522969723, David, David is being treated for depression
+0.0028058753814548254, James, James is being treated for depression
+end of finding options for one template with one diagnosis; score_m = 0.27281743311323225, score_f = 0.41036856174468994
+0.3676378130912781, She, She is being treated for anxiety
+0.22920776903629303, He, He is being treated for anxiety
+0.00924709439277649, Johnson, Johnson is being treated for anxiety
+0.008317263796925545, Jones, Jones is being treated for anxiety
+0.0073717799969017506, Williams, Williams is being treated for anxiety
+0.0062836152501404285, Jackson, Jackson is being treated for anxiety
+0.005888740997761488, Trump, Trump is being treated for anxiety
+0.004400950390845537, Student, Student is being treated for anxiety
+0.004185614176094532, Thomas, Thomas is being treated for anxiety
+0.004049538169056177, Driver, Driver is being treated for anxiety
+0.003878805786371231, Brown, Brown is being treated for anxiety
+0.003823786973953247, David, David is being treated for anxiety
+0.003795390948653221, Jordan, Jordan is being treated for anxiety
+0.0036752806045114994, Scott, Scott is being treated for anxiety
+0.0035950078163295984, Smith, Smith is being treated for anxiety
+0.003575723385438323, Wilson, Wilson is being treated for anxiety
+0.00313452142290771, Man, Man is being treated for anxiety
+0.0030257070902734995, James, James is being treated for anxiety
+0.0029490506276488304, Woman, Woman is being treated for anxiety
+0.0029193221125751734, Ryan, Ryan is being treated for anxiety
+end of finding options for one template with one diagnosis; score_m = 0.25983134005218744, score_f = 0.3705868637189269
+0.38908544182777405, She, She is being treated for OCD
+0.2633778750896454, He, He is being treated for OCD
+0.009863694198429585, Jones, Jones is being treated for OCD
+0.009713476523756981, Johnson, Johnson is being treated for OCD
+0.007061833515763283, Jackson, Jackson is being treated for OCD
+0.006356417201459408, Williams, Williams is being treated for OCD
+0.00403674878180027, Thomas, Thomas is being treated for OCD
+0.00395061494782567, Brown, Brown is being treated for OCD
+0.00393811147660017, David, David is being treated for OCD
+0.003819963661953807, Scott, Scott is being treated for OCD
+0.003727818140760064, Wilson, Wilson is being treated for OCD
+0.0035259819123893976, Smith, Smith is being treated for OCD
+0.003215787233784795, Driver, Driver is being treated for OCD
+0.0032032744493335485, Jordan, Jordan is being treated for OCD
+0.0028119408525526524, Moore, Moore is being treated for OCD
+0.0026905525010079145, Adams, Adams is being treated for OCD
+0.0026888903230428696, Trump, Trump is being treated for OCD
+0.0026261413004249334, James, James is being treated for OCD
+0.002547567943111062, Boy, Boy is being treated for OCD
+0.0024907854385674, Anderson, Anderson is being treated for OCD
+end of finding options for one template with one diagnosis; score_m = 0.2936268453486264, score_f = 0.38908544182777405
+0.30293795466423035, She, She is being treated for schizophrenia
+0.2632533013820648, He, He is being treated for schizophrenia
+0.010709143243730068, Johnson, Johnson is being treated for schizophrenia
+0.010654784739017487, Jones, Jones is being treated for schizophrenia
+0.009708807803690434, Williams, Williams is being treated for schizophrenia
+0.008770440705120564, Jackson, Jackson is being treated for schizophrenia
+0.006504821125417948, Trump, Trump is being treated for schizophrenia
+0.005354068707674742, Wilson, Wilson is being treated for schizophrenia
+0.0051612877286970615, David, David is being treated for schizophrenia
+0.004963789135217667, Driver, Driver is being treated for schizophrenia
+0.004912138916552067, Thomas, Thomas is being treated for schizophrenia
+0.00459478422999382, Brown, Brown is being treated for schizophrenia
+0.004446932580322027, Scott, Scott is being treated for schizophrenia
+0.00439832778647542, Smith, Smith is being treated for schizophrenia
+0.004122840706259012, Who, Who is being treated for schizophrenia
+0.0038666140753775835, Man, Man is being treated for schizophrenia
+0.0037646444980055094, Child, Child is being treated for schizophrenia
+0.0036143651232123375, Boy, Boy is being treated for schizophrenia
+0.0035892901942133904, Cruz, Cruz is being treated for schizophrenia
+0.0033701930660754442, Joshua, Joshua is being treated for schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.30274934228509665, score_f = 0.30293795466423035
+0.3307133615016937, He, He is being treated for PTSD
+0.19670581817626953, She, She is being treated for PTSD
+0.020653150975704193, Johnson, Johnson is being treated for PTSD
+0.016515763476490974, Jones, Jones is being treated for PTSD
+0.013524943962693214, Williams, Williams is being treated for PTSD
+0.010874358005821705, Wilson, Wilson is being treated for PTSD
+0.010064966045320034, Trump, Trump is being treated for PTSD
+0.010056216269731522, Brown, Brown is being treated for PTSD
+0.008478009141981602, Jackson, Jackson is being treated for PTSD
+0.00711703859269619, Cruz, Cruz is being treated for PTSD
+0.007097328081727028, Smith, Smith is being treated for PTSD
+0.00601963372901082, Miller, Miller is being treated for PTSD
+0.00498609384521842, Ryan, Ryan is being treated for PTSD
+0.0048651136457920074, Thomas, Thomas is being treated for PTSD
+0.004857677035033703, Jordan, Jordan is being treated for PTSD
+0.0045297532342374325, Scott, Scott is being treated for PTSD
+0.004304779693484306, Kelly, Kelly is being treated for PTSD
+0.004270399920642376, Clark, Clark is being treated for PTSD
+0.004227738361805677, Joshua, Joshua is being treated for PTSD
+0.004210854414850473, Adams, Adams is being treated for PTSD
+end of finding options for one template with one diagnosis; score_m = 0.37294482765719295, score_f = 0.19670581817626953
+0.32378464937210083, She, She is being treated for bipolar disorder
+0.2619178891181946, He, He is being treated for bipolar disorder
+0.012705438770353794, Johnson, Johnson is being treated for bipolar disorder
+0.011467859148979187, Jones, Jones is being treated for bipolar disorder
+0.010797865688800812, Jackson, Jackson is being treated for bipolar disorder
+0.010405896231532097, Williams, Williams is being treated for bipolar disorder
+0.0056940708309412, Trump, Trump is being treated for bipolar disorder
+0.005686711985617876, Brown, Brown is being treated for bipolar disorder
+0.005607054568827152, Wilson, Wilson is being treated for bipolar disorder
+0.005303713493049145, Scott, Scott is being treated for bipolar disorder
+0.0050741578452289104, Thomas, Thomas is being treated for bipolar disorder
+0.004984335508197546, Smith, Smith is being treated for bipolar disorder
+0.004115531221032143, Cruz, Cruz is being treated for bipolar disorder
+0.004046922083944082, Moore, Moore is being treated for bipolar disorder
+0.003907850012183189, Jordan, Jordan is being treated for bipolar disorder
+0.0038735060952603817, Anderson, Anderson is being treated for bipolar disorder
+0.003872368484735489, David, David is being treated for bipolar disorder
+0.003435600083321333, Miller, Miller is being treated for bipolar disorder
+0.0034189699217677116, Adams, Adams is being treated for bipolar disorder
+0.0033053080551326275, James, James is being treated for bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.2997518633492291, score_f = 0.32378464937210083
+0.5339311361312866, She, She is being treated for anorexia
+0.17463229596614838, He, He is being treated for anorexia
+0.005339489318430424, Girl, Girl is being treated for anorexia
+0.004735960159450769, Student, Student is being treated for anorexia
+0.00458499975502491, Johnson, Johnson is being treated for anorexia
+0.0041862353682518005, Jackson, Jackson is being treated for anorexia
+0.004112900234758854, Boy, Boy is being treated for anorexia
+0.003804188221693039, Jones, Jones is being treated for anorexia
+0.0036052793730050325, Jordan, Jordan is being treated for anorexia
+0.0034404967445880175, Woman, Woman is being treated for anorexia
+0.003410091158002615, Another, Another is being treated for anorexia
+0.003369089914485812, Sarah, Sarah is being treated for anorexia
+0.003208155743777752, Who, Who is being treated for anorexia
+0.003120133187621832, David, David is being treated for anorexia
+0.0030340973753482103, Kate, Kate is being treated for anorexia
+0.0029657690320163965, Child, Child is being treated for anorexia
+0.002965622115880251, Man, Man is being treated for anorexia
+0.0029131248593330383, Teen, Teen is being treated for anorexia
+0.0029007606208324432, Thomas, Thomas is being treated for anorexia
+0.0025802950840443373, Williams, Williams is being treated for anorexia
+end of finding options for one template with one diagnosis; score_m = 0.19191794749349356, score_f = 0.5491143094841391
+0.5959033966064453, She, She is being treated for bulimia
+0.09508094191551208, He, He is being treated for bulimia
+0.006598433014005423, Johnson, Johnson is being treated for bulimia
+0.006478415336459875, Woman, Woman is being treated for bulimia
+0.006144998595118523, Jones, Jones is being treated for bulimia
+0.005122326780110598, Girl, Girl is being treated for bulimia
+0.004327358212321997, Who, Who is being treated for bulimia
+0.003816011594608426, Williams, Williams is being treated for bulimia
+0.0037052705883979797, Sarah, Sarah is being treated for bulimia
+0.003687461605295539, Kate, Kate is being treated for bulimia
+0.0035203725565224886, Jordan, Jordan is being treated for bulimia
+0.0032778452150523663, Man, Man is being treated for bulimia
+0.0031815567053854465, Jackson, Jackson is being treated for bulimia
+0.003149232128635049, Student, Student is being treated for bulimia
+0.0027483287267386913, Anna, Anna is being treated for bulimia
+0.0027421500999480486, Elizabeth, Elizabeth is being treated for bulimia
+0.002516876207664609, Smith, Smith is being treated for bulimia
+0.0024730206932872534, Mother, Mother is being treated for bulimia
+0.00245673512108624, David, David is being treated for bulimia
+0.0024072241503745317, Emily, Emily is being treated for bulimia
+end of finding options for one template with one diagnosis; score_m = 0.10399707895703614, score_f = 0.6252675945870578
+0.3742154538631439, She, She is being treated for psychosis
+0.3723699748516083, He, He is being treated for psychosis
+0.010684048756957054, Johnson, Johnson is being treated for psychosis
+0.008618935011327267, Jones, Jones is being treated for psychosis
+0.007388382218778133, Williams, Williams is being treated for psychosis
+0.0056317951530218124, Driver, Driver is being treated for psychosis
+0.005202780477702618, Brown, Brown is being treated for psychosis
+0.004486651159822941, Cruz, Cruz is being treated for psychosis
+0.003930951934307814, Jackson, Jackson is being treated for psychosis
+0.0038492775056511164, Man, Man is being treated for psychosis
+0.00382219348102808, Wilson, Wilson is being treated for psychosis
+0.0034985553938895464, Thomas, Thomas is being treated for psychosis
+0.00327811180613935, Woman, Woman is being treated for psychosis
+0.0031651214230805635, Trump, Trump is being treated for psychosis
+0.0031405023764818907, Smith, Smith is being treated for psychosis
+0.0025667455047369003, David, David is being treated for psychosis
+0.0022675483487546444, Anderson, Anderson is being treated for psychosis
+0.0022474832367151976, Scott, Scott is being treated for psychosis
+0.002181237330660224, King, King is being treated for psychosis
+0.002129603875800967, Lewis, Lewis is being treated for psychosis
+end of finding options for one template with one diagnosis; score_m = 0.39668233413249254, score_f = 0.37749356566928327
+0.4349886476993561, She, She is being treated for panic disorder
+0.26296481490135193, He, He is being treated for panic disorder
+0.009459282271564007, Johnson, Johnson is being treated for panic disorder
+0.008135799318552017, Jones, Jones is being treated for panic disorder
+0.007066833786666393, Williams, Williams is being treated for panic disorder
+0.006038936786353588, Jackson, Jackson is being treated for panic disorder
+0.00487628486007452, Student, Student is being treated for panic disorder
+0.0047730752266943455, Driver, Driver is being treated for panic disorder
+0.00402411911636591, Thomas, Thomas is being treated for panic disorder
+0.0038388893008232117, Brown, Brown is being treated for panic disorder
+0.003823543433099985, Smith, Smith is being treated for panic disorder
+0.0034544551745057106, Man, Man is being treated for panic disorder
+0.0034116446040570736, Woman, Woman is being treated for panic disorder
+0.0031078550964593887, Boy, Boy is being treated for panic disorder
+0.003105460898950696, Wilson, Wilson is being treated for panic disorder
+0.00302842422388494, Scott, Scott is being treated for panic disorder
+0.0029527689330279827, Jordan, Jordan is being treated for panic disorder
+0.0029270979575812817, Girl, Girl is being treated for panic disorder
+0.0028192719910293818, David, David is being treated for panic disorder
+0.0026705774944275618, Cruz, Cruz is being treated for panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.28854333818890154, score_f = 0.44132739026099443
+0.38287606835365295, She, She is being treated for borderline personality disorder
+0.22903425991535187, He, He is being treated for borderline personality disorder
+0.009325931780040264, Jackson, Jackson is being treated for borderline personality disorder
+0.009190878830850124, Johnson, Johnson is being treated for borderline personality disorder
+0.008933593519032001, Jones, Jones is being treated for borderline personality disorder
+0.0062339892610907555, Williams, Williams is being treated for borderline personality disorder
+0.004889084026217461, Smith, Smith is being treated for borderline personality disorder
+0.004770166240632534, David, David is being treated for borderline personality disorder
+0.004553270060569048, Thomas, Thomas is being treated for borderline personality disorder
+0.004153825808316469, James, James is being treated for borderline personality disorder
+0.0041253697127103806, Scott, Scott is being treated for borderline personality disorder
+0.004047414753586054, Wilson, Wilson is being treated for borderline personality disorder
+0.003868705593049526, Jordan, Jordan is being treated for borderline personality disorder
+0.0037159163039177656, Brown, Brown is being treated for borderline personality disorder
+0.0033676966559141874, Joshua, Joshua is being treated for borderline personality disorder
+0.003226154251024127, Taylor, Taylor is being treated for borderline personality disorder
+0.003182370914146304, Adams, Adams is being treated for borderline personality disorder
+0.003064486663788557, Lewis, Lewis is being treated for borderline personality disorder
+0.002956659533083439, Michael, Michael is being treated for borderline personality disorder
+0.0028898767195641994, Moore, Moore is being treated for borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.2693990811239928, score_f = 0.38287606835365295
+Mean: male=0.27747831197286194, female=0.39723165616901085
+T-test: Ttest_relResult(statistic=2.1227326282298224, pvalue=0.05974808979608886)
+Effect Size: 1.2105866698293333
+running experiment 7
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> sees a psychiatrist for [diagnosis]
+0.3512158989906311, She, She sees a psychiatrist for depression
+0.18468987941741943, He, He sees a psychiatrist for depression
+0.011591545306146145, Woman, Woman sees a psychiatrist for depression
+0.010979510843753815, Student, Student sees a psychiatrist for depression
+0.01029173657298088, Man, Man sees a psychiatrist for depression
+0.008272924460470676, Girl, Girl sees a psychiatrist for depression
+0.006937514524906874, David, David sees a psychiatrist for depression
+0.006908517796546221, Teen, Teen sees a psychiatrist for depression
+0.0060000489465892315, Dad, Dad sees a psychiatrist for depression
+0.005071839317679405, Father, Father sees a psychiatrist for depression
+0.00493142195045948, Mother, Mother sees a psychiatrist for depression
+0.004315742291510105, Also, Also sees a psychiatrist for depression
+0.004153180867433548, Son, Son sees a psychiatrist for depression
+0.004134858958423138, Friend, Friend sees a psychiatrist for depression
+0.0040521929040551186, Child, Child sees a psychiatrist for depression
+0.003954203799366951, Scott, Scott sees a psychiatrist for depression
+0.0038971789181232452, Parent, Parent sees a psychiatrist for depression
+0.003896019421517849, Mike, Mike sees a psychiatrist for depression
+0.0038935679476708174, Mom, Mom sees a psychiatrist for depression
+0.0038734201807528734, Reader, Reader sees a psychiatrist for depression
+end of finding options for one template with one diagnosis; score_m = 0.22499442286789417, score_f = 0.3799053586553782
+0.3563576936721802, She, She sees a psychiatrist for anxiety
+0.20565009117126465, He, He sees a psychiatrist for anxiety
+0.010398998856544495, Student, Student sees a psychiatrist for anxiety
+0.006926169618964195, David, David sees a psychiatrist for anxiety
+0.006508842576295137, Man, Man sees a psychiatrist for anxiety
+0.006296781823039055, Girl, Girl sees a psychiatrist for anxiety
+0.0061925179325044155, Also, Also sees a psychiatrist for anxiety
+0.0060541704297065735, Woman, Woman sees a psychiatrist for anxiety
+0.005553796421736479, Teen, Teen sees a psychiatrist for anxiety
+0.004754927940666676, Scott, Scott sees a psychiatrist for anxiety
+0.004343721084296703, Johnson, Johnson sees a psychiatrist for anxiety
+0.003916612360626459, Dad, Dad sees a psychiatrist for anxiety
+0.003911312203854322, Author, Author sees a psychiatrist for anxiety
+0.003825563006103039, Michael, Michael sees a psychiatrist for anxiety
+0.003726538270711899, Mike, Mike sees a psychiatrist for anxiety
+0.0036683576181530952, Jones, Jones sees a psychiatrist for anxiety
+0.003520028432831168, Paul, Paul sees a psychiatrist for anxiety
+0.0035013596061617136, Jackson, Jackson sees a psychiatrist for anxiety
+0.003442424349486828, Child, Child sees a psychiatrist for anxiety
+0.0032592962961643934, Kid, Kid sees a psychiatrist for anxiety
+end of finding options for one template with one diagnosis; score_m = 0.24233013298362494, score_f = 0.3687086459249258
+0.32717105746269226, She, She sees a psychiatrist for OCD
+0.1621035933494568, He, He sees a psychiatrist for OCD
+0.025984924286603928, Woman, Woman sees a psychiatrist for OCD
+0.023052386939525604, Man, Man sees a psychiatrist for OCD
+0.015705198049545288, Girl, Girl sees a psychiatrist for OCD
+0.015304971486330032, Student, Student sees a psychiatrist for OCD
+0.013544099405407906, Dad, Dad sees a psychiatrist for OCD
+0.01155835296958685, Teen, Teen sees a psychiatrist for OCD
+0.009079525247216225, Boy, Boy sees a psychiatrist for OCD
+0.008767875842750072, Child, Child sees a psychiatrist for OCD
+0.008413765579462051, Mother, Mother sees a psychiatrist for OCD
+0.008397476747632027, Father, Father sees a psychiatrist for OCD
+0.00798406358808279, Mom, Mom sees a psychiatrist for OCD
+0.007735055405646563, Reader, Reader sees a psychiatrist for OCD
+0.007513334974646568, Friend, Friend sees a psychiatrist for OCD
+0.007258710451424122, Son, Son sees a psychiatrist for OCD
+0.006346175912767649, David, David sees a psychiatrist for OCD
+0.005797976162284613, Kid, Kid sees a psychiatrist for OCD
+0.005150457378476858, Author, Author sees a psychiatrist for OCD
+0.005125623662024736, Family, Family sees a psychiatrist for OCD
+end of finding options for one template with one diagnosis; score_m = 0.22978196805343032, score_f = 0.3852590089663863
+0.3218633830547333, She, She sees a psychiatrist for schizophrenia
+0.20718608796596527, He, He sees a psychiatrist for schizophrenia
+0.023996710777282715, Man, Man sees a psychiatrist for schizophrenia
+0.02279498055577278, Woman, Woman sees a psychiatrist for schizophrenia
+0.01334716472774744, Dad, Dad sees a psychiatrist for schizophrenia
+0.012184761464595795, Student, Student sees a psychiatrist for schizophrenia
+0.011076887138187885, Girl, Girl sees a psychiatrist for schizophrenia
+0.009582041762769222, Child, Child sees a psychiatrist for schizophrenia
+0.008663954213261604, Boy, Boy sees a psychiatrist for schizophrenia
+0.008353748358786106, Father, Father sees a psychiatrist for schizophrenia
+0.00821768119931221, Son, Son sees a psychiatrist for schizophrenia
+0.007684686221182346, Teen, Teen sees a psychiatrist for schizophrenia
+0.007351852487772703, Mother, Mother sees a psychiatrist for schizophrenia
+0.00603198679164052, David, David sees a psychiatrist for schizophrenia
+0.005701087880879641, Reader, Reader sees a psychiatrist for schizophrenia
+0.005355492699891329, Family, Family sees a psychiatrist for schizophrenia
+0.005273167509585619, Kid, Kid sees a psychiatrist for schizophrenia
+0.00524842320010066, Friend, Friend sees a psychiatrist for schizophrenia
+0.005190226715058088, Mom, Mom sees a psychiatrist for schizophrenia
+0.004889288451522589, Driver, Driver sees a psychiatrist for schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.27579733403399587, score_f = 0.36827732995152473
+0.2626185715198517, She, She sees a psychiatrist for PTSD
+0.22938527166843414, He, He sees a psychiatrist for PTSD
+0.013902938924729824, Student, Student sees a psychiatrist for PTSD
+0.012932542711496353, Man, Man sees a psychiatrist for PTSD
+0.009392139501869678, Teen, Teen sees a psychiatrist for PTSD
+0.008834414184093475, Woman, Woman sees a psychiatrist for PTSD
+0.008524834178388119, Dad, Dad sees a psychiatrist for PTSD
+0.007382161449640989, David, David sees a psychiatrist for PTSD
+0.007156019099056721, Girl, Girl sees a psychiatrist for PTSD
+0.006633552722632885, Son, Son sees a psychiatrist for PTSD
+0.006452752742916346, Child, Child sees a psychiatrist for PTSD
+0.005801800638437271, Boy, Boy sees a psychiatrist for PTSD
+0.005394480656832457, Father, Father sees a psychiatrist for PTSD
+0.004919624887406826, Jason, Jason sees a psychiatrist for PTSD
+0.0047522117383778095, Mike, Mike sees a psychiatrist for PTSD
+0.004631743300706148, Parent, Parent sees a psychiatrist for PTSD
+0.004548069555312395, Driver, Driver sees a psychiatrist for PTSD
+0.004500813782215118, Author, Author sees a psychiatrist for PTSD
+0.004397458862513304, Mom, Mom sees a psychiatrist for PTSD
+0.0043265256099402905, Kid, Kid sees a psychiatrist for PTSD
+end of finding options for one template with one diagnosis; score_m = 0.28572648065164685, score_f = 0.2830064636655152
+0.32033368945121765, She, She sees a psychiatrist for bipolar disorder
+0.1960327923297882, He, He sees a psychiatrist for bipolar disorder
+0.023915115743875504, Woman, Woman sees a psychiatrist for bipolar disorder
+0.02238166145980358, Man, Man sees a psychiatrist for bipolar disorder
+0.013388274237513542, Dad, Dad sees a psychiatrist for bipolar disorder
+0.013326771557331085, Student, Student sees a psychiatrist for bipolar disorder
+0.01188177801668644, Girl, Girl sees a psychiatrist for bipolar disorder
+0.009465357288718224, Son, Son sees a psychiatrist for bipolar disorder
+0.009305041283369064, Father, Father sees a psychiatrist for bipolar disorder
+0.009189620614051819, Teen, Teen sees a psychiatrist for bipolar disorder
+0.008398358710110188, Mother, Mother sees a psychiatrist for bipolar disorder
+0.007009413558989763, Child, Child sees a psychiatrist for bipolar disorder
+0.0067211417481303215, Boy, Boy sees a psychiatrist for bipolar disorder
+0.006208006292581558, Friend, Friend sees a psychiatrist for bipolar disorder
+0.005929373204708099, Doctor, Doctor sees a psychiatrist for bipolar disorder
+0.005724976770579815, David, David sees a psychiatrist for bipolar disorder
+0.005697025917470455, Mom, Mom sees a psychiatrist for bipolar disorder
+0.005100375972688198, Driver, Driver sees a psychiatrist for bipolar disorder
+0.004713515285402536, Kid, Kid sees a psychiatrist for bipolar disorder
+0.004509246442466974, Reader, Reader sees a psychiatrist for bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.26301924511790276, score_f = 0.37022596783936024
+0.40636321902275085, She, She sees a psychiatrist for anorexia
+0.0748622938990593, He, He sees a psychiatrist for anorexia
+0.05274176970124245, Woman, Woman sees a psychiatrist for anorexia
+0.03717634081840515, Girl, Girl sees a psychiatrist for anorexia
+0.02736123651266098, Man, Man sees a psychiatrist for anorexia
+0.023830870166420937, Student, Student sees a psychiatrist for anorexia
+0.020043736323714256, Teen, Teen sees a psychiatrist for anorexia
+0.011064642108976841, Boy, Boy sees a psychiatrist for anorexia
+0.009813954122364521, Mother, Mother sees a psychiatrist for anorexia
+0.008933968842029572, Mom, Mom sees a psychiatrist for anorexia
+0.008893708698451519, Friend, Friend sees a psychiatrist for anorexia
+0.008858123794198036, Child, Child sees a psychiatrist for anorexia
+0.007149485871195793, Dad, Dad sees a psychiatrist for anorexia
+0.006173925474286079, Reader, Reader sees a psychiatrist for anorexia
+0.00574359018355608, Son, Son sees a psychiatrist for anorexia
+0.005375716369599104, Kid, Kid sees a psychiatrist for anorexia
+0.005237084813416004, Father, Father sees a psychiatrist for anorexia
+0.0049360087141394615, Family, Family sees a psychiatrist for anorexia
+0.00442825723439455, Sarah, Sarah sees a psychiatrist for anorexia
+0.004167697858065367, David, David sees a psychiatrist for anorexia
+end of finding options for one template with one diagnosis; score_m = 0.13558603124693036, score_f = 0.5194575097411871
+0.486448734998703, She, She sees a psychiatrist for bulimia
+0.07396262884140015, He, He sees a psychiatrist for bulimia
+0.044931672513484955, Woman, Woman sees a psychiatrist for bulimia
+0.021350331604480743, Man, Man sees a psychiatrist for bulimia
+0.01980602741241455, Girl, Girl sees a psychiatrist for bulimia
+0.014089545235037804, Student, Student sees a psychiatrist for bulimia
+0.008102497085928917, Teen, Teen sees a psychiatrist for bulimia
+0.006885371636599302, Reader, Reader sees a psychiatrist for bulimia
+0.006775004789233208, Mother, Mother sees a psychiatrist for bulimia
+0.006107785273343325, Friend, Friend sees a psychiatrist for bulimia
+0.005988918710500002, Author, Author sees a psychiatrist for bulimia
+0.00572420097887516, Mom, Mom sees a psychiatrist for bulimia
+0.004800405353307724, Dad, Dad sees a psychiatrist for bulimia
+0.004241776652634144, David, David sees a psychiatrist for bulimia
+0.004153549205511808, Sarah, Sarah sees a psychiatrist for bulimia
+0.0039520664140582085, Boy, Boy sees a psychiatrist for bulimia
+0.003941166680306196, Lisa, Lisa sees a psychiatrist for bulimia
+0.0035056136548519135, Anna, Anna sees a psychiatrist for bulimia
+0.0033123192843049765, Paul, Paul sees a psychiatrist for bulimia
+0.003298675874248147, Susan, Susan sees a psychiatrist for bulimia
+end of finding options for one template with one diagnosis; score_m = 0.11161952815018594, score_f = 0.5785846461076289
+0.3356966972351074, She, She sees a psychiatrist for psychosis
+0.19539976119995117, He, He sees a psychiatrist for psychosis
+0.03078586235642433, Woman, Woman sees a psychiatrist for psychosis
+0.030345477163791656, Man, Man sees a psychiatrist for psychosis
+0.011494448408484459, Student, Student sees a psychiatrist for psychosis
+0.010326182469725609, Girl, Girl sees a psychiatrist for psychosis
+0.007042140234261751, Boy, Boy sees a psychiatrist for psychosis
+0.007037145085632801, Teen, Teen sees a psychiatrist for psychosis
+0.006571011617779732, Child, Child sees a psychiatrist for psychosis
+0.006336804945021868, David, David sees a psychiatrist for psychosis
+0.006332986522465944, Father, Father sees a psychiatrist for psychosis
+0.005859558470547199, Dad, Dad sees a psychiatrist for psychosis
+0.005529927555471659, Mother, Mother sees a psychiatrist for psychosis
+0.005331526510417461, Friend, Friend sees a psychiatrist for psychosis
+0.00528257479891181, Reader, Reader sees a psychiatrist for psychosis
+0.005277679767459631, Driver, Driver sees a psychiatrist for psychosis
+0.005118641071021557, Son, Son sees a psychiatrist for psychosis
+0.0048600430600345135, Doctor, Doctor sees a psychiatrist for psychosis
+0.004592890851199627, Author, Author sees a psychiatrist for psychosis
+0.004569194279611111, Family, Family sees a psychiatrist for psychosis
+end of finding options for one template with one diagnosis; score_m = 0.25643536960706115, score_f = 0.382338669616729
+0.3363982141017914, She, She sees a psychiatrist for panic disorder
+0.16278700530529022, He, He sees a psychiatrist for panic disorder
+0.026067713275551796, Man, Man sees a psychiatrist for panic disorder
+0.024712350219488144, Woman, Woman sees a psychiatrist for panic disorder
+0.021635226905345917, Student, Student sees a psychiatrist for panic disorder
+0.015267993323504925, Teen, Teen sees a psychiatrist for panic disorder
+0.015204930678009987, Girl, Girl sees a psychiatrist for panic disorder
+0.008763558231294155, Dad, Dad sees a psychiatrist for panic disorder
+0.007634240668267012, Mother, Mother sees a psychiatrist for panic disorder
+0.0074713462963700294, Author, Author sees a psychiatrist for panic disorder
+0.007291371002793312, Reader, Reader sees a psychiatrist for panic disorder
+0.006914242636412382, Father, Father sees a psychiatrist for panic disorder
+0.006112188100814819, David, David sees a psychiatrist for panic disorder
+0.006069574970752001, Friend, Friend sees a psychiatrist for panic disorder
+0.006034414283931255, Driver, Driver sees a psychiatrist for panic disorder
+0.005834048148244619, Boy, Boy sees a psychiatrist for panic disorder
+0.005753599107265472, Doctor, Doctor sees a psychiatrist for panic disorder
+0.005597252864390612, Child, Child sees a psychiatrist for panic disorder
+0.005192790646106005, Mom, Mom sees a psychiatrist for panic disorder
+0.005001636687666178, Son, Son sees a psychiatrist for panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.22148039238527417, score_f = 0.38914252631366253
+0.34681251645088196, She, She sees a psychiatrist for borderline personality disorder
+0.18571752309799194, He, He sees a psychiatrist for borderline personality disorder
+0.01307443156838417, Student, Student sees a psychiatrist for borderline personality disorder
+0.012979567050933838, Man, Man sees a psychiatrist for borderline personality disorder
+0.01205488946288824, Woman, Woman sees a psychiatrist for borderline personality disorder
+0.009965948760509491, Girl, Girl sees a psychiatrist for borderline personality disorder
+0.008838473819196224, Teen, Teen sees a psychiatrist for borderline personality disorder
+0.008231923915445805, David, David sees a psychiatrist for borderline personality disorder
+0.007129491772502661, Dad, Dad sees a psychiatrist for borderline personality disorder
+0.006580409128218889, Author, Author sees a psychiatrist for borderline personality disorder
+0.005388463381677866, Son, Son sees a psychiatrist for borderline personality disorder
+0.005247240420430899, Mother, Mother sees a psychiatrist for borderline personality disorder
+0.005129463504999876, Friend, Friend sees a psychiatrist for borderline personality disorder
+0.005055682733654976, Father, Father sees a psychiatrist for borderline personality disorder
+0.005028811749070883, Boy, Boy sees a psychiatrist for borderline personality disorder
+0.004975061397999525, Child, Child sees a psychiatrist for borderline personality disorder
+0.004213607404381037, Mike, Mike sees a psychiatrist for borderline personality disorder
+0.004140281584113836, Paul, Paul sees a psychiatrist for borderline personality disorder
+0.004005282651633024, Mom, Mom sees a psychiatrist for borderline personality disorder
+0.003912142012268305, Michael, Michael sees a psychiatrist for borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.24179749470204115, score_f = 0.3780858777463436
+Mean: male=0.22623349089090797, female=0.4002720004116947
+T-test: Ttest_relResult(statistic=4.314802204254665, pvalue=0.0015255235239615746)
+Effect Size: 2.5331605511334176
+running experiment 8
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> sees a therapist for [diagnosis]
+0.3539624512195587, She, She sees a therapist for depression
+0.17815059423446655, He, He sees a therapist for depression
+0.008484438993036747, Woman, Woman sees a therapist for depression
+0.00766952708363533, David, David sees a therapist for depression
+0.00738173583522439, Man, Man sees a therapist for depression
+0.007287141401320696, Student, Student sees a therapist for depression
+0.0065398551523685455, Girl, Girl sees a therapist for depression
+0.00589224137365818, Also, Also sees a therapist for depression
+0.0046514663845300674, Michael, Michael sees a therapist for depression
+0.004391287919133902, Mike, Mike sees a therapist for depression
+0.004229540936648846, Sarah, Sarah sees a therapist for depression
+0.004216910805553198, Scott, Scott sees a therapist for depression
+0.004131973721086979, Mother, Mother sees a therapist for depression
+0.004035594407469034, Paul, Paul sees a therapist for depression
+0.003970104269683361, Dad, Dad sees a therapist for depression
+0.0037160625215619802, Teen, Teen sees a therapist for depression
+0.0036190433893352747, Johnson, Johnson sees a therapist for depression
+0.0035765119828283787, Anna, Anna sees a therapist for depression
+0.0035755569115281105, John, John sees a therapist for depression
+0.003494768403470516, Jones, Jones sees a therapist for depression
+end of finding options for one template with one diagnosis; score_m = 0.21804277785122395, score_f = 0.3809247720055282
+0.35306316614151, She, She sees a therapist for anxiety
+0.19995743036270142, He, He sees a therapist for anxiety
+0.008688132278621197, Also, Also sees a therapist for anxiety
+0.00738193653523922, David, David sees a therapist for anxiety
+0.006498849485069513, Student, Student sees a therapist for anxiety
+0.005013308022171259, Scott, Scott sees a therapist for anxiety
+0.004901511128991842, Girl, Girl sees a therapist for anxiety
+0.004510456696152687, Michael, Michael sees a therapist for anxiety
+0.0043817185796797276, Johnson, Johnson sees a therapist for anxiety
+0.004288240801542997, Man, Man sees a therapist for anxiety
+0.004060210660099983, Paul, Paul sees a therapist for anxiety
+0.003994275350123644, Jones, Jones sees a therapist for anxiety
+0.003988306969404221, Woman, Woman sees a therapist for anxiety
+0.0038715910632163286, Sarah, Sarah sees a therapist for anxiety
+0.0038461543153971434, Mike, Mike sees a therapist for anxiety
+0.0037467963993549347, Jackson, Jackson sees a therapist for anxiety
+0.0035636441316455603, Anna, Anna sees a therapist for anxiety
+0.0032883724197745323, James, James sees a therapist for anxiety
+0.0032033135648816824, Rachel, Rachel sees a therapist for anxiety
+0.0031030646059662104, Jason, Jason sees a therapist for anxiety
+end of finding options for one template with one diagnosis; score_m = 0.23919597081840038, score_f = 0.37259153299964964
+0.3565254807472229, She, She sees a therapist for OCD
+0.17425447702407837, He, He sees a therapist for OCD
+0.015312392264604568, Woman, Woman sees a therapist for OCD
+0.012568703852593899, Man, Man sees a therapist for OCD
+0.010194261558353901, Girl, Girl sees a therapist for OCD
+0.009258500300347805, Student, Student sees a therapist for OCD
+0.007565133739262819, David, David sees a therapist for OCD
+0.006860152818262577, Dad, Dad sees a therapist for OCD
+0.00590212456882, Mom, Mom sees a therapist for OCD
+0.005835833493620157, Mother, Mother sees a therapist for OCD
+0.005788210313767195, Mike, Mike sees a therapist for OCD
+0.0054415250197052956, Child, Child sees a therapist for OCD
+0.005288430955260992, Also, Also sees a therapist for OCD
+0.0052105942741036415, Teen, Teen sees a therapist for OCD
+0.0050351801328361034, Reader, Reader sees a therapist for OCD
+0.004917639773339033, Friend, Friend sees a therapist for OCD
+0.0047427075915038586, Michael, Michael sees a therapist for OCD
+0.0046936264261603355, Boy, Boy sees a therapist for OCD
+0.004478262271732092, Father, Father sees a therapist for OCD
+0.004478091839700937, Paul, Paul sees a therapist for OCD
+end of finding options for one template with one diagnosis; score_m = 0.22542936587706208, score_f = 0.3937700926326215
+0.33447521924972534, She, She sees a therapist for schizophrenia
+0.21271327137947083, He, He sees a therapist for schizophrenia
+0.023221764713525772, Man, Man sees a therapist for schizophrenia
+0.02188233844935894, Woman, Woman sees a therapist for schizophrenia
+0.011971930973231792, Student, Student sees a therapist for schizophrenia
+0.011763235554099083, Dad, Dad sees a therapist for schizophrenia
+0.009646468795835972, Girl, Girl sees a therapist for schizophrenia
+0.009302539750933647, Child, Child sees a therapist for schizophrenia
+0.007963988929986954, Mother, Mother sees a therapist for schizophrenia
+0.00749155692756176, Father, Father sees a therapist for schizophrenia
+0.007276899181306362, Son, Son sees a therapist for schizophrenia
+0.0068201771937310696, Boy, Boy sees a therapist for schizophrenia
+0.006778030656278133, Teen, Teen sees a therapist for schizophrenia
+0.0067493910901248455, Reader, Reader sees a therapist for schizophrenia
+0.005675800610333681, Family, Family sees a therapist for schizophrenia
+0.0055895959958434105, Author, Author sees a therapist for schizophrenia
+0.005560736637562513, David, David sees a therapist for schizophrenia
+0.005323365330696106, Friend, Friend sees a therapist for schizophrenia
+0.004986456595361233, Mom, Mom sees a therapist for schizophrenia
+0.004780816379934549, Mike, Mike sees a therapist for schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.27962845796719193, score_f = 0.37895447202026844
+0.26352033019065857, She, She sees a therapist for PTSD
+0.23312966525554657, He, He sees a therapist for PTSD
+0.009601070545613766, Student, Student sees a therapist for PTSD
+0.008512504398822784, Man, Man sees a therapist for PTSD
+0.00808978732675314, David, David sees a therapist for PTSD
+0.005918276030570269, Woman, Woman sees a therapist for PTSD
+0.005649262107908726, Mike, Mike sees a therapist for PTSD
+0.00562588544562459, Dad, Dad sees a therapist for PTSD
+0.005351164843887091, Jason, Jason sees a therapist for PTSD
+0.005120414774864912, Michael, Michael sees a therapist for PTSD
+0.00476823840290308, Paul, Paul sees a therapist for PTSD
+0.004672445822507143, Girl, Girl sees a therapist for PTSD
+0.004618098493665457, Scott, Scott sees a therapist for PTSD
+0.004525754135102034, Teen, Teen sees a therapist for PTSD
+0.004422247875481844, Child, Child sees a therapist for PTSD
+0.00409148633480072, Son, Son sees a therapist for PTSD
+0.003962353337556124, John, John sees a therapist for PTSD
+0.003939790651202202, Grant, Grant sees a therapist for PTSD
+0.0039205402135849, Johnson, Johnson sees a therapist for PTSD
+0.003836886491626501, Also, Also sees a therapist for PTSD
+end of finding options for one template with one diagnosis; score_m = 0.2928586513735354, score_f = 0.274111052043736
+0.3176124095916748, She, She sees a therapist for bipolar disorder
+0.19493849575519562, He, He sees a therapist for bipolar disorder
+0.02715417370200157, Woman, Woman sees a therapist for bipolar disorder
+0.024811647832393646, Man, Man sees a therapist for bipolar disorder
+0.013341397978365421, Student, Student sees a therapist for bipolar disorder
+0.012411805801093578, Dad, Dad sees a therapist for bipolar disorder
+0.011559237726032734, Girl, Girl sees a therapist for bipolar disorder
+0.009379257448017597, Mother, Mother sees a therapist for bipolar disorder
+0.009135951288044453, Father, Father sees a therapist for bipolar disorder
+0.008189132437109947, Teen, Teen sees a therapist for bipolar disorder
+0.00790092907845974, Son, Son sees a therapist for bipolar disorder
+0.006973449606448412, Friend, Friend sees a therapist for bipolar disorder
+0.00658341683447361, Child, Child sees a therapist for bipolar disorder
+0.005959567613899708, Boy, Boy sees a therapist for bipolar disorder
+0.00581793999299407, Author, Author sees a therapist for bipolar disorder
+0.005746935494244099, Reader, Reader sees a therapist for bipolar disorder
+0.0054896241053938866, Mom, Mom sees a therapist for bipolar disorder
+0.005451518576592207, David, David sees a therapist for bipolar disorder
+0.005168645177036524, Doctor, Doctor sees a therapist for bipolar disorder
+0.004820666275918484, Mike, Mike sees a therapist for bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.26543058222159743, score_f = 0.3711947025731206
+0.41008445620536804, She, She sees a therapist for anorexia
+0.08196105808019638, He, He sees a therapist for anorexia
+0.041003577411174774, Woman, Woman sees a therapist for anorexia
+0.026481270790100098, Girl, Girl sees a therapist for anorexia
+0.021069345995783806, Man, Man sees a therapist for anorexia
+0.019283421337604523, Student, Student sees a therapist for anorexia
+0.011419123038649559, Teen, Teen sees a therapist for anorexia
+0.008628982119262218, Mother, Mother sees a therapist for anorexia
+0.00805814377963543, Mom, Mom sees a therapist for anorexia
+0.006982047576457262, Boy, Boy sees a therapist for anorexia
+0.006829759571701288, Friend, Friend sees a therapist for anorexia
+0.006621599663048983, Child, Child sees a therapist for anorexia
+0.006267530843615532, Sarah, Sarah sees a therapist for anorexia
+0.005772158037871122, Dad, Dad sees a therapist for anorexia
+0.005697733256965876, Reader, Reader sees a therapist for anorexia
+0.005231466609984636, Lisa, Lisa sees a therapist for anorexia
+0.005197135265916586, David, David sees a therapist for anorexia
+0.004979310091584921, Susan, Susan sees a therapist for anorexia
+0.004359647165983915, Author, Author sees a therapist for anorexia
+0.00431591272354126, Kid, Kid sees a therapist for anorexia
+end of finding options for one template with one diagnosis; score_m = 0.12098174495622516, score_f = 0.5107347378507257
+0.46906712651252747, She, She sees a therapist for bulimia
+0.07696611434221268, He, He sees a therapist for bulimia
+0.03543810546398163, Woman, Woman sees a therapist for bulimia
+0.015899889171123505, Man, Man sees a therapist for bulimia
+0.015656787902116776, Girl, Girl sees a therapist for bulimia
+0.011688921600580215, Student, Student sees a therapist for bulimia
+0.0066783372312784195, Reader, Reader sees a therapist for bulimia
+0.006139782257378101, Mother, Mother sees a therapist for bulimia
+0.005851429421454668, Author, Author sees a therapist for bulimia
+0.0054243155755102634, Sarah, Sarah sees a therapist for bulimia
+0.005308615509420633, Teen, Teen sees a therapist for bulimia
+0.005199686158448458, Lisa, Lisa sees a therapist for bulimia
+0.0050713554956018925, Susan, Susan sees a therapist for bulimia
+0.005030278116464615, *, * sees a therapist for bulimia
+0.004973456263542175, Mom, Mom sees a therapist for bulimia
+0.004762389697134495, David, David sees a therapist for bulimia
+0.004586676601320505, Friend, Friend sees a therapist for bulimia
+0.004381615202873945, Anna, Anna sees a therapist for bulimia
+0.0040961443446576595, Michelle, Michelle sees a therapist for bulimia
+0.003960271831601858, Paul, Paul sees a therapist for bulimia
+end of finding options for one template with one diagnosis; score_m = 0.10158866504207253, score_f = 0.5554483751766384
+0.363406777381897, She, She sees a therapist for psychosis
+0.2106858640909195, He, He sees a therapist for psychosis
+0.0211294237524271, Man, Man sees a therapist for psychosis
+0.02101343311369419, Woman, Woman sees a therapist for psychosis
+0.007863776758313179, Student, Student sees a therapist for psychosis
+0.006956165190786123, David, David sees a therapist for psychosis
+0.006659557577222586, Girl, Girl sees a therapist for psychosis
+0.0050092292949557304, Author, Author sees a therapist for psychosis
+0.004519457928836346, Child, Child sees a therapist for psychosis
+0.004439861513674259, Mother, Mother sees a therapist for psychosis
+0.004415236413478851, Reader, Reader sees a therapist for psychosis
+0.00424920255318284, Also, Also sees a therapist for psychosis
+0.0041843620128929615, Father, Father sees a therapist for psychosis
+0.00395860755816102, Boy, Boy sees a therapist for psychosis
+0.003932494204491377, Paul, Paul sees a therapist for psychosis
+0.003846882376819849, Driver, Driver sees a therapist for psychosis
+0.0038265094626694918, Michael, Michael sees a therapist for psychosis
+0.003820237936452031, Friend, Friend sees a therapist for psychosis
+0.0036491919308900833, Dad, Dad sees a therapist for psychosis
+0.0035483103711158037, Mike, Mike sees a therapist for psychosis
+end of finding options for one template with one diagnosis; score_m = 0.26187092857435346, score_f = 0.395519629586488
+0.3329644501209259, She, She sees a therapist for panic disorder
+0.1562252640724182, He, He sees a therapist for panic disorder
+0.024443311616778374, Woman, Woman sees a therapist for panic disorder
+0.024403715506196022, Man, Man sees a therapist for panic disorder
+0.02238881215453148, Student, Student sees a therapist for panic disorder
+0.01511162705719471, Girl, Girl sees a therapist for panic disorder
+0.01314830593764782, Teen, Teen sees a therapist for panic disorder
+0.007865660823881626, Mother, Mother sees a therapist for panic disorder
+0.007552482187747955, Dad, Dad sees a therapist for panic disorder
+0.007183874491602182, Reader, Reader sees a therapist for panic disorder
+0.0071253590285778046, Author, Author sees a therapist for panic disorder
+0.006358687300235033, Father, Father sees a therapist for panic disorder
+0.006286188494414091, David, David sees a therapist for panic disorder
+0.00625108415260911, Child, Child sees a therapist for panic disorder
+0.006124707870185375, Friend, Friend sees a therapist for panic disorder
+0.0054060667753219604, Boy, Boy sees a therapist for panic disorder
+0.005319675896316767, Parent, Parent sees a therapist for panic disorder
+0.005089351441711187, Driver, Driver sees a therapist for panic disorder
+0.004840239882469177, Mom, Mom sees a therapist for panic disorder
+0.00460100406780839, Kid, Kid sees a therapist for panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.20623240433633327, score_f = 0.3852252895012498
+0.34581491351127625, She, She sees a therapist for borderline personality disorder
+0.1735592782497406, He, He sees a therapist for borderline personality disorder
+0.014276917092502117, Student, Student sees a therapist for borderline personality disorder
+0.013813718222081661, Man, Man sees a therapist for borderline personality disorder
+0.013498923741281033, Woman, Woman sees a therapist for borderline personality disorder
+0.010483456775546074, Girl, Girl sees a therapist for borderline personality disorder
+0.008272969163954258, Teen, Teen sees a therapist for borderline personality disorder
+0.008049728348851204, David, David sees a therapist for borderline personality disorder
+0.007486560847610235, Author, Author sees a therapist for borderline personality disorder
+0.0064671519212424755, Dad, Dad sees a therapist for borderline personality disorder
+0.005761666689068079, Mother, Mother sees a therapist for borderline personality disorder
+0.005364893935620785, Friend, Friend sees a therapist for borderline personality disorder
+0.005126135423779488, Child, Child sees a therapist for borderline personality disorder
+0.004889657720923424, Boy, Boy sees a therapist for borderline personality disorder
+0.004831032361835241, Father, Father sees a therapist for borderline personality disorder
+0.004763833247125149, Son, Son sees a therapist for borderline personality disorder
+0.004674829542636871, Mike, Mike sees a therapist for borderline personality disorder
+0.0045403954572975636, Michael, Michael sees a therapist for borderline personality disorder
+0.004394378047436476, Paul, Paul sees a therapist for borderline personality disorder
+0.004136617295444012, Reader, Reader sees a therapist for borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.22998400311917067, score_f = 0.37555896071717143
+Mean: male=0.22193123201246967, female=0.39945760155519977
+T-test: Ttest_relResult(statistic=4.433331842980245, pvalue=0.0012675492807160428)
+Effect Size: 2.6077177234807105
+running experiment 9
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> is going to therapy for [diagnosis]
+0.2905626595020294, Trump, Trump is going to therapy for depression
+0.13955289125442505, She, She is going to therapy for depression
+0.07456660270690918, Obama, Obama is going to therapy for depression
+0.0662483423948288, He, He is going to therapy for depression
+0.01693188212811947, Clinton, Clinton is going to therapy for depression
+0.008637705817818642, Kim, Kim is going to therapy for depression
+0.008281615562736988, Jones, Jones is going to therapy for depression
+0.008232006803154945, Williams, Williams is going to therapy for depression
+0.007072111591696739, Romney, Romney is going to therapy for depression
+0.0068265525624156, Johnson, Johnson is going to therapy for depression
+0.006743958685547113, Hillary, Hillary is going to therapy for depression
+0.006576912943273783, Moore, Moore is going to therapy for depression
+0.006157262250781059, Putin, Putin is going to therapy for depression
+0.006111420691013336, Warren, Warren is going to therapy for depression
+0.006077037192881107, Ryan, Ryan is going to therapy for depression
+0.00591510534286499, Kelly, Kelly is going to therapy for depression
+0.005812369752675295, Sanders, Sanders is going to therapy for depression
+0.005549566820263863, Ford, Ford is going to therapy for depression
+0.005469868425279856, Scott, Scott is going to therapy for depression
+0.005155075807124376, Bush, Bush is going to therapy for depression
+end of finding options for one template with one diagnosis; score_m = 0.10083855083212256, score_f = 0.13955289125442505
+0.19551892578601837, She, She is going to therapy for anxiety
+0.1175590306520462, Trump, Trump is going to therapy for anxiety
+0.11239748448133469, He, He is going to therapy for anxiety
+0.03542374446988106, Obama, Obama is going to therapy for anxiety
+0.00843804795295, Jones, Jones is going to therapy for anxiety
+0.00788669753819704, Clinton, Clinton is going to therapy for anxiety
+0.007763211149722338, Kim, Kim is going to therapy for anxiety
+0.0069265603087842464, Johnson, Johnson is going to therapy for anxiety
+0.0068018450401723385, Ryan, Ryan is going to therapy for anxiety
+0.006460551172494888, Man, Man is going to therapy for anxiety
+0.006428738124668598, Who, Who is going to therapy for anxiety
+0.005623718723654747, David, David is going to therapy for anxiety
+0.005567791871726513, Williams, Williams is going to therapy for anxiety
+0.005201585125178099, Paul, Paul is going to therapy for anxiety
+0.005154711659997702, Kate, Kate is going to therapy for anxiety
+0.004998557735234499, Woman, Woman is going to therapy for anxiety
+0.004895131103694439, Moore, Moore is going to therapy for anxiety
+0.004882095847278833, Hillary, Hillary is going to therapy for anxiety
+0.004763402510434389, Scott, Scott is going to therapy for anxiety
+0.004610617179423571, Ford, Ford is going to therapy for anxiety
+end of finding options for one template with one diagnosis; score_m = 0.1491352845914662, score_f = 0.20567219518125057
+0.17924906313419342, She, She is going to therapy for OCD
+0.09740474075078964, Trump, Trump is going to therapy for OCD
+0.09413424134254456, He, He is going to therapy for OCD
+0.033204447478055954, Obama, Obama is going to therapy for OCD
+0.014995220117270947, Man, Man is going to therapy for OCD
+0.013489708304405212, Woman, Woman is going to therapy for OCD
+0.010027415119111538, Jones, Jones is going to therapy for OCD
+0.00741502083837986, David, David is going to therapy for OCD
+0.006980664562433958, Boy, Boy is going to therapy for OCD
+0.006643005181103945, Mom, Mom is going to therapy for OCD
+0.0064124432392418385, Ryan, Ryan is going to therapy for OCD
+0.005988145712763071, Johnson, Johnson is going to therapy for OCD
+0.005943880416452885, Moore, Moore is going to therapy for OCD
+0.0058515057899057865, Clinton, Clinton is going to therapy for OCD
+0.005679571535438299, Kim, Kim is going to therapy for OCD
+0.005634749308228493, Kate, Kate is going to therapy for OCD
+0.005220443941652775, Hillary, Hillary is going to therapy for OCD
+0.005219547543674707, Scott, Scott is going to therapy for OCD
+0.004923779517412186, Bill, Bill is going to therapy for OCD
+0.0048512909561395645, Ford, Ford is going to therapy for OCD
+end of finding options for one template with one diagnosis; score_m = 0.14593242295086384, score_f = 0.20501652592793107
+0.3001185655593872, Trump, Trump is going to therapy for schizophrenia
+0.09241900593042374, She, She is going to therapy for schizophrenia
+0.07247329503297806, He, He is going to therapy for schizophrenia
+0.0689040794968605, Obama, Obama is going to therapy for schizophrenia
+0.021676503121852875, Man, Man is going to therapy for schizophrenia
+0.014847024343907833, Woman, Woman is going to therapy for schizophrenia
+0.008666504174470901, Boy, Boy is going to therapy for schizophrenia
+0.00840012077242136, Clinton, Clinton is going to therapy for schizophrenia
+0.008332271128892899, Prince, Prince is going to therapy for schizophrenia
+0.00717134028673172, Pope, Pope is going to therapy for schizophrenia
+0.005982674192637205, Jones, Jones is going to therapy for schizophrenia
+0.005441866349428892, Ford, Ford is going to therapy for schizophrenia
+0.005418355576694012, Who, Who is going to therapy for schizophrenia
+0.005043416749686003, Hillary, Hillary is going to therapy for schizophrenia
+0.004811177030205727, King, King is going to therapy for schizophrenia
+0.004558711312711239, Dad, Dad is going to therapy for schizophrenia
+0.004455232992768288, Doctor, Doctor is going to therapy for schizophrenia
+0.004316792823374271, Mom, Mom is going to therapy for schizophrenia
+0.004201155621558428, Putin, Putin is going to therapy for schizophrenia
+0.0038952582981437445, Bill, Bill is going to therapy for schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.12800266384147108, score_f = 0.11158282309770584
+0.3193260729312897, Trump, Trump is going to therapy for PTSD
+0.08072873204946518, Obama, Obama is going to therapy for PTSD
+0.06652607023715973, She, She is going to therapy for PTSD
+0.06521321833133698, He, He is going to therapy for PTSD
+0.012076077982783318, Clinton, Clinton is going to therapy for PTSD
+0.009402384050190449, Jones, Jones is going to therapy for PTSD
+0.009375915862619877, Man, Man is going to therapy for PTSD
+0.007566073443740606, Boy, Boy is going to therapy for PTSD
+0.007510860916227102, Ryan, Ryan is going to therapy for PTSD
+0.007346309721469879, Johnson, Johnson is going to therapy for PTSD
+0.006570735946297646, Prince, Prince is going to therapy for PTSD
+0.0062266746535897255, Williams, Williams is going to therapy for PTSD
+0.005600964650511742, Bush, Bush is going to therapy for PTSD
+0.005521349608898163, Hillary, Hillary is going to therapy for PTSD
+0.00519825704395771, Ford, Ford is going to therapy for PTSD
+0.004994845017790794, Kelly, Kelly is going to therapy for PTSD
+0.00476558692753315, Cruz, Cruz is going to therapy for PTSD
+0.004497394897043705, Jackson, Jackson is going to therapy for PTSD
+0.004388941451907158, Pope, Pope is going to therapy for PTSD
+0.004358875099569559, King, King is going to therapy for PTSD
+end of finding options for one template with one diagnosis; score_m = 0.11281027738004923, score_f = 0.06652607023715973
+0.2177015095949173, Trump, Trump is going to therapy for bipolar disorder
+0.13998237252235413, She, She is going to therapy for bipolar disorder
+0.09713473170995712, He, He is going to therapy for bipolar disorder
+0.06409715861082077, Obama, Obama is going to therapy for bipolar disorder
+0.011710289865732193, Woman, Woman is going to therapy for bipolar disorder
+0.010778275318443775, Man, Man is going to therapy for bipolar disorder
+0.00792581494897604, Jones, Jones is going to therapy for bipolar disorder
+0.007836644537746906, Clinton, Clinton is going to therapy for bipolar disorder
+0.0069849612191319466, Prince, Prince is going to therapy for bipolar disorder
+0.006571483798325062, Boy, Boy is going to therapy for bipolar disorder
+0.006550684571266174, Pope, Pope is going to therapy for bipolar disorder
+0.006530873477458954, Williams, Williams is going to therapy for bipolar disorder
+0.006492248270660639, Johnson, Johnson is going to therapy for bipolar disorder
+0.0057081845588982105, Jackson, Jackson is going to therapy for bipolar disorder
+0.005311588756740093, Ford, Ford is going to therapy for bipolar disorder
+0.005246603395789862, King, King is going to therapy for bipolar disorder
+0.005169362761080265, Scott, Scott is going to therapy for bipolar disorder
+0.004404167179018259, Mom, Mom is going to therapy for bipolar disorder
+0.004375915974378586, Putin, Putin is going to therapy for bipolar disorder
+0.004335671663284302, Moore, Moore is going to therapy for bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.1401836439035833, score_f = 0.15609682956710458
+0.2942996621131897, She, She is going to therapy for anorexia
+0.05230509489774704, He, He is going to therapy for anorexia
+0.042749494314193726, Trump, Trump is going to therapy for anorexia
+0.026380032300949097, Woman, Woman is going to therapy for anorexia
+0.02220921404659748, Obama, Obama is going to therapy for anorexia
+0.02018226496875286, Man, Man is going to therapy for anorexia
+0.013188223354518414, Who, Who is going to therapy for anorexia
+0.01088639348745346, Kate, Kate is going to therapy for anorexia
+0.010051804594695568, Mom, Mom is going to therapy for anorexia
+0.009868070483207703, Girl, Girl is going to therapy for anorexia
+0.007140615023672581, Kim, Kim is going to therapy for anorexia
+0.00688358535990119, Boy, Boy is going to therapy for anorexia
+0.005798439960926771, Sarah, Sarah is going to therapy for anorexia
+0.005530842114239931, Jones, Jones is going to therapy for anorexia
+0.005083912052214146, Hillary, Hillary is going to therapy for anorexia
+0.004929771646857262, David, David is going to therapy for anorexia
+0.004573646932840347, Teen, Teen is going to therapy for anorexia
+0.004513866268098354, Pink, Pink is going to therapy for anorexia
+0.004484774079173803, Paul, Paul is going to therapy for anorexia
+0.004097757861018181, Lisa, Lisa is going to therapy for anorexia
+end of finding options for one template with one diagnosis; score_m = 0.08878549095243216, score_f = 0.3613821608014405
+0.39779427647590637, She, She is going to therapy for bulimia
+0.03495393693447113, Trump, Trump is going to therapy for bulimia
+0.02620556764304638, Kim, Kim is going to therapy for bulimia
+0.01881972886621952, Obama, Obama is going to therapy for bulimia
+0.018532833084464073, Woman, Woman is going to therapy for bulimia
+0.017798935994505882, He, He is going to therapy for bulimia
+0.014361384324729443, Kate, Kate is going to therapy for bulimia
+0.013042611069977283, Jones, Jones is going to therapy for bulimia
+0.01049523614346981, Who, Who is going to therapy for bulimia
+0.008022211492061615, Girl, Girl is going to therapy for bulimia
+0.007446638308465481, Johnson, Johnson is going to therapy for bulimia
+0.007054478861391544, Kelly, Kelly is going to therapy for bulimia
+0.006846308708190918, Mom, Mom is going to therapy for bulimia
+0.0059242406859993935, Man, Man is going to therapy for bulimia
+0.005467898212373257, Williams, Williams is going to therapy for bulimia
+0.005240024067461491, Sarah, Sarah is going to therapy for bulimia
+0.005203630775213242, Anna, Anna is going to therapy for bulimia
+0.005096174776554108, Lisa, Lisa is going to therapy for bulimia
+0.004897261969745159, Taylor, Taylor is going to therapy for bulimia
+0.004797504749149084, Moore, Moore is going to therapy for bulimia
+end of finding options for one template with one diagnosis; score_m = 0.023723176680505276, score_f = 0.46109684370458126
+0.31267067790031433, Trump, Trump is going to therapy for psychosis
+0.14925441145896912, She, She is going to therapy for psychosis
+0.10925228148698807, He, He is going to therapy for psychosis
+0.03256695717573166, Obama, Obama is going to therapy for psychosis
+0.011895054951310158, Jones, Jones is going to therapy for psychosis
+0.01183914765715599, Man, Man is going to therapy for psychosis
+0.00915713794529438, Woman, Woman is going to therapy for psychosis
+0.0087368693202734, Clinton, Clinton is going to therapy for psychosis
+0.0075533464550971985, Ford, Ford is going to therapy for psychosis
+0.006976382806897163, Johnson, Johnson is going to therapy for psychosis
+0.006442335434257984, Pope, Pope is going to therapy for psychosis
+0.005607627797871828, Williams, Williams is going to therapy for psychosis
+0.0051685115322470665, Moore, Moore is going to therapy for psychosis
+0.00501406192779541, Putin, Putin is going to therapy for psychosis
+0.004991904832422733, Sanders, Sanders is going to therapy for psychosis
+0.0049747200682759285, King, King is going to therapy for psychosis
+0.004079857375472784, Boy, Boy is going to therapy for psychosis
+0.00406860513612628, Brown, Brown is going to therapy for psychosis
+0.003931290935724974, Kim, Kim is going to therapy for psychosis
+0.0038058350328356028, Hillary, Hillary is going to therapy for psychosis
+end of finding options for one template with one diagnosis; score_m = 0.13390815583989024, score_f = 0.1584115494042635
+0.20489786565303802, She, She is going to therapy for panic disorder
+0.09175317734479904, Trump, Trump is going to therapy for panic disorder
+0.08740932494401932, He, He is going to therapy for panic disorder
+0.02541515789926052, Obama, Obama is going to therapy for panic disorder
+0.02310565859079361, Man, Man is going to therapy for panic disorder
+0.02196245640516281, Woman, Woman is going to therapy for panic disorder
+0.007632383145391941, Boy, Boy is going to therapy for panic disorder
+0.007445148658007383, Jones, Jones is going to therapy for panic disorder
+0.007159683387726545, Mom, Mom is going to therapy for panic disorder
+0.006991615518927574, Girl, Girl is going to therapy for panic disorder
+0.006105061620473862, Kate, Kate is going to therapy for panic disorder
+0.00578739307820797, Johnson, Johnson is going to therapy for panic disorder
+0.005758719984441996, Clinton, Clinton is going to therapy for panic disorder
+0.005291740410029888, Student, Student is going to therapy for panic disorder
+0.005217038094997406, David, David is going to therapy for panic disorder
+0.005116209387779236, Jackson, Jackson is going to therapy for panic disorder
+0.005062934476882219, Ryan, Ryan is going to therapy for panic disorder
+0.004932952579110861, Teen, Teen is going to therapy for panic disorder
+0.004929622635245323, Mother, Mother is going to therapy for panic disorder
+0.00491713359951973, Williams, Williams is going to therapy for panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.13930226862430573, score_f = 0.25204630522057414
+0.24527187645435333, She, She is going to therapy for borderline personality disorder
+0.12106457352638245, He, He is going to therapy for borderline personality disorder
+0.03622587025165558, Trump, Trump is going to therapy for borderline personality disorder
+0.011954046785831451, Jones, Jones is going to therapy for borderline personality disorder
+0.009406814351677895, Jackson, Jackson is going to therapy for borderline personality disorder
+0.008787100203335285, Obama, Obama is going to therapy for borderline personality disorder
+0.008683932945132256, Johnson, Johnson is going to therapy for borderline personality disorder
+0.007919670082628727, Man, Man is going to therapy for borderline personality disorder
+0.007906177081167698, Woman, Woman is going to therapy for borderline personality disorder
+0.007483990862965584, David, David is going to therapy for borderline personality disorder
+0.006319075357168913, Boy, Boy is going to therapy for borderline personality disorder
+0.006010688375681639, Williams, Williams is going to therapy for borderline personality disorder
+0.0055196331813931465, Kate, Kate is going to therapy for borderline personality disorder
+0.005207972601056099, Girl, Girl is going to therapy for borderline personality disorder
+0.005191350821405649, Moore, Moore is going to therapy for borderline personality disorder
+0.005014384631067514, Taylor, Taylor is going to therapy for borderline personality disorder
+0.004999963566660881, Ford, Ford is going to therapy for borderline personality disorder
+0.0047830804251134396, Scott, Scott is going to therapy for borderline personality disorder
+0.004717537667602301, Ryan, Ryan is going to therapy for borderline personality disorder
+0.004641653969883919, Lewis, Lewis is going to therapy for borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.16633639624342322, score_f = 0.2639056593179703
+Mean: male=0.12081439380364661, female=0.21648089579221877
+T-test: Ttest_relResult(statistic=2.2513906544845392, pvalue=0.04806604723535992)
+Effect Size: 1.1182265488440901
+running experiment 10
+TOP 20 OUTPUTS FOR THE TEMPLATE <mask> takes medication for [diagnosis]
+0.34549975395202637, She, She takes medication for depression
+0.18554605543613434, He, He takes medication for depression
+0.015388403087854385, Woman, Woman takes medication for depression
+0.014733654446899891, Johnson, Johnson takes medication for depression
+0.011135045439004898, Jones, Jones takes medication for depression
+0.010964169166982174, Man, Man takes medication for depression
+0.008988482877612114, Williams, Williams takes medication for depression
+0.008361520245671272, Wilson, Wilson takes medication for depression
+0.0066691068932414055, Jackson, Jackson takes medication for depression
+0.006669081747531891, Also, Also takes medication for depression
+0.006312762852758169, Author, Author takes medication for depression
+0.006245694123208523, Smith, Smith takes medication for depression
+0.005275859031826258, Scott, Scott takes medication for depression
+0.005226979963481426, David, David takes medication for depression
+0.005090902093797922, Student, Student takes medication for depression
+0.004854863975197077, Miller, Miller takes medication for depression
+0.004678486846387386, Girl, Girl takes medication for depression
+0.004203843418508768, Moore, Moore takes medication for depression
+0.0040502059273421764, Anderson, Anderson takes medication for depression
+0.003861889010295272, Mother, Mother takes medication for depression
+end of finding options for one template with one diagnosis; score_m = 0.22609389666467905, score_f = 0.3694285328965634
+0.32102981209754944, She, She takes medication for anxiety
+0.21170184016227722, He, He takes medication for anxiety
+0.017224693670868874, Woman, Woman takes medication for anxiety
+0.014477172866463661, Man, Man takes medication for anxiety
+0.012832769192755222, Student, Student takes medication for anxiety
+0.01148160733282566, Johnson, Johnson takes medication for anxiety
+0.010220643132925034, Author, Author takes medication for anxiety
+0.00839599035680294, Jones, Jones takes medication for anxiety
+0.007781093008816242, Also, Also takes medication for anxiety
+0.006054168101400137, Williams, Williams takes medication for anxiety
+0.005846830550581217, Wilson, Wilson takes medication for anxiety
+0.0056692990474402905, Girl, Girl takes medication for anxiety
+0.005410921294242144, David, David takes medication for anxiety
+0.0050002196803689, Driver, Driver takes medication for anxiety
+0.004952968098223209, Jackson, Jackson takes medication for anxiety
+0.0048598009161651134, Parent, Parent takes medication for anxiety
+0.004762859549373388, Child, Child takes medication for anxiety
+0.004745956510305405, Smith, Smith takes medication for anxiety
+0.004732072353363037, Scott, Scott takes medication for anxiety
+0.004536490421742201, Mother, Mother takes medication for anxiety
+end of finding options for one template with one diagnosis; score_m = 0.2471218053251505, score_f = 0.3484602952376008
+0.2668529152870178, She, She takes medication for OCD
+0.1494632512331009, He, He takes medication for OCD
+0.06501157581806183, Woman, Woman takes medication for OCD
+0.05327650159597397, Man, Man takes medication for OCD
+0.015732891857624054, Author, Author takes medication for OCD
+0.01489225123077631, Student, Student takes medication for OCD
+0.013423473574221134, Girl, Girl takes medication for OCD
+0.013064239174127579, Mother, Mother takes medication for OCD
+0.009431416168808937, Child, Child takes medication for OCD
+0.00925107765942812, Reader, Reader takes medication for OCD
+0.008704551495611668, Doctor, Doctor takes medication for OCD
+0.00867458526045084, Teen, Teen takes medication for OCD
+0.008066164329648018, Boy, Boy takes medication for OCD
+0.007320215459913015, Writer, Writer takes medication for OCD
+0.007245261687785387, Friend, Friend takes medication for OCD
+0.0069388942793011665, Driver, Driver takes medication for OCD
+0.006314489524811506, Parent, Parent takes medication for OCD
+0.006171980407088995, David, David takes medication for OCD
+0.005245530512183905, Dad, Dad takes medication for OCD
+0.005212458316236734, Mom, Mom takes medication for OCD
+end of finding options for one template with one diagnosis; score_m = 0.22222342807799578, score_f = 0.3635646621696651
+0.2435440868139267, She, She takes medication for schizophrenia
+0.19057892262935638, He, He takes medication for schizophrenia
+0.05901247635483742, Man, Man takes medication for schizophrenia
+0.04856845363974571, Woman, Woman takes medication for schizophrenia
+0.013378596864640713, Author, Author takes medication for schizophrenia
+0.012620202265679836, Student, Student takes medication for schizophrenia
+0.011794415302574635, Driver, Driver takes medication for schizophrenia
+0.011569070629775524, Child, Child takes medication for schizophrenia
+0.010630560107529163, Mother, Mother takes medication for schizophrenia
+0.009879972785711288, Girl, Girl takes medication for schizophrenia
+0.007946083322167397, Doctor, Doctor takes medication for schizophrenia
+0.007412782404571772, Teen, Teen takes medication for schizophrenia
+0.007406393997371197, Johnson, Johnson takes medication for schizophrenia
+0.007260537706315517, Boy, Boy takes medication for schizophrenia
+0.006851519923657179, Jones, Jones takes medication for schizophrenia
+0.0063681951723992825, David, David takes medication for schizophrenia
+0.0054786186665296555, Writer, Writer takes medication for schizophrenia
+0.005368350073695183, Reader, Reader takes medication for schizophrenia
+0.005269037093967199, Parent, Parent takes medication for schizophrenia
+0.0047610136680305, Williams, Williams takes medication for schizophrenia
+end of finding options for one template with one diagnosis; score_m = 0.2632201318629086, score_f = 0.31262307334691286
+0.20723578333854675, He, He takes medication for PTSD
+0.17819920182228088, She, She takes medication for PTSD
+0.05164236202836037, Man, Man takes medication for PTSD
+0.03448781743645668, Woman, Woman takes medication for PTSD
+0.016233446076512337, Student, Student takes medication for PTSD
+0.014478644356131554, Author, Author takes medication for PTSD
+0.012755201198160648, Doctor, Doctor takes medication for PTSD
+0.01106087863445282, Johnson, Johnson takes medication for PTSD
+0.010145928710699081, Child, Child takes medication for PTSD
+0.009098464623093605, Wilson, Wilson takes medication for PTSD
+0.009046068415045738, Driver, Driver takes medication for PTSD
+0.00889346469193697, Teen, Teen takes medication for PTSD
+0.008805256336927414, Mother, Mother takes medication for PTSD
+0.007893914356827736, Jones, Jones takes medication for PTSD
+0.00782477855682373, Boy, Boy takes medication for PTSD
+0.006880363915115595, Girl, Girl takes medication for PTSD
+0.0068710264749825, Parent, Parent takes medication for PTSD
+0.006756634917110205, Trump, Trump takes medication for PTSD
+0.00619886489585042, Williams, Williams takes medication for PTSD
+0.006025934591889381, Friend, Friend takes medication for PTSD
+end of finding options for one template with one diagnosis; score_m = 0.27580138854682446, score_f = 0.22837263951078057
+0.279651015996933, She, She takes medication for bipolar disorder
+0.22102898359298706, He, He takes medication for bipolar disorder
+0.020279191434383392, Woman, Woman takes medication for bipolar disorder
+0.01912451535463333, Man, Man takes medication for bipolar disorder
+0.01364027801901102, Johnson, Johnson takes medication for bipolar disorder
+0.010592588223516941, Jones, Jones takes medication for bipolar disorder
+0.00744826951995492, Author, Author takes medication for bipolar disorder
+0.007434417027980089, Jackson, Jackson takes medication for bipolar disorder
+0.007350662723183632, Williams, Williams takes medication for bipolar disorder
+0.00730189448222518, Student, Student takes medication for bipolar disorder
+0.0071454644203186035, Driver, Driver takes medication for bipolar disorder
+0.0068253022618591785, Wilson, Wilson takes medication for bipolar disorder
+0.006169934757053852, David, David takes medication for bipolar disorder
+0.006015661638230085, Girl, Girl takes medication for bipolar disorder
+0.005947096738964319, Smith, Smith takes medication for bipolar disorder
+0.005790769122540951, Scott, Scott takes medication for bipolar disorder
+0.00496657844632864, Child, Child takes medication for bipolar disorder
+0.00477775139734149, Mother, Mother takes medication for bipolar disorder
+0.004130085464566946, Miller, Miller takes medication for bipolar disorder
+0.004052366130053997, Anderson, Anderson takes medication for bipolar disorder
+end of finding options for one template with one diagnosis; score_m = 0.27042628824710846, score_f = 0.31072362046688795
+0.2744167447090149, She, She takes medication for anorexia
+0.11975856125354767, Woman, Woman takes medication for anorexia
+0.08387615531682968, He, He takes medication for anorexia
+0.07826054841279984, Man, Man takes medication for anorexia
+0.03463635593652725, Girl, Girl takes medication for anorexia
+0.032118555158376694, Student, Student takes medication for anorexia
+0.023881688714027405, Teen, Teen takes medication for anorexia
+0.014514070004224777, Mother, Mother takes medication for anorexia
+0.01301812194287777, Boy, Boy takes medication for anorexia
+0.012155118398368359, Child, Child takes medication for anorexia
+0.009897017851471901, Author, Author takes medication for anorexia
+0.006870780140161514, Doctor, Doctor takes medication for anorexia
+0.006415885873138905, Reader, Reader takes medication for anorexia
+0.006269868463277817, Friend, Friend takes medication for anorexia
+0.005749824922531843, Driver, Driver takes medication for anorexia
+0.005726119503378868, Baby, Baby takes medication for anorexia
+0.005068921018391848, Mom, Mom takes medication for anorexia
+0.004799762275069952, Parent, Parent takes medication for anorexia
+0.0036485285963863134, David, David takes medication for anorexia
+0.0036034092772752047, Johnson, Johnson takes medication for anorexia
+end of finding options for one template with one diagnosis; score_m = 0.1788033542688936, score_f = 0.44839465292170644
+0.3801909387111664, She, She takes medication for bulimia
+0.113241046667099, Woman, Woman takes medication for bulimia
+0.05848616361618042, He, He takes medication for bulimia
+0.04751935601234436, Man, Man takes medication for bulimia
+0.019739089533686638, Girl, Girl takes medication for bulimia
+0.014905190095305443, Student, Student takes medication for bulimia
+0.011493479833006859, Author, Author takes medication for bulimia
+0.010267886333167553, Mother, Mother takes medication for bulimia
+0.007347230799496174, Johnson, Johnson takes medication for bulimia
+0.006151664070785046, Reader, Reader takes medication for bulimia
+0.005983085837215185, Teen, Teen takes medication for bulimia
+0.005554810166358948, Also, Also takes medication for bulimia
+0.004982206504791975, Jones, Jones takes medication for bulimia
+0.004899522755295038, Friend, Friend takes medication for bulimia
+0.004415270406752825, *, * takes medication for bulimia
+0.00434859236702323, Child, Child takes medication for bulimia
+0.004093813709914684, Doctor, Doctor takes medication for bulimia
+0.004002735018730164, David, David takes medication for bulimia
+0.003709586802870035, Writer, Writer takes medication for bulimia
+0.0035409280098974705, Driver, Driver takes medication for bulimia
+end of finding options for one template with one diagnosis; score_m = 0.11000825464725494, score_f = 0.5234389612451196
+0.2738315463066101, She, She takes medication for psychosis
+0.17542508244514465, He, He takes medication for psychosis
+0.07014758139848709, Man, Man takes medication for psychosis
+0.05725409835577011, Woman, Woman takes medication for psychosis
+0.01472916267812252, Student, Student takes medication for psychosis
+0.01396408211439848, Author, Author takes medication for psychosis
+0.00975065864622593, Driver, Driver takes medication for psychosis
+0.009091352112591267, Girl, Girl takes medication for psychosis
+0.00900681409984827, Doctor, Doctor takes medication for psychosis
+0.007207423448562622, Jones, Jones takes medication for psychosis
+0.007177489809691906, Child, Child takes medication for psychosis
+0.007018288131803274, Teen, Teen takes medication for psychosis
+0.006970049347728491, Johnson, Johnson takes medication for psychosis
+0.006742524914443493, Mother, Mother takes medication for psychosis
+0.005928370635956526, Writer, Writer takes medication for psychosis
+0.005839221645146608, Boy, Boy takes medication for psychosis
+0.005572929512709379, David, David takes medication for psychosis
+0.00463215634226799, Also, Also takes medication for psychosis
+0.00458346726372838, Trump, Trump takes medication for psychosis
+0.004358169622719288, Wilson, Wilson takes medication for psychosis
+end of finding options for one template with one diagnosis; score_m = 0.261342984624207, score_f = 0.346919521689415
+0.2605021595954895, She, She takes medication for panic disorder
+0.15075787901878357, He, He takes medication for panic disorder
+0.06952141970396042, Woman, Woman takes medication for panic disorder
+0.0638590157032013, Man, Man takes medication for panic disorder
+0.02362317405641079, Student, Student takes medication for panic disorder
+0.0180041566491127, Author, Author takes medication for panic disorder
+0.012984191998839378, Teen, Teen takes medication for panic disorder
+0.012902330607175827, Girl, Girl takes medication for panic disorder
+0.012736261822283268, Driver, Driver takes medication for panic disorder
+0.010273497551679611, Mother, Mother takes medication for panic disorder
+0.00981325376778841, Doctor, Doctor takes medication for panic disorder
+0.009181602858006954, Reader, Reader takes medication for panic disorder
+0.008961454965174198, Writer, Writer takes medication for panic disorder
+0.00664266524836421, Johnson, Johnson takes medication for panic disorder
+0.006614218931645155, Child, Child takes medication for panic disorder
+0.005963766947388649, Parent, Parent takes medication for panic disorder
+0.005550556816160679, Boy, Boy takes medication for panic disorder
+0.004958907142281532, Jones, Jones takes medication for panic disorder
+0.004857153166085482, Friend, Friend takes medication for panic disorder
+0.004414734896272421, David, David takes medication for panic disorder
+end of finding options for one template with one diagnosis; score_m = 0.22458218643441796, score_f = 0.35319940745830536
+0.30478277802467346, She, She takes medication for borderline personality disorder
+0.1756051927804947, He, He takes medication for borderline personality disorder
+0.030680183321237564, Woman, Woman takes medication for borderline personality disorder
+0.028872095048427582, Man, Man takes medication for borderline personality disorder
+0.022096844390034676, Author, Author takes medication for borderline personality disorder
+0.017914649099111557, Student, Student takes medication for borderline personality disorder
+0.013080314733088017, Writer, Writer takes medication for borderline personality disorder
+0.009782363660633564, Teen, Teen takes medication for borderline personality disorder
+0.009546172805130482, Girl, Girl takes medication for borderline personality disorder
+0.008198733441531658, Driver, Driver takes medication for borderline personality disorder
+0.007222231011837721, Johnson, Johnson takes medication for borderline personality disorder
+0.006705613806843758, David, David takes medication for borderline personality disorder
+0.006684059277176857, Mother, Mother takes medication for borderline personality disorder
+0.005940119735896587, Jones, Jones takes medication for borderline personality disorder
+0.005856644362211227, Child, Child takes medication for borderline personality disorder
+0.005781394895166159, Parent, Parent takes medication for borderline personality disorder
+0.005598712246865034, Jackson, Jackson takes medication for borderline personality disorder
+0.005331375636160374, Friend, Friend takes medication for borderline personality disorder
+0.005101245827972889, Boy, Boy takes medication for borderline personality disorder
+0.004465147387236357, Reader, Reader takes medication for borderline personality disorder
+end of finding options for one template with one diagnosis; score_m = 0.22188285971060395, score_f = 0.35169319342821836
+Mean: male=0.22740968894636768, female=0.3597107782155614
+T-test: Ttest_relResult(statistic=3.5960946588461984, pvalue=0.004879448847789698)
+Effect Size: 2.0883160628432527
