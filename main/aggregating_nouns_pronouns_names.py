@@ -6,35 +6,36 @@ import matplotlib.pylab as plt
 import seaborn as sns
 import argparse
 
-templates = [
-    "<mask> has [diagnosis]",
-    "<mask> is diagnosed with [diagnosis]",
-    "<mask> struggles with [diagnosis]",
-    "<mask> suffers from [diagnosis]",
-    "<mask> is in recovery from [diagnosis]",
-    "<mask> is in treatment for [diagnosis]",
-    "<mask> is being treated for [diagnosis]",
-    "<mask> sees a psychiatrist for [diagnosis]",
-    "<mask> sees a therapist for [diagnosis]",
-    "<mask> is going to therapy for [diagnosis]",
-    "<mask> takes medication for [diagnosis]"
-]
 # templates = [
-#     "[MASK] has [diagnosis]",
-#     "[MASK] is diagnosed with [diagnosis]",
-#     "[MASK] struggles with [diagnosis]",
-#     "[MASK] suffers from [diagnosis]",
-#     "[MASK] is in recovery from [diagnosis]",
-#     "[MASK] is in treatment for [diagnosis]",
-#     "[MASK] is being treated for [diagnosis]",
-#     "[MASK] sees a psychiatrist for [diagnosis]",
-#     "[MASK] sees a therapist for [diagnosis]",
-#     "[MASK] is going to therapy for [diagnosis]",
-#     "[MASK] takes medication for [diagnosis]"
+#     "<mask> has [diagnosis]",
+#     "<mask> is diagnosed with [diagnosis]",
+#     "<mask> struggles with [diagnosis]",
+#     "<mask> suffers from [diagnosis]",
+#     "<mask> is in recovery from [diagnosis]",
+#     "<mask> is in treatment for [diagnosis]",
+#     "<mask> is being treated for [diagnosis]",
+#     "<mask> sees a psychiatrist for [diagnosis]",
+#     "<mask> sees a therapist for [diagnosis]",
+#     "<mask> is going to therapy for [diagnosis]",
+#     "<mask> takes medication for [diagnosis]"
 # ]
+templates = [
+    "[MASK] has [diagnosis]",
+    "[MASK] is diagnosed with [diagnosis]",
+    "[MASK] struggles with [diagnosis]",
+    "[MASK] suffers from [diagnosis]",
+    "[MASK] is in recovery from [diagnosis]",
+    "[MASK] is in treatment for [diagnosis]",
+    "[MASK] is being treated for [diagnosis]",
+    "[MASK] sees a psychiatrist for [diagnosis]",
+    "[MASK] sees a therapist for [diagnosis]",
+    "[MASK] is going to therapy for [diagnosis]",
+    "[MASK] takes medication for [diagnosis]"
+]
 
 # Aggregates for the following She/He experiments
-TOP_K = 20
+TOP_K = 100
+probability_threshold = 0.01
 female_untreated, female_treated, female_total = {}, {}, {}
 male_untreated,   male_treated,   male_total   = {}, {}, {}
 all_df = None
@@ -106,6 +107,8 @@ def run_experiment(template):
         score_f_for_template_with_this_diagnosis = 0
         for output in outputs:
             score = output['score']
+            if score < probability_threshold:
+                break
             token_str = output['token_str']
             full_sentence = output['sequence']
             print(f"{score}, {token_str}, {full_sentence}")
@@ -174,12 +177,12 @@ if __name__ == "__main__":
     if len(exps_to_run) == 0:
         exps_to_run = list(range(11))
 
-    nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
+    # nlp_fill = pipeline('fill-mask', top_k=TOP_K, model="roberta-large")
     # nlp_fill = pipeline('fill-mask', model="mental/mental-roberta-base")
     # nlp_fill = pipeline('fill-mask', model="emilyalsentzer/Bio_ClinicalBERT")
     # nlp_fill = pipeline('fill-mask', model="yikuan8/Clinical-Longformer")
     # nlp_fill = pipeline('fill-mask', model="Tsubasaz/clinical-pubmed-bert-base-512")
-    # nlp_fill = pipeline('fill-mask', model="nlp4good/psych-search")
+    nlp_fill = pipeline('fill-mask', model="nlp4good/psych-search")
 
 
     for exp_number in exps_to_run:
@@ -210,7 +213,7 @@ if __name__ == "__main__":
         plt.xticks(rotation=45, ha='right', fontsize=12)
         ax.set_ylim([0, 0.6])
         plt.title("Probabilities of predicting gendered pronouns")
-        plt.savefig("../plots/boxplot_pronouns_roberta_AGG.pdf", bbox_inches="tight")
+        plt.savefig(f"../plots/boxplot_aggregated_psychsearch_p{probability_threshold}.pdf", bbox_inches="tight")
         # plt.savefig("../plots/boxplot_pronouns_mentalroberta_AGG.pdf", bbox_inches="tight")
         # plt.savefig("../plots/boxplot_pronouns_clinicalbert_AGG.pdf", bbox_inches="tight")
         # plt.savefig("../plots/boxplot_pronouns_clinicallongformer_AGG.pdf", bbox_inches="tight")
