@@ -6,7 +6,7 @@ from collections import defaultdict
 # import matplotlib.pylab as plt
 # from nrclex import NRCLex
 import argparse
-from tqdm.notebook import tqdm
+from tqdm import tqdm, trange
 from utils import *
 from aggregating_nouns_pronouns_names import run_experiment
 import matplotlib.pylab as plt
@@ -105,7 +105,7 @@ templates = [
 
 
 TOP_K=1000
-probability_threshold = .01
+# probability_threshold = .01
 aggregate_probability_threshold = 0.9
 
 def add_to_df(male, female, ambig, template):  # , current_df=None):
@@ -124,7 +124,7 @@ def get_gender_scores_attributes(template, nlp_fill):
     ambig_scores = []
     # print (top_k_for_all_diagnoses)
     
-    for i, top_k_for_one_diagnosis in tqdm(enumerate(top_k_for_all_diagnoses)):
+    for i, top_k_for_one_diagnosis in enumerate(top_k_for_all_diagnoses):
         # print (top_k_for_one_diagnosis)
         outputs = top_k_for_one_diagnosis[0]
         # print (outputs)
@@ -157,7 +157,7 @@ def get_gender_scores_attributes(template, nlp_fill):
         ambig_scores.append(score_a_for_template_with_this_diagnosis)
 
 
-    male_mean, female_mean = print_stats(male=male_scores, female=female_scores)
+    # male_mean, female_mean = print_stats(male=male_scores, female=female_scores)
 
     # print (male_scores, female_scores)
 
@@ -170,8 +170,10 @@ if __name__ == '__main__':
         nlp_fill = pipeline('fill-mask', model=models[model]['huggingface_path'])
         
         all_df = None
-        for i in range(len(templates)):
+        for i in trange(len(templates)):
             get_gender_scores_attributes(templates[i], nlp_fill)
+
+        all_df.to_csv(f'../output/results_attributes_{model}_p{aggregate_probability_threshold}.csv')
 
         binary_df = all_df[all_df.gender != 'ambig']
         ax = sns.boxplot(x="prompt", y="probability", hue="gender",
@@ -182,7 +184,7 @@ if __name__ == '__main__':
         plt.xticks(rotation=45, ha='right', fontsize=12)
         ax.set_ylim([0, .6])
         plt.title("Probabilities of predicting gendered nouns given attributes")
-        plt.savefig(f"../plots/boxplot_attributes_binary_gender_{model}_p{probability_threshold}.pdf", bbox_inches="tight")
+        plt.savefig(f"../plots/boxplot_attributes_binary_gender_{model}_p{aggregate_probability_threshold}.pdf", bbox_inches="tight")
 
 
         # plot binary + ambig
@@ -194,4 +196,4 @@ if __name__ == '__main__':
         plt.xticks(rotation=45, ha='right', fontsize=12)
         ax.set_ylim([0, .6])
         plt.title("Probabilities of predicting gendered nouns given attributes")
-        plt.savefig(f"../plots/boxplot_attributes_aggregate_ambig_{model}_p{probability_threshold}.pdf", bbox_inches="tight")
+        plt.savefig(f"../plots/boxplot_attributes_aggregate_ambig_{model}_p{aggregate_probability_threshold}.pdf", bbox_inches="tight")
