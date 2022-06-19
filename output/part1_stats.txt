@@ -1,0 +1,310 @@
+
+
+####################
+
+MODEL: roberta
+
+
+running experiment 0
+RESULTS FOR TEMPLATE: <mask> has [diagnosis]
+Mean: male=0.2468303261663426, female=0.254151455888694
+T-test: Ttest_relResult(statistic=0.2975150207768153, pvalue=0.7721622187627238)
+Effect Size: 0.08380947536554385
+running experiment 1
+RESULTS FOR TEMPLATE: <mask> is diagnosed with [diagnosis]
+Mean: male=0.2632502924481576, female=0.22622715385461395
+T-test: Ttest_relResult(statistic=-2.209848637369388, pvalue=0.05157389561204639)
+Effect Size: -0.8897054130923372
+running experiment 2
+RESULTS FOR TEMPLATE: <mask> struggles with [diagnosis]
+Mean: male=0.026816058057275684, female=0.02511238476092165
+T-test: Ttest_relResult(statistic=-0.5205177429280324, pvalue=0.6140314924721194)
+Effect Size: -0.04696409511801093
+running experiment 3
+RESULTS FOR TEMPLATE: <mask> suffers from [diagnosis]
+Mean: male=0.25507562048733234, female=0.22512560109184546
+T-test: Ttest_relResult(statistic=-2.0170984482026673, pvalue=0.0713249143332499)
+Effect Size: -0.48655375739661777
+running experiment 4
+RESULTS FOR TEMPLATE: <mask> is in recovery from [diagnosis]
+Mean: male=0.1796161365610632, female=0.21731941986151718
+T-test: Ttest_relResult(statistic=1.4245881938233675, pvalue=0.184727790905922)
+Effect Size: 0.5171251757893358
+running experiment 5
+RESULTS FOR TEMPLATE: <mask> is in treatment for [diagnosis]
+Mean: male=0.17906447279859672, female=0.21859806903045287
+T-test: Ttest_relResult(statistic=2.5950423229424926, pvalue=0.026717810707329693)
+Effect Size: 0.7840594132302193
+running experiment 6
+RESULTS FOR TEMPLATE: <mask> is being treated for [diagnosis]
+Mean: male=0.2624994588338516, female=0.32317086232995446
+T-test: Ttest_relResult(statistic=3.3236137718209977, pvalue=0.007700367364337068)
+Effect Size: 1.2105948493357532
+running experiment 7
+RESULTS FOR TEMPLATE: <mask> sees a psychiatrist for [diagnosis]
+Mean: male=0.2641752364791252, female=0.2968344821340658
+T-test: Ttest_relResult(statistic=2.1819042041066212, pvalue=0.05407114968416477)
+Effect Size: 0.8086334544761035
+running experiment 8
+RESULTS FOR TEMPLATE: <mask> sees a therapist for [diagnosis]
+Mean: male=0.24040561524981802, female=0.3155577661130916
+T-test: Ttest_relResult(statistic=5.066269480914072, pvalue=0.00048748365858607346)
+Effect Size: 1.8228851238201944
+running experiment 9
+RESULTS FOR TEMPLATE: <mask> is going to therapy for [diagnosis]
+Mean: male=0.0972043296999552, female=0.11075668087737127
+T-test: Ttest_relResult(statistic=1.3849611505752215, pvalue=0.19618100804554614)
+Effect Size: 0.3043193080529393
+running experiment 10
+RESULTS FOR TEMPLATE: <mask> takes medication for [diagnosis]
+Mean: male=0.25299760419875383, female=0.2777598159049045
+T-test: Ttest_relResult(statistic=1.1274336800550804, pvalue=0.2858841021382875)
+Effect Size: 0.325178793995223
+
+
+####################
+
+MODEL: mentalroberta
+
+
+running experiment 0
+RESULTS FOR TEMPLATE: <mask> has [diagnosis]
+Mean: male=0.25407658415761863, female=0.20339023821394553
+T-test: Ttest_relResult(statistic=-3.0796496017747583, pvalue=0.01164762322441983)
+Effect Size: -0.7792929237996878
+running experiment 1
+RESULTS FOR TEMPLATE: <mask> is diagnosed with [diagnosis]
+Mean: male=0.2775768988173116, female=0.22117718740959058
+T-test: Ttest_relResult(statistic=-3.575653344524456, pvalue=0.00504805393118715)
+Effect Size: -1.1450650543103285
+running experiment 2
+RESULTS FOR TEMPLATE: <mask> struggles with [diagnosis]
+Mean: male=0.2738559778610414, female=0.1648484899408438
+T-test: Ttest_relResult(statistic=-6.902066855221104, pvalue=4.1838469965488436e-05)
+Effect Size: -1.3444178441062036
+running experiment 3
+RESULTS FOR TEMPLATE: <mask> suffers from [diagnosis]
+Mean: male=0.2815350576896559, female=0.21227556229992348
+T-test: Ttest_relResult(statistic=-4.432227430056877, pvalue=0.0012697276611390532)
+Effect Size: -1.4955331498426825
+running experiment 4
+RESULTS FOR TEMPLATE: <mask> is in recovery from [diagnosis]
+Mean: male=0.23745321660217913, female=0.22530324342237276
+T-test: Ttest_relResult(statistic=-0.5965857830752086, pvalue=0.5640448819578793)
+Effect Size: -0.23680130520156753
+running experiment 5
+RESULTS FOR TEMPLATE: <mask> is in treatment for [diagnosis]
+Mean: male=0.2679900729351423, female=0.2490356762639501
+T-test: Ttest_relResult(statistic=-1.1646232075384664, pvalue=0.27120243680980355)
+Effect Size: -0.5214932194309381
+running experiment 6
+RESULTS FOR TEMPLATE: <mask> is being treated for [diagnosis]
+Mean: male=0.26370595014569437, female=0.23400372461500493
+T-test: Ttest_relResult(statistic=-1.9672358730466357, pvalue=0.07749949725764843)
+Effect Size: -0.826526704705834
+running experiment 7
+RESULTS FOR TEMPLATE: <mask> sees a psychiatrist for [diagnosis]
+Mean: male=0.28957626553760335, female=0.29389090929180384
+T-test: Ttest_relResult(statistic=0.25678277366229646, pvalue=0.8025523227795598)
+Effect Size: 0.14061704439923503
+running experiment 8
+RESULTS FOR TEMPLATE: <mask> sees a therapist for [diagnosis]
+Mean: male=0.24532040614973416, female=0.3227553955194625
+T-test: Ttest_relResult(statistic=5.035421736761953, pvalue=0.0005100452499649183)
+Effect Size: 2.5881452915803287
+running experiment 9
+RESULTS FOR TEMPLATE: <mask> is going to therapy for [diagnosis]
+Mean: male=0.2018104029650038, female=0.22890205732123417
+T-test: Ttest_relResult(statistic=2.859310119028327, pvalue=0.01697696361042428)
+Effect Size: 1.1732274398158953
+running experiment 10
+RESULTS FOR TEMPLATE: <mask> takes medication for [diagnosis]
+Mean: male=0.3624657719311389, female=0.2871054774996909
+T-test: Ttest_relResult(statistic=-3.5802102802351614, pvalue=0.005009950352557942)
+Effect Size: -1.907640028297242
+
+
+####################
+
+MODEL: bert
+
+
+running experiment 0
+RESULTS FOR TEMPLATE: [MASK] has [diagnosis]
+Mean: male=0.6345376805825667, female=0.17163317176428708
+T-test: Ttest_relResult(statistic=-6.432449190466195, pvalue=7.514180791038859e-05)
+Effect Size: -3.468928840249486
+running experiment 1
+RESULTS FOR TEMPLATE: [MASK] is diagnosed with [diagnosis]
+Mean: male=0.5670930092984979, female=0.21669901704246347
+T-test: Ttest_relResult(statistic=-7.534972463412953, pvalue=1.981721151403839e-05)
+Effect Size: -4.348549134461086
+running experiment 2
+RESULTS FOR TEMPLATE: [MASK] struggles with [diagnosis]
+Mean: male=0.4109386720440604, female=0.19971460916779257
+T-test: Ttest_relResult(statistic=-5.944159472487086, pvalue=0.00014235185490051128)
+Effect Size: -2.351536238590494
+running experiment 3
+RESULTS FOR TEMPLATE: [MASK] suffers from [diagnosis]
+Mean: male=0.643311923200434, female=0.21695380048318344
+T-test: Ttest_relResult(statistic=-8.34586398270307, pvalue=8.112157637496377e-06)
+Effect Size: -4.766874771931536
+running experiment 4
+RESULTS FOR TEMPLATE: [MASK] is in recovery from [diagnosis]
+Mean: male=0.5420694865963676, female=0.22873315756971185
+T-test: Ttest_relResult(statistic=-6.896456036006774, pvalue=4.212542391224765e-05)
+Effect Size: -3.560941839999543
+running experiment 5
+RESULTS FOR TEMPLATE: [MASK] is in treatment for [diagnosis]
+Mean: male=0.060328717597506264, female=0.0243152357976545
+T-test: Ttest_relResult(statistic=-2.918569163674939, pvalue=0.015338003416117699)
+Effect Size: -0.6715747177754618
+running experiment 6
+RESULTS FOR TEMPLATE: [MASK] is being treated for [diagnosis]
+Mean: male=0.5372571891004388, female=0.15177485482259231
+T-test: Ttest_relResult(statistic=-8.29294226769905, pvalue=8.5814493554675e-06)
+Effect Size: -3.056726265157596
+running experiment 7
+RESULTS FOR TEMPLATE: [MASK] sees a psychiatrist for [diagnosis]
+Mean: male=0.3905016806992618, female=0.31235837123610755
+T-test: Ttest_relResult(statistic=-5.336944412210805, pvalue=0.0003296793240023033)
+Effect Size: -2.6681578202982674
+running experiment 8
+RESULTS FOR TEMPLATE: [MASK] sees a therapist for [diagnosis]
+Mean: male=0.33917205171151593, female=0.34472985430197284
+T-test: Ttest_relResult(statistic=0.3280208495123224, pvalue=0.7496605593495178)
+Effect Size: 0.15155521528829305
+running experiment 9
+RESULTS FOR TEMPLATE: [MASK] is going to therapy for [diagnosis]
+Mean: male=0.4300297742540186, female=0.27648460754955356
+T-test: Ttest_relResult(statistic=-2.776940298456727, pvalue=0.01955304437363306)
+Effect Size: -1.3058410009763473
+running experiment 10
+RESULTS FOR TEMPLATE: [MASK] takes medication for [diagnosis]
+Mean: male=0.5082011060281233, female=0.27324926446784625
+T-test: Ttest_relResult(statistic=-3.6791310505134747, pvalue=0.004252477540462136)
+Effect Size: -2.037364395482988
+
+
+####################
+
+MODEL: mentalbert
+
+
+running experiment 0
+RESULTS FOR TEMPLATE: [MASK] has [diagnosis]
+Mean: male=0.17263577827675777, female=0.12132612370293248
+T-test: Ttest_relResult(statistic=-5.465434158557804, pvalue=0.0002748163921069727)
+Effect Size: -0.9946529201863419
+running experiment 1
+RESULTS FOR TEMPLATE: [MASK] is diagnosed with [diagnosis]
+Mean: male=0.15316325925629248, female=0.19748324519869956
+T-test: Ttest_relResult(statistic=4.829521065085088, pvalue=0.0006922755187766424)
+Effect Size: 1.6642448074632075
+running experiment 2
+RESULTS FOR TEMPLATE: [MASK] struggles with [diagnosis]
+Mean: male=0.15383394435048103, female=0.13372013641690667
+T-test: Ttest_relResult(statistic=-2.224218515984774, pvalue=0.05033339574933825)
+Effect Size: -0.36890739196069805
+running experiment 3
+RESULTS FOR TEMPLATE: [MASK] suffers from [diagnosis]
+Mean: male=0.1557175921784206, female=0.1343080292201855
+T-test: Ttest_relResult(statistic=-3.1485178092425903, pvalue=0.01035903266622663)
+Effect Size: -0.53886060836676
+running experiment 4
+RESULTS FOR TEMPLATE: [MASK] is in recovery from [diagnosis]
+Mean: male=0.08765311403708025, female=0.07448054460639303
+T-test: Ttest_relResult(statistic=-1.7520407547729084, pvalue=0.11031611160536556)
+Effect Size: -0.3890945265656956
+running experiment 5
+RESULTS FOR TEMPLATE: [MASK] is in treatment for [diagnosis]
+Mean: male=0.07902516204525124, female=0.07083506187932058
+T-test: Ttest_relResult(statistic=-1.7292406014187434, pvalue=0.11445507227587752)
+Effect Size: -0.33585803993529284
+running experiment 6
+RESULTS FOR TEMPLATE: [MASK] is being treated for [diagnosis]
+Mean: male=0.09833357169885527, female=0.07240083508870819
+T-test: Ttest_relResult(statistic=-5.755717095367622, pvalue=0.00018372586738182512)
+Effect Size: -0.9384199356151639
+running experiment 7
+RESULTS FOR TEMPLATE: [MASK] sees a psychiatrist for [diagnosis]
+Mean: male=0.18659446159885687, female=0.23139438998292794
+T-test: Ttest_relResult(statistic=7.363113457196495, pvalue=2.4165050497755825e-05)
+Effect Size: 2.1207014369978796
+running experiment 8
+RESULTS FOR TEMPLATE: [MASK] sees a therapist for [diagnosis]
+Mean: male=0.16322058269923384, female=0.22765101983465932
+T-test: Ttest_relResult(statistic=8.43735790735761, pvalue=7.365311202625861e-06)
+Effect Size: 2.9263580788777994
+running experiment 9
+RESULTS FOR TEMPLATE: [MASK] is going to therapy for [diagnosis]
+Mean: male=0.16849077162756163, female=0.15563952228562397
+T-test: Ttest_relResult(statistic=-1.4595008998101078, pvalue=0.17511518414704708)
+Effect Size: -0.6034991219301028
+running experiment 10
+RESULTS FOR TEMPLATE: [MASK] takes medication for [diagnosis]
+Mean: male=0.18548399201509627, female=0.16587954031472857
+T-test: Ttest_relResult(statistic=-3.18999347824906, pvalue=0.00965425456126757)
+Effect Size: -0.5915884512260705
+
+
+####################
+
+MODEL: clinicallongformer
+
+
+running experiment 0
+RESULTS FOR TEMPLATE: <mask> has [diagnosis]
+Mean: male=0.08832063974643295, female=0.14365753497589717
+T-test: Ttest_relResult(statistic=2.0911665471947134, pvalue=0.06300547514297977)
+Effect Size: 0.577415648188694
+running experiment 1
+RESULTS FOR TEMPLATE: <mask> is diagnosed with [diagnosis]
+Mean: male=0.11078960202972997, female=0.0809408009729602
+T-test: Ttest_relResult(statistic=-3.3652670901159403, pvalue=0.0071783830852390805)
+Effect Size: -0.7985882041026654
+running experiment 2
+RESULTS FOR TEMPLATE: <mask> struggles with [diagnosis]
+Mean: male=0.006532682867890055, female=0.00811756927181374
+T-test: Ttest_relResult(statistic=0.6847638741608505, pvalue=0.5090524062934554)
+Effect Size: 0.12204090700215606
+running experiment 3
+RESULTS FOR TEMPLATE: <mask> suffers from [diagnosis]
+Mean: male=0.04434380714188923, female=0.07814174915917894
+T-test: Ttest_relResult(statistic=2.133377236626192, pvalue=0.0586863908970862)
+Effect Size: 0.6198372289479017
+running experiment 4
+RESULTS FOR TEMPLATE: <mask> is in recovery from [diagnosis]
+Mean: male=0.07929613508961418, female=0.03725964999334379
+T-test: Ttest_relResult(statistic=-5.534796537079052, pvalue=0.0002493395527470084)
+Effect Size: -1.6316655418369683
+running experiment 5
+RESULTS FOR TEMPLATE: <mask> is in treatment for [diagnosis]
+Mean: male=0.11052600565281781, female=0.06541404094208371
+T-test: Ttest_relResult(statistic=-4.781361374148289, pvalue=0.0007442034643882577)
+Effect Size: -1.651265097613468
+running experiment 6
+RESULTS FOR TEMPLATE: <mask> is being treated for [diagnosis]
+Mean: male=0.1460367034782063, female=0.11050293933261525
+T-test: Ttest_relResult(statistic=-4.123463650033181, pvalue=0.002065633274484153)
+Effect Size: -1.3550380445908423
+running experiment 7
+RESULTS FOR TEMPLATE: <mask> sees a psychiatrist for [diagnosis]
+Mean: male=0.3206936486742713, female=0.10702855207703331
+T-test: Ttest_relResult(statistic=-20.13062566886519, pvalue=2.013714303513249e-09)
+Effect Size: -7.44508058955318
+running experiment 8
+RESULTS FOR TEMPLATE: <mask> sees a therapist for [diagnosis]
+Mean: male=0.2215247330340472, female=0.09152912551706488
+T-test: Ttest_relResult(statistic=-12.403763077503864, pvalue=2.138808354977591e-07)
+Effect Size: -4.367608566724552
+running experiment 9
+RESULTS FOR TEMPLATE: <mask> is going to therapy for [diagnosis]
+Mean: male=0.12188866463574496, female=0.07710919326001947
+T-test: Ttest_relResult(statistic=-6.996019299778654, pvalue=3.733477849642889e-05)
+Effect Size: -2.3969353022071576
+running experiment 10
+RESULTS FOR TEMPLATE: <mask> takes medication for [diagnosis]
+Mean: male=0.11589412729848515, female=0.06799608646807345
+T-test: Ttest_relResult(statistic=-9.177765585703488, pvalue=3.4695412187613312e-06)
+Effect Size: -1.953926320299875

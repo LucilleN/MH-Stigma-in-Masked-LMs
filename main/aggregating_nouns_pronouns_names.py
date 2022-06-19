@@ -19,14 +19,14 @@ templates = [
 ]
 
 models = {
-    # 'roberta': {
-    #     'huggingface_path': "roberta-large",
-    #     'mask_token': "<mask>"
-    # },
-    # 'mentalroberta': {
-    #     'huggingface_path': "mental/mental-roberta-base",
-    #     'mask_token': "<mask>"
-    # },
+    'roberta': {
+        'huggingface_path': "roberta-large",
+        'mask_token': "<mask>"
+    },
+    'mentalroberta': {
+        'huggingface_path': "mental/mental-roberta-base",
+        'mask_token': "<mask>"
+    },
     'bert': {
         'huggingface_path': "bert-base-uncased",
         'mask_token': "[MASK]"
@@ -39,10 +39,10 @@ models = {
     #     'huggingface_path': "emilyalsentzer/Bio_ClinicalBERT",
     #     'mask_token': "[MASK]"
     # },
-    # 'clinicallongformer': {
-    #     'huggingface_path': "yikuan8/Clinical-Longformer",
-    #     'mask_token': "<mask>"
-    # },
+    'clinicallongformer': {
+        'huggingface_path': "yikuan8/Clinical-Longformer",
+        'mask_token': "<mask>"
+    },
     # 'clinicalpubmedbert': {
     #     'huggingface_path': "Tsubasaz/clinical-pubmed-bert-base-512",
     #     'mask_token': "[MASK]"
@@ -103,7 +103,7 @@ def add_to_df(male, female, ambig, template):  # , current_df=None):
 
 def run_experiment(template):
 
-    print(f"TOP {TOP_K} OUTPUTS FOR THE TEMPLATE {template}")
+    # print(f"TOP {TOP_K} OUTPUTS FOR THE TEMPLATE {template}")
     top_k_for_all_diagnoses = get_top_k(template, nlp_fill, TOP_K)
 
     male_scores = []
@@ -121,7 +121,7 @@ def run_experiment(template):
                 break
             token_str = output['token_str']
             full_sentence = output['sequence']
-            print(f"{score}, {token_str}, {full_sentence}")
+            # print(f"{score}, {token_str}, {full_sentence}")
 
             if token_str.lower() in male_subjects or token_str in male_names:
                 score_m_for_template_with_this_diagnosis = score_m_for_template_with_this_diagnosis + score
@@ -130,12 +130,13 @@ def run_experiment(template):
             else:
                 score_a_for_template_with_this_diagnosis = score_a_for_template_with_this_diagnosis + score
 
-        print(f"end of finding options for one template with one diagnosis; score_m = {score_m_for_template_with_this_diagnosis}, score_f = {score_f_for_template_with_this_diagnosis}")
+        # print(f"end of finding options for one template with one diagnosis; score_m = {score_m_for_template_with_this_diagnosis}, score_f = {score_f_for_template_with_this_diagnosis}")
         male_scores.append(score_m_for_template_with_this_diagnosis)
         female_scores.append(score_f_for_template_with_this_diagnosis)
         ambig_scores.append(score_a_for_template_with_this_diagnosis)
 
 
+    print(f"RESULTS FOR TEMPLATE: {template}")
     male_mean, female_mean = print_stats(male=male_scores, female=female_scores)
 
     if args.box_plot:
@@ -147,6 +148,8 @@ if __name__ == "__main__":
     args = parse_args()
 
     for model in models:
+
+        print(f"""\n\n####################\n\nMODEL: {model}\n\n""")
 
         nlp_fill = pipeline('fill-mask', model=models[model]['huggingface_path'])
         
