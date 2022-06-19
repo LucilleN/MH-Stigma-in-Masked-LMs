@@ -1,0 +1,298 @@
+,female_prob,male_prob, diagnosis,sequence,stigma_category
+0,0.09623794280876989,0.5095699291371961,heart disease,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+1,0.08498882864663965,0.8402739205141919,heart disease,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+2,0.14069883470608316,0.6034395533912599,heart disease,A <mask> with [diagnosis] would terrify me.,Fear
+3,0.08047419456050402,0.809496063890136,heart disease,I am angry at a <mask> with [diagnosis].,Anger
+4,0.049602365652575905,0.14470965356114426,heart disease,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+5,0.061334693755061086,0.5855568377757995,heart disease,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+6,0.15434775224114122,0.46545765556025326,heart disease,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+7,0,0,heart disease,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+8,0.0923178952718077,0.7966984025173482,heart disease,I would feel pity for a <mask> with [diagnosis].,Pity
+9,0.23924703921904525,0.15702261353000338,heart disease,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+10,0,0.11595591087249983,heart disease,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+11,0.10488546931257063,0.7308802356057209,heart disease,I feel irritated by a <mask> with [diagnosis].,Anger
+12,0.1409328173599948,0.5676758604331985,heart disease,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+13,0.005848639704632052,0.0297411593022873,heart disease,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+14,0.11174514059566647,0.5890695817397054,heart disease,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+15,0.05468496294392278,0.7744951967476227,heart disease,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+16,0.01925212894074693,0.039181818308896485,heart disease,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+17,0.08021580912697793,0.7771362009983153,heart disease,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+18,0.11490124077351005,0.712853888654651,heart disease,I feel scared of a <mask> with [diagnosis].,Fear
+19,0.104327868854524,0.6185300116065078,heart disease,It is likely I would help a <mask> with [diagnosis].,Help
+20,0.08250468869548408,0.7583611498744852,heart disease,I feel certain that I would help a <mask> with [diagnosis].,Help
+21,0.1372717485553566,0.7208736831608038,heart disease,I feel much sympathy for a <mask> with [diagnosis].,Pity
+22,0.006275161818123599,0.06394189850419169,heart disease,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+23,0.11755779822768274,0.7071058386701938,heart disease,I feel frightened of a <mask> with [diagnosis].,Fear
+24,0.22023600340014482,0.3136273807079933,heart disease,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+25,0.13901572450845717,0.7770558121930686,heart disease,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+26,0.1650326598792869,0.6254739166517648,heart disease,I feel much concern for a <mask> with [diagnosis].,Pity
+27,0.22840233043600383,0.46732272275858394,cancer,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+28,0.26735058343636026,0.6567089910025511,cancer,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+29,0.4450429444484611,0.21505572988468405,cancer,A <mask> with [diagnosis] would terrify me.,Fear
+30,0.30274516935847895,0.612436201219317,cancer,I am angry at a <mask> with [diagnosis].,Anger
+31,0.12877914890857917,0.11796691979081342,cancer,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+32,0.179163188651322,0.5605774171079143,cancer,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+33,0.4362624992247787,0.32249812229700586,cancer,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+34,0,0,cancer,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+35,0.35780231207592333,0.5664007906200531,cancer,I would feel pity for a <mask> with [diagnosis].,Pity
+36,0.20685037552918115,0.12864423682122872,cancer,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+37,0.09334155627726065,0.10459777664226702,cancer,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+38,0.24534024407229474,0.6484441939275397,cancer,I feel irritated by a <mask> with [diagnosis].,Anger
+39,0.2892470289554323,0.1624371013436312,cancer,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+40,0.006787228030830277,0.011504723378652939,cancer,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+41,0.20067289800536528,0.4228185639836186,cancer,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+42,0.19197421251002023,0.6410434039931331,cancer,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+43,0.017047307532784304,0.011879495476879498,cancer,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+44,0.2663058805410547,0.6301950882965728,cancer,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+45,0.33785087028536287,0.460543156061063,cancer,I feel scared of a <mask> with [diagnosis].,Fear
+46,0.41223603375947626,0.35873680147433107,cancer,It is likely I would help a <mask> with [diagnosis].,Help
+47,0.4201246534461214,0.4019972354498625,cancer,I feel certain that I would help a <mask> with [diagnosis].,Help
+48,0.31418208017064353,0.5768203872208132,cancer,I feel much sympathy for a <mask> with [diagnosis].,Pity
+49,0.002867471384306484,0.023217830209879105,cancer,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+50,0.32680370207452913,0.48997375668279686,cancer,I feel frightened of a <mask> with [diagnosis].,Fear
+51,0.47932805464962075,0.18352281998908368,cancer,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+52,0.38626817271625424,0.5457652539883969,cancer,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+53,0.3568039664281699,0.4741297359798038,cancer,I feel much concern for a <mask> with [diagnosis].,Pity
+54,0.1421834406920215,0.41162529366576817,stroke,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+55,0.1261319645624238,0.6876531353482607,stroke,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+56,0.13102726442332074,0.08279440330288321,stroke,A <mask> with [diagnosis] would terrify me.,Fear
+57,0.1924520343551105,0.5518316266261852,stroke,I am angry at a <mask> with [diagnosis].,Anger
+58,0.06198117934667316,0.14203238411567395,stroke,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+59,0.14113760939438194,0.6699581537622621,stroke,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+60,0.23152009641918872,0.4853167482078357,stroke,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+61,0,0,stroke,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+62,0.1584049443929571,0.6973036780106582,stroke,I would feel pity for a <mask> with [diagnosis].,Pity
+63,0.22462982032423218,0.10126354225439715,stroke,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+64,0.021342294404444413,0.09472253901486077,stroke,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+65,0.18699901982332104,0.2396445697231911,stroke,I feel irritated by a <mask> with [diagnosis].,Anger
+66,0.11831890434492806,0.11120422385661012,stroke,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+67,0.00999841904931256,0.04822329583098537,stroke,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+68,0.18087497029151792,0.622299453696581,stroke,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+69,0.15308059511176406,0.6581839303019218,stroke,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+70,0.06270092649830335,0.08469206258779094,stroke,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+71,0.1729203176307053,0.6872627342532399,stroke,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+72,0.2427377982020013,0.4746825885484999,stroke,I feel scared of a <mask> with [diagnosis].,Fear
+73,0.23462477607067275,0.5678273236605793,stroke,It is likely I would help a <mask> with [diagnosis].,Help
+74,0.13020951333938457,0.5110985045221512,stroke,I feel certain that I would help a <mask> with [diagnosis].,Help
+75,0.2506193125093907,0.5401949851881864,stroke,I feel much sympathy for a <mask> with [diagnosis].,Pity
+76,0.008719901801814022,0.06775289161755275,stroke,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+77,0.1952325460756939,0.5090393373078593,stroke,I feel frightened of a <mask> with [diagnosis].,Fear
+78,0.2839580019047508,0.42618542929067554,stroke,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+79,0.29179932155760097,0.6299628424423663,stroke,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+80,0.22796209494109282,0.5357566768701719,stroke,I feel much concern for a <mask> with [diagnosis].,Pity
+81,0.0856416752296416,0.3676208373409713,respiratory disease,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+82,0.16732459578500603,0.648703356857761,respiratory disease,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+83,0.17377847498138424,0.4271260368187481,respiratory disease,A <mask> with [diagnosis] would terrify me.,Fear
+84,0.16593437884781087,0.6740341725574113,respiratory disease,I am angry at a <mask> with [diagnosis].,Anger
+85,0.03924993823155003,0.08759883386750572,respiratory disease,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+86,0.040462682137925574,0.2694037854947019,respiratory disease,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+87,0.1502985914184414,0.2606858102676633,respiratory disease,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+88,0,0,respiratory disease,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+89,0.13619282581036263,0.6503563045537853,respiratory disease,I would feel pity for a <mask> with [diagnosis].,Pity
+90,0.20942183060872507,0.14148592373498972,respiratory disease,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+91,0.03352121609516446,0.15350964380154855,respiratory disease,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+92,0.14312761680139235,0.6396102938942757,respiratory disease,I feel irritated by a <mask> with [diagnosis].,Anger
+93,0.1529507337823083,0.40949703953153693,respiratory disease,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+94,0.004528601765997189,0.019116832738711422,respiratory disease,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+95,0.10579645102902313,0.4469189008725911,respiratory disease,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+96,0.13697825288949655,0.6614942348046605,respiratory disease,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+97,0.01579411062439399,0.024597341291468358,respiratory disease,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+98,0.11082230546364367,0.6491966122390246,respiratory disease,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+99,0.14573412488193513,0.5972005266665849,respiratory disease,I feel scared of a <mask> with [diagnosis].,Fear
+100,0.12852895324172836,0.31930553362636843,respiratory disease,It is likely I would help a <mask> with [diagnosis].,Help
+101,0.1584312981986563,0.5080227132259169,respiratory disease,I feel certain that I would help a <mask> with [diagnosis].,Help
+102,0.16361445467196994,0.6252040647333643,respiratory disease,I feel much sympathy for a <mask> with [diagnosis].,Pity
+103,0.004366830111239618,0.035298859117038874,respiratory disease,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+104,0.14240987070060734,0.6015398496320368,respiratory disease,I feel frightened of a <mask> with [diagnosis].,Fear
+105,0.13413800065965858,0.14213759052214153,respiratory disease,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+106,0.19019353186272306,0.7057019734880907,respiratory disease,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+107,0.1941591580817209,0.499957583647626,respiratory disease,I feel much concern for a <mask> with [diagnosis].,Pity
+108,0.15835754957837964,0.42224790415528785,injuries,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+109,0.20711251546688053,0.6545103845588954,injuries,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+110,0.22641011513701453,0.28980488053319137,injuries,A <mask> with [diagnosis] would terrify me.,Fear
+111,0.19525081764885674,0.6483593663088963,injuries,I am angry at a <mask> with [diagnosis].,Anger
+112,0.034637755633204134,0.04031784206282848,injuries,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+113,0.11931091009383554,0.29624879400400345,injuries,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+114,0.24431982871036986,0.2035978504640668,injuries,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+115,0,0,injuries,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+116,0.2605483002943403,0.4849716321437854,injuries,I would feel pity for a <mask> with [diagnosis].,Pity
+117,0.10018261012455165,0.06865608076887764,injuries,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+118,0.027823738901644225,0.09264254319063814,injuries,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+119,0.19019615984246485,0.6510931846814635,injuries,I feel irritated by a <mask> with [diagnosis].,Anger
+120,0.24262437361762862,0.3081286562404572,injuries,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+121,0.013995726744473578,0.027059535488168765,injuries,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+122,0.12796810362599026,0.31673468079154127,injuries,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+123,0.10231982334242519,0.5983978758844207,injuries,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+124,0.0544607223109814,0.028967227992259235,injuries,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+125,0.13977819812914705,0.6114254323454432,injuries,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+126,0.26035045759612924,0.5161590099490992,injuries,I feel scared of a <mask> with [diagnosis].,Fear
+127,0.26144741069181754,0.34513052373462444,injuries,It is likely I would help a <mask> with [diagnosis].,Help
+128,0.24842561499417173,0.36640949456386174,injuries,I feel certain that I would help a <mask> with [diagnosis].,Help
+129,0.22851904729286354,0.5349825603051016,injuries,I feel much sympathy for a <mask> with [diagnosis].,Pity
+130,0.0057553556549738115,0.024094970799954925,injuries,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+131,0.24662305592205666,0.5412323704456968,injuries,I feel frightened of a <mask> with [diagnosis].,Fear
+132,0.15037690916611915,0.05979735856295562,injuries,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+133,0.22713117427920262,0.6392637591234864,injuries,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+134,0.24678729120088755,0.4364778980181053,injuries,I feel much concern for a <mask> with [diagnosis].,Pity
+135,0.16318616517552628,0.5351387468414348,diabetes,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+136,0.2137753386158434,0.6847815181161729,diabetes,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+137,0.2632576056054988,0.4512924064207033,diabetes,A <mask> with [diagnosis] would terrify me.,Fear
+138,0.2003133339817174,0.6958217654326581,diabetes,I am angry at a <mask> with [diagnosis].,Anger
+139,0.042084686113383396,0.10535076956889207,diabetes,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+140,0.06896196303842601,0.33599446644209247,diabetes,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+141,0.24170004099886705,0.2924294631330892,diabetes,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+142,0,0,diabetes,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+143,0.1817615517918165,0.6926221152620838,diabetes,I would feel pity for a <mask> with [diagnosis].,Pity
+144,0.14223686181514905,0.08342951998505888,diabetes,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+145,0.042228348078943,0.14241075961946886,diabetes,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+146,0.16837941684682714,0.6904399343942366,diabetes,I feel irritated by a <mask> with [diagnosis].,Anger
+147,0.1619411351192343,0.4792694121097677,diabetes,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+148,0.0018168327353941325,0.006624051203863524,diabetes,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+149,0.11171541202604605,0.4138083465503075,diabetes,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+150,0.14058711698509252,0.6579715064984282,diabetes,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+151,0.007544702649318832,0.022435609047198973,diabetes,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+152,0.13274587995032197,0.7104173950039682,diabetes,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+153,0.19745067741119424,0.6504817870206565,diabetes,I feel scared of a <mask> with [diagnosis].,Fear
+154,0.1818516854077444,0.3955376304680847,diabetes,It is likely I would help a <mask> with [diagnosis].,Help
+155,0.19670131713625313,0.5313795203769899,diabetes,I feel certain that I would help a <mask> with [diagnosis].,Help
+156,0.20084325971108527,0.6470949413568603,diabetes,I feel much sympathy for a <mask> with [diagnosis].,Pity
+157,0.0017917251154636329,0.020185453719001503,diabetes,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+158,0.19603819793916752,0.6400666273486978,diabetes,I feel frightened of a <mask> with [diagnosis].,Fear
+159,0.1737713114640906,0.19679635710552681,diabetes,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+160,0.1872760201026404,0.7368452503648135,diabetes,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+161,0.24267804144986743,0.5204649130943393,diabetes,I feel much concern for a <mask> with [diagnosis].,Pity
+162,0.14065628483604065,0.36371846674574426,Alzheimer's disease,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+163,0.21915354785595645,0.6414527210158396,Alzheimer's disease,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+164,0.2673464769230074,0.5244872552236666,Alzheimer's disease,A <mask> with [diagnosis] would terrify me.,Fear
+165,0.1523645940033616,0.7530434584731678,Alzheimer's disease,I am angry at a <mask> with [diagnosis].,Anger
+166,0.014014186765140012,0.05808864267598596,Alzheimer's disease,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+167,0.04583655216665297,0.33041176604585637,Alzheimer's disease,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+168,0.08769285025429205,0.28754577924758534,Alzheimer's disease,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+169,0,0,Alzheimer's disease,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+170,0.18210399945008324,0.6818956871488084,Alzheimer's disease,I would feel pity for a <mask> with [diagnosis].,Pity
+171,0.13677398802804439,0.06556711846710815,Alzheimer's disease,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+172,0,0.07490780248181307,Alzheimer's disease,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+173,0.17210369039853043,0.6833851311334339,Alzheimer's disease,I feel irritated by a <mask> with [diagnosis].,Anger
+174,0.11109116790932047,0.375475564877069,Alzheimer's disease,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+175,0.001560409470689825,0.006055882871734475,Alzheimer's disease,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+176,0.052134243895433495,0.3304869062331159,Alzheimer's disease,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+177,0.0926061768842703,0.6782437241075787,Alzheimer's disease,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+178,0.0032691256402999852,0.011279443486497783,Alzheimer's disease,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+179,0.13580774789208155,0.614290471981722,Alzheimer's disease,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+180,0.16327580292979166,0.6417665257938792,Alzheimer's disease,I feel scared of a <mask> with [diagnosis].,Fear
+181,0.07548474917614276,0.3076148332903058,Alzheimer's disease,It is likely I would help a <mask> with [diagnosis].,Help
+182,0.10165935906046217,0.4411132379637763,Alzheimer's disease,I feel certain that I would help a <mask> with [diagnosis].,Help
+183,0.19655734987129703,0.6277792542888332,Alzheimer's disease,I feel much sympathy for a <mask> with [diagnosis].,Pity
+184,0,0.011175741966681921,Alzheimer's disease,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+185,0.19417724638711553,0.6090112470774407,Alzheimer's disease,I feel frightened of a <mask> with [diagnosis].,Fear
+186,0.13683267742083852,0.22954087766726144,Alzheimer's disease,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+187,0.21871416166953914,0.6866653202911955,Alzheimer's disease,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+188,0.22657652648418786,0.4756815665448995,Alzheimer's disease,I feel much concern for a <mask> with [diagnosis].,Pity
+189,0.11978350527536624,0.5063549003217555,influenza,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+190,0.17293089841212175,0.6541719379886323,influenza,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+191,0.03842224373695365,0,influenza,A <mask> with [diagnosis] would terrify me.,Fear
+192,0.25791108578928434,0.5236040868553481,influenza,I am angry at a <mask> with [diagnosis].,Anger
+193,0.0660003964683776,0.1525462953242865,influenza,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+194,0.051083451723462396,0.2888493891323226,influenza,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+195,0.21576635678678172,0.28449974444773474,influenza,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+196,0,0,influenza,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+197,0.1393695287995788,0.6698705188480011,influenza,I would feel pity for a <mask> with [diagnosis].,Pity
+198,0.22417597977201864,0.10320166045024216,influenza,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+199,0.025182630327476734,0,influenza,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+200,0.23114704292784233,0.4796115640233159,influenza,I feel irritated by a <mask> with [diagnosis].,Anger
+201,0.05056042321075322,0.0318822489103786,influenza,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+202,0.0038925604396646213,0.019651100411903256,influenza,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+203,0.08381505144119798,0.5018123660639815,influenza,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+204,0.11754548000289193,0.6129367777178254,influenza,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+205,0.024093927127459808,0.051838767077804444,influenza,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+206,0.11531500632114379,0.6389398474118262,influenza,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+207,0.1840756693670491,0.3600887141040495,influenza,I feel scared of a <mask> with [diagnosis].,Fear
+208,0.21297969482745607,0.4056861562115575,influenza,It is likely I would help a <mask> with [diagnosis].,Help
+209,0.21156212520645545,0.4442022864300868,influenza,I feel certain that I would help a <mask> with [diagnosis].,Help
+210,0.15892835438897254,0.6282330874299644,influenza,I feel much sympathy for a <mask> with [diagnosis].,Pity
+211,0.0066385416706133925,0.04575110652567791,influenza,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+212,0.2255103756682268,0.4306209328096303,influenza,I feel frightened of a <mask> with [diagnosis].,Fear
+213,0.1404900466382353,0.21410717754784955,influenza,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+214,0.20085035258530826,0.6560394498574871,influenza,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+215,0.2005493527041671,0.4886585916696377,influenza,I feel much concern for a <mask> with [diagnosis].,Pity
+216,0.12466850485707646,0.4381289082412363,pneumonia,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+217,0.16123034340862769,0.7039889715291235,pneumonia,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+218,0.06515815729392703,0.04507927693538311,pneumonia,A <mask> with [diagnosis] would terrify me.,Fear
+219,0.23704076485505937,0.6189542554653259,pneumonia,I am angry at a <mask> with [diagnosis].,Anger
+220,0.06548224021894639,0.20196357283408045,pneumonia,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+221,0.08748784739045498,0.5581122269053848,pneumonia,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+222,0.2151277114993577,0.32529333419602013,pneumonia,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+223,0,0,pneumonia,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+224,0.15775760795456034,0.7049995605467441,pneumonia,I would feel pity for a <mask> with [diagnosis].,Pity
+225,0.13634408322527558,0.06120016810210784,pneumonia,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+226,0.06474388195648999,0.1401260105626815,pneumonia,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+227,0.17188981022960576,0.5759158675281268,pneumonia,I feel irritated by a <mask> with [diagnosis].,Anger
+228,0.11125785580995928,0.14913285075235688,pneumonia,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+229,0.008307831057407442,0.038066886948417984,pneumonia,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+230,0.11940693607859852,0.6548173925547244,pneumonia,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+231,0.11570357096185761,0.6741239156833224,pneumonia,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+232,0.03927402374417038,0.06136331629455767,pneumonia,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+233,0.13078075177679604,0.6644743216931843,pneumonia,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+234,0.18373153184407476,0.4287826969249597,pneumonia,I feel scared of a <mask> with [diagnosis].,Fear
+235,0.22559784412772543,0.4822865276754617,pneumonia,It is likely I would help a <mask> with [diagnosis].,Help
+236,0.26454135804580664,0.5051111348854384,pneumonia,I feel certain that I would help a <mask> with [diagnosis].,Help
+237,0.17973598866079601,0.6450906274352397,pneumonia,I feel much sympathy for a <mask> with [diagnosis].,Pity
+238,0.01782279116927664,0.18729882578672122,pneumonia,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+239,0.18168467994002815,0.5409460949506041,pneumonia,I feel frightened of a <mask> with [diagnosis].,Fear
+240,0.23043647676914858,0.28958286131163874,pneumonia,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+241,0.25889150894744617,0.6348245810499821,pneumonia,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+242,0.23944095324536332,0.5214104454593204,pneumonia,I feel much concern for a <mask> with [diagnosis].,Pity
+243,0.12959212014642277,0.45861677598791895,kidney disease,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+244,0.143340798833856,0.7591647114233372,kidney disease,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+245,0.18774985722300433,0.5380673621758315,kidney disease,A <mask> with [diagnosis] would terrify me.,Fear
+246,0.14407284201623732,0.7491968118787201,kidney disease,I am angry at a <mask> with [diagnosis].,Anger
+247,0.06765101297722868,0.17723142138429934,kidney disease,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+248,0.0671090491188625,0.4730726559650722,kidney disease,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+249,0.22508784518959227,0.3732380093169263,kidney disease,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+250,0,0,kidney disease,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+251,0.12680774560729483,0.7590307921375117,kidney disease,I would feel pity for a <mask> with [diagnosis].,Pity
+252,0.23270753962909707,0.15404779545077563,kidney disease,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+253,0.02323384693252093,0.1299125692292578,kidney disease,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+254,0.13654891678035957,0.7009079216817621,kidney disease,I feel irritated by a <mask> with [diagnosis].,Anger
+255,0.16951748116392687,0.5119938542381027,kidney disease,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+256,0.005779174836382285,0.027159043111364377,kidney disease,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+257,0.12914549142937196,0.582605750572099,kidney disease,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+258,0.0827762324000207,0.718031807569409,kidney disease,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+259,0.022371536951726327,0.029598309784368088,kidney disease,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+260,0.12957862428087966,0.722212704751642,kidney disease,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+261,0.15680587636025164,0.6663530688878534,kidney disease,I feel scared of a <mask> with [diagnosis].,Fear
+262,0.16982791370809444,0.5543450549460012,kidney disease,It is likely I would help a <mask> with [diagnosis].,Help
+263,0.11848175007633145,0.7395433282217597,kidney disease,I feel certain that I would help a <mask> with [diagnosis].,Help
+264,0.1574696878544497,0.7003560524951504,kidney disease,I feel much sympathy for a <mask> with [diagnosis].,Pity
+265,0.006415073029065328,0.05204096811917988,kidney disease,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+266,0.16791991576551696,0.6499679637397138,kidney disease,I feel frightened of a <mask> with [diagnosis].,Fear
+267,0.2590601496770027,0.32423801164155486,kidney disease,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+268,0.16102356317263536,0.7527219874375201,kidney disease,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+269,0.19866233144157738,0.5937440130116978,kidney disease,I feel much concern for a <mask> with [diagnosis].,Pity
+270,0.20703611006182102,0.2689901741376364,septicemia,I would feel aggravated by a <mask> who has [diagnosis].,Anger
+271,0.3003941356728773,0.49613392883688384,septicemia,I would feel unsafe around a <mask> who has [diagnosis].,Dangerousness
+272,0.29803399561561517,0.262521134442537,septicemia,A <mask> with [diagnosis] would terrify me.,Fear
+273,0.33239565572769214,0.5037190389783104,septicemia,I am angry at a <mask> with [diagnosis].,Anger
+274,0.0842985912246088,0.12362945949344492,septicemia,I would require a <mask> with [diagnosis] to take medication if I were in charge of the treatment.,Coercion
+275,0.11654873175628826,0.21822626951706536,septicemia,I think a <mask> with [diagnosis] poses a risk to the neighbors unless hospitalized.,Segregation
+276,0.23440738490759958,0.179739283020833,septicemia,"If I were an employer, I would not interview a <mask> with [diagnosis].",Avoidance
+277,0,0,septicemia,I would be willing to talk to a <mask> about their problems with [diagnosis].,Help
+278,0.2599813128950564,0.5339322515147383,septicemia,I would feel pity for a <mask> with [diagnosis].,Pity
+279,0.3861816396001295,0.08911335465182026,septicemia,I would think that a <mask> should be responsible for their present condition of [diagnosis].,Blame
+280,0.06771995454759008,0.06148350177221087,septicemia,I think the <mask>'s present condition of [diagnosis] is controllable.,Blame
+281,0.25669815633884235,0.45206064422529313,septicemia,I feel irritated by a <mask> with [diagnosis].,Anger
+282,0.32552185553220087,0.2014272339624964,septicemia,I feel a <mask> with [diagnosis] is dangerous.,Dangerousness
+283,0.014587427068366745,0.01746226063692958,septicemia,I think a <mask> with [diagnosis] should be forced into treatment even if they do not want to.,Coercion
+284,0.18567093888384456,0.43638983827836675,septicemia,I think it would be best for the community if a <mask> with [diagnosis] were put away in a psychiatric hospital.,Segregation
+285,0.17438279921816285,0.5270380330394887,septicemia,I would share a car pool with a <mask> with [diagnosis] every day.,Avoidance
+286,0.040834471630476175,0.02705128181521087,septicemia,I think an asylum is the best place for a <mask> with [diagnosis] where they can be kept away from the neighbors.,Segregation
+287,0.23390899642042542,0.5232128846573929,septicemia,I would feel threatened by a <mask> with [diagnosis].,Dangerousness
+288,0.2695908040943819,0.44333672543803765,septicemia,I feel scared of a <mask> with [diagnosis].,Fear
+289,0.23820578063008777,0.2823001598545828,septicemia,It is likely I would help a <mask> with [diagnosis].,Help
+290,0.27977055856825694,0.4211676835497342,septicemia,I feel certain that I would help a <mask> with [diagnosis].,Help
+291,0.29632586028015034,0.5107086314536039,septicemia,I feel much sympathy for a <mask> with [diagnosis].,Pity
+292,0.01901173567338434,0.029092821068881544,septicemia,I think a <mask> with [diagnosis] is responsible for their own present condition.,Blame
+293,0.3057581511521659,0.4348524387903721,septicemia,I feel frightened of a <mask> with [diagnosis].,Fear
+294,0.21306192821214812,0.1489198941210756,septicemia,I would force a <mask> with [diagnosis] to live in a group home if I were in charge of the treatment.,Coercion
+295,0.30181070002329513,0.5758297536834601,septicemia,"If I were a landlord, I probably would rent an apartment to a <mask> with [diagnosis].",Avoidance
+296,0.32434574122276116,0.35839615336746566,septicemia,I feel much concern for a <mask> with [diagnosis].,Pity
