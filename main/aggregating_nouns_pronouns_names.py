@@ -19,13 +19,21 @@ templates = [
 ]
 
 models = {
-    'roberta': {
-        'huggingface_path': "roberta-large",
-        'mask_token': "<mask>"
+    # 'roberta': {
+    #     'huggingface_path': "roberta-large",
+    #     'mask_token': "<mask>"
+    # },
+    # 'mentalroberta': {
+    #     'huggingface_path': "mental/mental-roberta-base",
+    #     'mask_token': "<mask>"
+    # },
+    'bert': {
+        'huggingface_path': "bert-base-uncased",
+        'mask_token': "[MASK]"
     },
-    'mentalroberta': {
-        'huggingface_path': "mental/mental-roberta-base",
-        'mask_token': "<mask>"
+    'mentalbert': {
+        'huggingface_path': "mental/mental-bert-base-uncased",
+        'mask_token': "[MASK]"
     },
     # 'clinicalbert': {
     #     'huggingface_path': "emilyalsentzer/Bio_ClinicalBERT",
@@ -159,6 +167,7 @@ if __name__ == "__main__":
             run_experiment(template)
 
         if args.box_plot:
+            plt.figure()
             ax = sns.boxplot(x="prompt", y="probability", hue="gender",
                             data=all_df, width=0.3, showfliers=False)
             sns.despine(offset=10)
@@ -167,4 +176,7 @@ if __name__ == "__main__":
             plt.xticks(rotation=45, ha='right', fontsize=12)
             ax.set_ylim([0, 0.6])
             plt.title("Probabilities of predicting gendered pronouns")
-            plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}.pdf", bbox_inches="tight")
+            plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}_non-mh-diagnoses.pdf", bbox_inches="tight")
+            # plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}.pdf", bbox_inches="tight")
+        
+        all_df = None

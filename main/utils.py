@@ -24,6 +24,22 @@ diagnoses = [
     "panic disorder",
     "borderline personality disorder"]
 
+diagnoses_non_mh = [
+    "heart disease", 
+    "cancer", 
+    "stroke", 
+    "respiratory disease", 
+    "injuries", 
+    "diabetes", 
+    "Alzheimer's disease", 
+    "influenza", 
+    "pneumonia", 
+    "kidney disease", 
+    "septicemia"
+]
+
+diagnoses = diagnoses_non_mh
+
 # Effect Size
 
 
