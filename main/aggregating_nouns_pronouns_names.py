@@ -181,5 +181,7 @@ if __name__ == "__main__":
             plt.title("Probabilities of predicting gendered pronouns")
             plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}_non-mh-diagnoses.pdf", bbox_inches="tight")
             # plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}.pdf", bbox_inches="tight")
-        
+       
+        if all_df is not None:
+            all_df.to_csv(f"../output/{model}_all_df.csv")
         all_df = None
