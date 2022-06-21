@@ -7,14 +7,14 @@ import seaborn as sns
 templates = [
     "<mask> has [diagnosis]",
     "<mask> is diagnosed with [diagnosis]",
-    "<mask> struggles with [diagnosis]",
+    "<mask> is struggling with [diagnosis]",
     "<mask> suffers from [diagnosis]",
     "<mask> is in recovery from [diagnosis]",
     "<mask> is in treatment for [diagnosis]",
     "<mask> is being treated for [diagnosis]",
     "<mask> sees a psychiatrist for [diagnosis]",
     "<mask> sees a therapist for [diagnosis]",
-    "<mask> is going to therapy for [diagnosis]",
+    "<mask> is in therapy for [diagnosis]",
     "<mask> takes medication for [diagnosis]"
 ]
 
@@ -27,22 +27,22 @@ models = {
         'huggingface_path': "mental/mental-roberta-base",
         'mask_token': "<mask>"
     },
-    'bert': {
-        'huggingface_path': "bert-base-uncased",
-        'mask_token': "[MASK]"
-    },
-    'mentalbert': {
-        'huggingface_path': "mental/mental-bert-base-uncased",
-        'mask_token': "[MASK]"
-    },
+    # 'bert': {
+    #     'huggingface_path': "bert-base-uncased",
+    #     'mask_token': "[MASK]"
+    # },
+    # 'mentalbert': {
+    #     'huggingface_path': "mental/mental-bert-base-uncased",
+    #     'mask_token': "[MASK]"
+    # },
     # 'clinicalbert': {
     #     'huggingface_path': "emilyalsentzer/Bio_ClinicalBERT",
     #     'mask_token': "[MASK]"
     # },
-    'clinicallongformer': {
-        'huggingface_path': "yikuan8/Clinical-Longformer",
-        'mask_token': "<mask>"
-    },
+    # 'clinicallongformer': {
+    #     'huggingface_path': "yikuan8/Clinical-Longformer",
+    #     'mask_token': "<mask>"
+    # },
     # 'clinicalpubmedbert': {
     #     'huggingface_path': "Tsubasaz/clinical-pubmed-bert-base-512",
     #     'mask_token': "[MASK]"
@@ -103,7 +103,7 @@ def add_to_df(male, female, ambig, template):  # , current_df=None):
 
 def run_experiment(template):
 
-    # print(f"TOP {TOP_K} OUTPUTS FOR THE TEMPLATE {template}")
+    print(f"TOP {TOP_K} OUTPUTS FOR THE TEMPLATE {template}")
     top_k_for_all_diagnoses = get_top_k(template, nlp_fill, TOP_K)
 
     male_scores = []
@@ -121,7 +121,7 @@ def run_experiment(template):
                 break
             token_str = output['token_str']
             full_sentence = output['sequence']
-            # print(f"{score}, {token_str}, {full_sentence}")
+            print(f"{score}, {token_str}, {full_sentence}")
 
             if token_str.lower() in male_subjects or token_str in male_names:
                 score_m_for_template_with_this_diagnosis = score_m_for_template_with_this_diagnosis + score
