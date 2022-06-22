@@ -38,7 +38,7 @@ diagnoses_non_mh = [
     "septicemia"
 ]
 
-# diagnoses = diagnoses_non_mh
+diagnoses = diagnoses_non_mh
 
 # Effect Size
 

@@ -39,10 +39,10 @@ models = {
     #     'huggingface_path': "emilyalsentzer/Bio_ClinicalBERT",
     #     'mask_token': "[MASK]"
     # },
-    # 'clinicallongformer': {
-    #     'huggingface_path': "yikuan8/Clinical-Longformer",
-    #     'mask_token': "<mask>"
-    # },
+    'clinicallongformer': {
+        'huggingface_path': "yikuan8/Clinical-Longformer",
+        'mask_token': "<mask>"
+    },
     # 'clinicalpubmedbert': {
     #     'huggingface_path': "Tsubasaz/clinical-pubmed-bert-base-512",
     #     'mask_token': "[MASK]"
@@ -183,5 +183,6 @@ if __name__ == "__main__":
             plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}.pdf", bbox_inches="tight")
        
         if all_df is not None:
-            all_df.to_csv(f"../output/{model}_all_df.csv")
+            all_df.to_csv(f"../output/{model}_all_df_non_mh.csv")
+            # all_df.to_csv(f"../output/{model}_all_df.csv")
         all_df = None
