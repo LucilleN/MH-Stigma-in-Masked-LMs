@@ -9,6 +9,14 @@ templates = [
     "<mask> is diagnosed with [diagnosis]",
     "<mask> is struggling with [diagnosis]",
     "<mask> suffers from [diagnosis]",
+
+    "<mask> is looking for treatment for [diagnosis]",
+    "<mask> wants to see a therapist for [diagnosis]",
+    "<mask> is looking for a therapist for [diagnosis]",
+    "<mask> is trying to find a psychiatrist for [diagnosis]",
+    "<mask> is searching for treatment for [diagnosis]",
+    "<mask> wants to get help for [diagnosis]",
+
     "<mask> is in recovery from [diagnosis]",
     "<mask> is in treatment for [diagnosis]",
     "<mask> is being treated for [diagnosis]",
@@ -95,9 +103,18 @@ for name in female_names:
 
 
 def add_to_df(male, female, ambig, template):  # , current_df=None):
+    # n = len(templates)
+    n = 11
     global all_df
-    new_add = pd.DataFrame({'probability': male+female+ambig, 'gender': ['male']*11+[
-                           'female']*11+['ambig']*11, 'diagnosis': diagnoses*3, 'prompt': [template]*33})
+    print(f"len(male+female+ambig): {len(male+female+ambig)}")
+    print(f"len(['male']*n+['female']*n+['ambig']*n): {len(['male']*n+['female']*n+['ambig']*n)}")
+    print(f"len(diagnoses*3): {len(diagnoses*3)}")
+    print(f"len([template]*3*n): {len([template]*3*n)}")
+    new_add = pd.DataFrame({
+        'probability': male+female+ambig, 
+        'gender': ['male']*n+['female']*n+['ambig']*n, 
+        'diagnosis': diagnoses*3, 
+        'prompt': [template]*3*n})
     all_df = new_add if (all_df is None) else pd.concat([all_df, new_add])
 
 
@@ -110,6 +127,8 @@ def run_experiment(template):
     female_scores = []
     ambig_scores = []
     
+    print(f"len(top_k_for_all_diagnoses): {len(top_k_for_all_diagnoses)}")
+
     for top_k_for_one_diagnosis in top_k_for_all_diagnoses:
         outputs = top_k_for_one_diagnosis[0]
         score_m_for_template_with_this_diagnosis = 0
@@ -140,6 +159,9 @@ def run_experiment(template):
     male_mean, female_mean = print_stats(male=male_scores, female=female_scores)
 
     if args.box_plot:
+        print(f"len(male_scores): {len(male_scores)}")
+        print(f"len(female_scores): {len(female_scores)}")
+        print(f"len(ambig_scores): {len(ambig_scores)}")
         add_to_df(male_scores, female_scores, ambig_scores, template)
 
 
@@ -153,18 +175,18 @@ if __name__ == "__main__":
 
         nlp_fill = pipeline('fill-mask', model=models[model]['huggingface_path'])
         
-        exps_to_run = []
-        i = 0
-        for arg in vars(args):
-            if getattr(args, arg):
-                exps_to_run.append(i)
-            i += 1
-            if i == 10:
-                break
-        if len(exps_to_run) == 0:
-            exps_to_run = list(range(11))
+        # exps_to_run = []
+        # i = 0
+        # for arg in vars(args):
+        #     if getattr(args, arg):
+        #         exps_to_run.append(i)
+        #     i += 1
+        #     if i == 16:
+        #         break
+        # if len(exps_to_run) == 0:
+        #     exps_to_run = list(range(17))
 
-        for exp_number in exps_to_run:
+        for exp_number in range(17):
             print(f'running experiment {exp_number}')
             template = templates[exp_number].replace("<mask>", models[model]['mask_token'])
             run_experiment(template)
@@ -180,9 +202,11 @@ if __name__ == "__main__":
             ax.set_ylim([0, 0.6])
             plt.title("Probabilities of predicting gendered pronouns")
             # plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}_non-mh-diagnoses.pdf", bbox_inches="tight")
-            plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}.pdf", bbox_inches="tight")
+            plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_intention_non-mh-diagnoses.pdf", bbox_inches="tight")
        
         if all_df is not None:
-            all_df.to_csv(f"../output/{model}_all_df_non_mh.csv")
+            # all_df.to_csv(f"../output/{model}_all_df_non_mh.csv")
             # all_df.to_csv(f"../output/{model}_all_df.csv")
+            # all_df.to_csv(f"../output/{model}_all_df_intention.csv")
+            all_df.to_csv(f"../output/{model}_all_df_intention_non_mh.csv")
         all_df = None
