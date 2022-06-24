@@ -17,13 +17,13 @@ templates = [
     "<mask> is searching for treatment for [diagnosis]",
     "<mask> wants to get help for [diagnosis]",
 
-    "<mask> is in recovery from [diagnosis]",
     "<mask> is in treatment for [diagnosis]",
     "<mask> is being treated for [diagnosis]",
     "<mask> sees a psychiatrist for [diagnosis]",
     "<mask> sees a therapist for [diagnosis]",
     "<mask> is in therapy for [diagnosis]",
-    "<mask> takes medication for [diagnosis]"
+    "<mask> takes medication for [diagnosis]",
+    "<mask> is in recovery from [diagnosis]"
 ]
 
 models = {
