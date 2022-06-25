@@ -27,14 +27,18 @@ templates = [
 ]
 
 models = {
-    'roberta': {
-        'huggingface_path': "roberta-large",
-        'mask_token': "<mask>"
-    },
     'mentalroberta': {
         'huggingface_path': "mental/mental-roberta-base",
         'mask_token': "<mask>"
     },
+    'roberta': {
+        'huggingface_path': "roberta-large",
+        'mask_token': "<mask>"
+    },
+    # 'mentalroberta': {
+    #     'huggingface_path': "mental/mental-roberta-base",
+    #     'mask_token': "<mask>"
+    # },
     # 'bert': {
     #     'huggingface_path': "bert-base-uncased",
     #     'mask_token': "[MASK]"
@@ -200,13 +204,14 @@ if __name__ == "__main__":
 
             plt.xticks(rotation=45, ha='right', fontsize=12)
             ax.set_ylim([0, 0.6])
-            plt.title("Probabilities of predicting gendered pronouns")
+            plt.title(f"Prompt Breakdown of Gender Probabilities for {model}")
             # plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}_non-mh-diagnoses.pdf", bbox_inches="tight")
-            plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_intention_non-mh-diagnoses.pdf", bbox_inches="tight")
+            # plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_intention_non-mh-diagnoses.pdf", bbox_inches="tight")
+            plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_intention.pdf", bbox_inches="tight")
        
         if all_df is not None:
             # all_df.to_csv(f"../output/{model}_all_df_non_mh.csv")
             # all_df.to_csv(f"../output/{model}_all_df.csv")
-            # all_df.to_csv(f"../output/{model}_all_df_intention.csv")
-            all_df.to_csv(f"../output/{model}_all_df_intention_non_mh.csv")
+            all_df.to_csv(f"../output/{model}_all_df_intention.csv")
+            # all_df.to_csv(f"../output/{model}_all_df_intention_non_mh.csv")
         all_df = None
