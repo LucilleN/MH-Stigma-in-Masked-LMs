@@ -175,54 +175,6 @@ if __name__ == "__main__":
             template = templates[exp_number].replace("<mask>", models[model]['mask_token'])
             run_experiment(template)
 
-        if args.box_plot:
-            # plt.figure(figsize = (18,6))
-            # sns.set_style("whitegrid")
-            # color_palette = {'Female':'#ff7f00', 'Male':'#377eb8','Unspecified':'#bcbcbc'}
-            # BOX_WIDTH = 0.5
-
-            # ax = sns.boxplot(
-            #     x="Prompt", 
-            #     y="Probability", 
-            #     hue="Gender",
-            #     data=all_df, 
-            #     showfliers=False, 
-            #     width=BOX_WIDTH, 
-            #     palette=color_palette)
-            # sns.despine(offset=10)
-
-            # # sns.set(rc={'figure.figsize': (30, 6)}, font_scale=1.2)
-
-            # plt.xticks(rotation=45, ha='right', fontsize=12)
-            # ax.set_ylim([0, 0.55])
-            # plt.title(f"Prompt Breakdown of Gender Probabilities for {model}", fontweight="bold")
-            # # plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_p{probability_threshold}_non-mh-diagnoses.pdf", bbox_inches="tight")
-            # # plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_intention_non-mh-diagnoses.pdf", bbox_inches="tight")
-            # plt.savefig(f"../plots/boxplot_aggregated_ambig_{model}_intention.pdf", bbox_inches="tight")
-            plt.figure()
-            sns.set(rc={"figure.figsize":(18, 6)}) 
-            sns.set_style("whitegrid")
-            color_palette = {'Female':'#ff7f00', 'Male':'#377eb8','Unspecified':'#bcbcbc'}
-            BOX_WIDTH = 0.5
-
-            ax = sns.boxplot(x="prompt", y="probability", hue="gender",
-                            data=all_df, showfliers=False, width=BOX_WIDTH, palette=color_palette)
-            sns.despine(offset=10)
-
-            # sns.set(rc={'figure.figsize': (30, 6)}, font_scale=1.2)
-
-            plt.xticks(rotation=30, ha='right', fontsize=16)
-            plt.yticks(fontsize=18)
-            ax.set_ylabel('Probability', fontsize = 20.0)
-            ax.set_ylim([0, 0.55])
-            ax.set(xlabel=None)
-            ax.set_title("RoBERTa - MH", size=20,fontweight="bold")
-            handles, labels = ax.get_legend_handles_labels()
-            plt.legend(handles, ['Male', 'Female', 'Unspecified'], loc='upper left',bbox_to_anchor=(0.85, 1.05),fontsize=16)
-
-            plt.savefig('../plots/part1_RoBERTa_whitebackground_16.png', transparent=True, bbox_inches="tight")
-
-
         if all_df is not None:
             # all_df.to_csv(f"../output/{model}_all_df_non_mh.csv")
             # all_df.to_csv(f"../output/{model}_all_df.csv")
