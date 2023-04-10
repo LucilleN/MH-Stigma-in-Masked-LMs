@@ -1,15 +1,27 @@
+"""
+This script runs experiments for RQ1: Do MLMs associate mental health conditions with a particular gender?
+
+To run this script:
+- First make sure your HuggingFace access token is in ACCESS_TOKEN.txt. 
+- Then, run `python rq1.py` in your terminal.
+
+All results / scores will be saved to the `output/` folder. To generate figures, see `figures.ipynb`.
+"""
+
 from transformers import pipeline
 import pandas as pd
-from utils import diagnoses, get_target_probability, get_top_k, print_stats, plot_male_and_female, read_data_from_file, parse_args
+from utils import diagnoses, get_top_k, print_stats, plot_male_and_female, read_data_from_file, parse_args
 import matplotlib.pylab as plt
 import seaborn as sns
 
 templates = [
+    # Diagnosed with condition (Phase 1 of Health Action Process Approach)
     "<mask> has [diagnosis]",
     "<mask> is diagnosed with [diagnosis]",
     "<mask> is struggling with [diagnosis]",
     "<mask> suffers from [diagnosis]",
 
+    # Intending to seek treatment (Phase 2 of Health Action Process Approach)
     "<mask> is looking for treatment for [diagnosis]",
     "<mask> wants to see a therapist for [diagnosis]",
     "<mask> is looking for a therapist for [diagnosis]",
@@ -17,6 +29,7 @@ templates = [
     "<mask> is searching for treatment for [diagnosis]",
     "<mask> wants to get help for [diagnosis]",
 
+    # Taking action to get treatment (Phase 3 of Health Action Process Approach)
     "<mask> is in treatment for [diagnosis]",
     "<mask> is being treated for [diagnosis]",
     "<mask> sees a psychiatrist for [diagnosis]",
@@ -27,38 +40,18 @@ templates = [
 ]
 
 models = {
-    'RoBERTa': {
-        'huggingface_path': "roberta-large",
+    # 'RoBERTa': {
+    #     'huggingface_path': "roberta-large",
+    #     'mask_token': "<mask>"
+    # },
+    'mentalroberta': {
+        'huggingface_path': "mental/mental-roberta-base",
         'mask_token': "<mask>"
     },
-    # 'mentalroberta': {
-    #     'huggingface_path': "mental/mental-roberta-base",
-    #     'mask_token': "<mask>"
-    # },
-    # 'bert': {
-    #     'huggingface_path': "bert-base-uncased",
-    #     'mask_token': "[MASK]"
-    # },
-    # 'mentalbert': {
-    #     'huggingface_path': "mental/mental-bert-base-uncased",
-    #     'mask_token': "[MASK]"
-    # },
-    # 'clinicalbert': {
-    #     'huggingface_path': "emilyalsentzer/Bio_ClinicalBERT",
-    #     'mask_token': "[MASK]"
-    # },
-    # 'clinicallongformer': {
-    #     'huggingface_path': "yikuan8/Clinical-Longformer",
-    #     'mask_token': "<mask>"
-    # },
-    # 'clinicalpubmedbert': {
-    #     'huggingface_path': "Tsubasaz/clinical-pubmed-bert-base-512",
-    #     'mask_token': "[MASK]"
-    # },
-    # 'psychsearch': {
-    #     'huggingface_path': "nlp4good/psych-search",
-    #     'mask_token': "[MASK]"
-    # }
+    'clinicallongformer': {
+        'huggingface_path': "yikuan8/Clinical-Longformer",
+        'mask_token': "<mask>"
+    }
 }
 
 TOP_K = 100
@@ -102,8 +95,7 @@ for name in female_names:
         ambig_names.append(name)
 
 
-def add_to_df(male, female, ambig, template):  # , current_df=None):
-    # n = len(templates)
+def add_to_df(male, female, ambig, template): 
     n = 11
     global all_df
     print(f"len(male+female+ambig): {len(male+female+ambig)}")
@@ -127,8 +119,6 @@ def run_experiment(template):
     female_scores = []
     ambig_scores = []
     
-    print(f"len(top_k_for_all_diagnoses): {len(top_k_for_all_diagnoses)}")
-
     for top_k_for_one_diagnosis in top_k_for_all_diagnoses:
         outputs = top_k_for_one_diagnosis[0]
         score_m_for_template_with_this_diagnosis = 0
@@ -140,7 +130,7 @@ def run_experiment(template):
                 break
             token_str = output['token_str']
             full_sentence = output['sequence']
-            print(f"{score}, {token_str}, {full_sentence}")
+            print(f"{score} probability for {token_str} in '{full_sentence}'")
 
             if token_str.lower() in male_subjects or token_str in male_names:
                 score_m_for_template_with_this_diagnosis = score_m_for_template_with_this_diagnosis + score
@@ -169,24 +159,18 @@ if __name__ == "__main__":
 
     args = parse_args()
 
+    huggingface_access_token = ""
+    with open('ACCESS_TOKEN.txt', 'r') as file:
+        huggingface_access_token = file.read().rstrip()
+
     for model in models:
 
-        print(f"""\n\n####################\n\nMODEL: {model}\n\n""")
+        print(f"""\n\n####################\n\n  MODEL: {model}  \n\n####################\n\n""")
 
-        nlp_fill = pipeline('fill-mask', model=models[model]['huggingface_path'])
-        
-        # exps_to_run = []
-        # i = 0
-        # for arg in vars(args):
-        #     if getattr(args, arg):
-        #         exps_to_run.append(i)
-        #     i += 1
-        #     if i == 16:
-        #         break
-        # if len(exps_to_run) == 0:
-        #     exps_to_run = list(range(17))
+        nlp_fill = pipeline('fill-mask', model=models[model]['huggingface_path'], use_auth_token=huggingface_access_token)
 
-        for exp_number in range(17):
+        num_experiments = len(templates)
+        for exp_number in range(num_experiments):
             print(f'running experiment {exp_number}')
             template = templates[exp_number].replace("<mask>", models[model]['mask_token'])
             run_experiment(template)
