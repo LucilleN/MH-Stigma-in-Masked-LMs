@@ -10,9 +10,7 @@ All results / scores will be saved to the `output/` folder. To generate figures,
 
 from transformers import pipeline
 import pandas as pd
-from utils import diagnoses, get_top_k, print_stats, plot_male_and_female, read_data_from_file, parse_args
-import matplotlib.pylab as plt
-import seaborn as sns
+from utils import diagnoses, get_top_k, print_stats, read_data_from_file
 
 templates = [
     # Diagnosed with condition (Phase 1 of Health Action Process Approach)
@@ -59,7 +57,7 @@ probability_threshold = 0.01
 female_untreated, female_treated, female_total = {}, {}, {}
 male_untreated,   male_treated,   male_total   = {}, {}, {}
 ambig_untreated,  ambig_treated,  ambig_total  = {}, {}, {}
-all_df = None
+all_results_df = None
 
 male_subjects = [
     "he",
@@ -95,19 +93,15 @@ for name in female_names:
         ambig_names.append(name)
 
 
-def add_to_df(male, female, ambig, template): 
+def add_to_all_results_df(male, female, ambig, template): 
     n = 11
-    global all_df
-    print(f"len(male+female+ambig): {len(male+female+ambig)}")
-    print(f"len(['male']*n+['female']*n+['ambig']*n): {len(['male']*n+['female']*n+['ambig']*n)}")
-    print(f"len(diagnoses*3): {len(diagnoses*3)}")
-    print(f"len([template]*3*n): {len([template]*3*n)}")
+    global all_results_df
     new_add = pd.DataFrame({
         'probability': male+female+ambig, 
         'gender': ['Male']*n+['Female']*n+['Unspecified']*n, 
         'diagnosis': diagnoses*3, 
         'prompt': [template]*3*n})
-    all_df = new_add if (all_df is None) else pd.concat([all_df, new_add])
+    all_results_df = new_add if (all_results_df is None) else pd.concat([all_results_df, new_add])
 
 
 def run_experiment(template):
@@ -139,7 +133,6 @@ def run_experiment(template):
             else:
                 score_a_for_template_with_this_diagnosis = score_a_for_template_with_this_diagnosis + score
 
-        # print(f"end of finding options for one template with one diagnosis; score_m = {score_m_for_template_with_this_diagnosis}, score_f = {score_f_for_template_with_this_diagnosis}")
         male_scores.append(score_m_for_template_with_this_diagnosis)
         female_scores.append(score_f_for_template_with_this_diagnosis)
         ambig_scores.append(score_a_for_template_with_this_diagnosis)
@@ -148,16 +141,13 @@ def run_experiment(template):
     print(f"RESULTS FOR TEMPLATE: {template}")
     male_mean, female_mean = print_stats(male=male_scores, female=female_scores)
 
-    if args.box_plot:
-        print(f"len(male_scores): {len(male_scores)}")
-        print(f"len(female_scores): {len(female_scores)}")
-        print(f"len(ambig_scores): {len(ambig_scores)}")
-        add_to_df(male_scores, female_scores, ambig_scores, template)
+    print(f"len(male_scores): {len(male_scores)}")
+    print(f"len(female_scores): {len(female_scores)}")
+    print(f"len(ambig_scores): {len(ambig_scores)}")
+    add_to_all_results_df(male_scores, female_scores, ambig_scores, template)
 
 
 if __name__ == "__main__":
-
-    args = parse_args()
 
     huggingface_access_token = ""
     with open('ACCESS_TOKEN.txt', 'r') as file:
@@ -175,9 +165,9 @@ if __name__ == "__main__":
             template = templates[exp_number].replace("<mask>", models[model]['mask_token'])
             run_experiment(template)
 
-        if all_df is not None:
-            # all_df.to_csv(f"../output/{model}_all_df_non_mh.csv")
-            # all_df.to_csv(f"../output/{model}_all_df.csv")
-            all_df.to_csv(f"../output/{model}_all_df_intention.csv")
-            # all_df.to_csv(f"../output/{model}_all_df_intention_non_mh.csv")
-        all_df = None
+        if all_results_df is not None:
+            # all_results_df.to_csv(f"../output/{model}_all_results_df_non_mh.csv")
+            # all_results_df.to_csv(f"../output/{model}_all_results_df.csv")
+            all_results_df.to_csv(f"../output/{model}_all_results_df_intention.csv")
+            # all_results_df.to_csv(f"../output/{model}_all_results_df_intention_non_mh.csv")
+        all_results_df = None
