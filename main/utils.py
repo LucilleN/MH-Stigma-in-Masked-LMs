@@ -194,7 +194,7 @@ def sum_dictionary(template_to_mean_dict):
     return sum
 
 
-def read_data_from_file(filepath):
+def read_lexicon_from_file(filepath):
     data = []
     with open(filepath) as f:
         # reader = csv.reader(f)

@@ -10,7 +10,7 @@ All results / scores will be saved to the `output/` folder. To generate figures,
 
 from transformers import pipeline
 import pandas as pd
-from utils import diagnoses, get_top_k, print_stats, read_data_from_file
+from utils import diagnoses, get_top_k, print_stats, read_lexicon_from_file
 
 templates = [
     # Diagnosed with condition (Phase 1 of Health Action Process Approach)
@@ -83,8 +83,8 @@ female_subjects = [
     "daughter",
     "lady"
 ]
-female_names = read_data_from_file("../data/women_top_1000_names_only.csv")
-male_names = read_data_from_file("../data/men_top_1000_names_only.csv")
+female_names = read_lexicon_from_file("../data/women_top_1000_names_only.csv")
+male_names = read_lexicon_from_file("../data/men_top_1000_names_only.csv")
 ambig_names = []
 for name in female_names:
     if name in male_names:
